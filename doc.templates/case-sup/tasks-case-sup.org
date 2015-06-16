@@ -1,0 +1,33 @@
+Concerning exercise disease[fn:cas-ex]:
+
+/\textcolor{gray}{before 10 AM}/
+
+1. Are there any cases that must be isolated? Display the list of all those cases. Create tasks for isolation for those cases who need it and assign it.
+
+2. Are there any cases that need lab diagnosis? Display the list of all those cases. Create tasks for lab diagnostic verification for those cases who need it and assign it.
+
+3. Display all lab requests that are overdue.
+
+   /\ldots number of requests overdue/
+
+4. You receive the following lab information. Make sure it is properly documented in SORMAS-N.
+
+   /\ldots lab information for cases/
+
+5. Are there any cases that can be discharged? Display the list of all those cases. Create tasks for those cases who need it and assign it.
+   From those that have two negative tests (48h apart) the following cases are symptom-free for at least 3 days. 
+
+   /\ldots list of cases (name with birth date)/   
+
+6. Are there any cases who died? Display the list of all those cases. Create tasks for the burial of those cases who need it and assign it.
+
+   /\ldots list of cases (name with birth date)/ 
+
+/\textcolor{gray}{after 3 PM}/
+
+7. [@7] Are there any tasks that need to be updated? Display a list of pending tasks and update their status.
+    
+   /\ldots list of tasks (name of case, task type and status)/ 
+  
+
+[fn:cas-ex] according to the daily information given in the tasks section of the day

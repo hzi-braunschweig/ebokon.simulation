@@ -1,0 +1,60 @@
+#+Title: SORMAS-N \protect\\ Tasks \& Logbook \protect\\ \LARGE Instructions for the Pilot Phase
+#+Latex: \renewcommand\plaintitle{SORMAS-N -- Tasks \& Logbook}
+#+Date: June 2015
+#+Author:  BNI, HPI, HZI, NFELTP, RKI, SAP
+
+#+Language: en
+
+#+Startup: content 
+#+Options: toc:nil tex:t H:2 num:2 todo:nil pri:nil tags:nil ^:nil
+#+Property: header-args :cache yes
+#+Exclude_Tags: noexport
+
+#+begin_latex
+%\title{SORMAS-N Field Test -- Tasks \& Logbook}
+%\author[The SORMAS Team]{BNI, HPI, HZI, NFELTP, RKI, SAP}
+%\publisher{Publisher of This Book}
+
+% Prints the month name (e.g., January) and the year (e.g., 2008)
+\newcommand{\monthyear}{%
+  \ifcase\month\or January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or
+  December\fi\space\number\year
+}
+
+% .3 full title page
+% \maketitle
+
+% .4 copyright page
+\newpage
+% \begin{fullwidth}
+~\vfill
+\thispagestyle{empty}
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{\baselineskip}
+
+Copyright \copyright\ \the\year\ \thanklessauthor
+
+% \par\smallcaps{Published by \thanklesspublisher}
+% \par\smallcaps{sormas.googlecode.com}
+
+\par 
+Licensed under the Apache License, Version 2.0 (the ``License''); you may not
+use this file except in compliance with the License. You may obtain a copy
+of the License at \url{http://www.apache.org/licenses/LICENSE-2.0}. Unless
+required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an \smallcaps{``AS IS'' BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND}, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.\index{license}
+
+\par
+\textit{First printing, \monthyear}
+%\end{fullwidth}
+
+% r.5 contents
+\newpage
+% \tableofcontents
+#+end_latex
+
+#+Toc: headlines 1

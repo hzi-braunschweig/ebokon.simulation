@@ -1,0 +1,11 @@
+/Concerning Measles and Cholera you have no tasks./
+
+Concerning Avian Influenza[fn:real-sus-3d]:
+
+/\textcolor{gray}{daily}/
+
+1. Notify contact persons of animal and human cases of Avian Influenza including zero-notifications.
+
+2. Visit contact persons to check and document any symptoms of Avian influenza for 17 consecutive days.
+
+[fn:real-sus-3d] according to occurrence of real cases

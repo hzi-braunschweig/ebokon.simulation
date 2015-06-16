@@ -1,0 +1,105 @@
+Id;IdUser;IdUser2;IdState;State;StateShort;IdLGA;LGA;LGAShort;LGAType;Institution;FacilityType;Ownership;RealLifeRole;SormasRole;SormasRoleShort;No;Name;Phone;eMail;Device
+K2r-1Alb-2CtO;COO-KN-ABS-1;1;1;Kano;KN;1;Albasu;ABS;rural;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mr Nonso Fabunmi;+234-802-9867422;nonso.fabunmi@snft.net;phone
+K2r-1Alb-3HFP;HFP-KN-ABS-1;2;1;Kano;KN;1;Albasu;ABS;rural;Albasu PHC;Primary;Public;n/a;Hospital focal person;HFP;1;Mr Sesugh Ogunode;+234-806-8590530;sesugh.ogunode@sormas.ng;phone
+K2r-1Alb-4HFP;HFP-KN-ABS-2;3;1;Kano;KN;1;Albasu;ABS;rural;Fanda PHC;Primary;Public;n/a;Hospital focal person;HFP;2;Mr Ugoh Maduabum;+234-703-6666648;ugoh.maduabum@sormas.ng;phone
+K2r-1Alb-5HFP;HFP-KN-ABS-3;4;1;Kano;KN;1;Albasu;ABS;rural;Hungu PHC;Primary;Public;n/a;Hospital focal person;HFP;3;Mrs Chiburem Dabiri;+234-64-725328;chiburem.dabiri@sormas.net;phone
+K2r-1Alb-6HFP;HFP-KN-ABS-4;5;1;Kano;KN;1;Albasu;ABS;rural;Tsangaya PHC;Primary;Public;n/a;Hospital focal person;HFP;4;Mr Azi Aikhionbare;+234-813-1846976;azi.aikhionbare@ebokon.ng;phone
+K2r-1Alb-1SvO;SUO-KN-ABS-1;6;1;Kano;KN;1;Albasu;ABS;rural;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Adebolajo Oboli;0806-7040681;adebolajo.oboli@sormas.org;phone
+K2r-2DTo-2CtO;COO-KN-DTF-1;7;1;Kano;KN;2;Dawakin Tofa;DTF;rural;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mr Nnaemeka Mbah;0809-8629930;nnaemeka.mbah@sormas.ng;phone
+K2r-2DTo-3HFP;HFP-KN-DTF-1;8;1;Kano;KN;2;Dawakin Tofa;DTF;rural;Dandalama PHC;Primary;Public;n/a;Hospital focal person;HFP;1;Mr Godwin Fajinmi;0807-4757680;godwin.fajinmi@sormas.ng;phone
+K2r-2DTo-5HFP;HFP-KN-DTF-2;9;1;Kano;KN;2;Dawakin Tofa;DTF;rural;Dawanau PHC;Primary;Public;n/a;Hospital focal person;HFP;2;Mrs Mujee Bot Kan;0813-9282742;mujee bot.kan@sormas.com;phone
+K2r-2DTo-6HFP;HFP-KN-DTF-3;10;1;Kano;KN;2;Dawakin Tofa;DTF;rural;Tattarawa PHC;Primary;Public;n/a;Hospital focal person;HFP;3;Mrs Loutoyopnica Kanayo;0705-8898223;loutoyopnica.kanayo@ebokon.org;phone
+K2r-2DTo-4HFP;HFP-KN-DTF-4;11;1;Kano;KN;2;Dawakin Tofa;DTF;rural;Dawaki General hospital;Secondary;Public;n/a;Hospital focal person;HFP;4;Mrs Al Derafaka Aradeon;064-7644943;al derafaka.aradeon@ebokon.com;phone
+K2r-2DTo-1SvO;SUO-KN-DTF-1;12;1;Kano;KN;2;Dawakin Tofa;DTF;rural;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mrs Njideka Emordi;0705-2995315;njideka.emordi@sormas.edu;phone
+K2r-3Gwa-2CtO;COO-KN-GRZ-1;13;1;Kano;KN;3;Gwarzo;GRZ;rural;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mrs Ijeoma Ezinwa;0809-4578376;ijeoma.ezinwa@snft.ng;phone
+K2r-3Gwa-3HFP;HFP-KN-GRZ-1;14;1;Kano;KN;3;Gwarzo;GRZ;rural;Getso MCH;Primary;Public ;n/a;Hospital focal person;HFP;1;Mr Yakubu Effiom;064-6622768;yakubu.effiom@snft.ng;phone
+K2r-3Gwa-5HFP;HFP-KN-GRZ-2;15;1;Kano;KN;3;Gwarzo;GRZ;rural;Alheri Clinic;Primary;Private;n/a;Hospital focal person;HFP;2;Mr Adeyemi Njoku;0805-7989784;adeyemi.njoku@sormas-n.org;phone
+K2r-3Gwa-6HFP;HFP-KN-GRZ-3;16;1;Kano;KN;3;Gwarzo;GRZ;rural;Koya Health Post ;Primary;Public;n/a;Hospital focal person;HFP;3;Mr Enosaze Olowola;0803-9123219;e.olowola@sormas.ng;phone
+K2r-3Gwa-4HFP;HFP-KN-GRZ-4;17;1;Kano;KN;3;Gwarzo;GRZ;rural;Gwarzo General Hospital;Secondary;Public;n/a;Hospital focal person;HFP;4;Mr Uche Mohamed;+234-64-6111069;u.mohamed@sormas-n.ng;phone
+K2r-3Gwa-1SvO;SUO-KN-GRZ-1;18;1;Kano;KN;3;Gwarzo;GRZ;rural;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Olaoluwa Mshelia;+234-64-1447435;olaoluwa.mshelia@sormas.ng;phone
+K1u-1Kum-2CtO;COO-KN-KBT-1;19;1;Kano;KN;4;Kumbotso;KBT;urban;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mrs Oluwanifesimi Abayomi;+234-64-4341611;o.abayomi@snft.ng;phone
+K1u-1Kum-3HFP;HFP-KN-KBT-1;20;1;Kano;KN;4;Kumbotso;KBT;urban;Chiranci PHC;Primary;Public;n/a;Hospital focal person;HFP;1;Mrs Adeyinka Olowola;+234-809-3511816;adeyinka.olowola@ebokon.edu;phone
+K1u-1Kum-4HFP;HFP-KN-KBT-2;21;1;Kano;KN;4;Kumbotso;KBT;urban;Sheka PHC;Primary;Public;n/a;Hospital focal person;HFP;2;Mr Onyinye Agwuocha;0706-2978568;onyinye.agwuocha@sormas.org;phone
+K1u-1Kum-5HFP;HFP-KN-KBT-3;22;1;Kano;KN;4;Kumbotso;KBT;urban;Nasiha Clinic;Primary;Private;n/a;Hospital focal person;HFP;3;Mr Osagie Bada;0809-5409660;osagie.bada@ebokon.ng;phone
+K1u-1Kum-6HFP;HFP-KN-KBT-4;23;1;Kano;KN;4;Kumbotso;KBT;urban;Tajudden Clinic;Primary;Private;n/a;Hospital focal person;HFP;4;Mr Mosaku Choji;+234-64-9105358;mosaku.choji@snft.net;phone
+K1u-1Kum-1SvO;SUO-KN-KBT-1;24;1;Kano;KN;4;Kumbotso;KBT;urban;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mrs Olamide Popoola;+234-809-6103167;olamide.popoola@sormas-n.ng;phone
+K2r-4Kir-2CtO;COO-KN-KKU-1;25;1;Kano;KN;5;Kiru;KKU;rural;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mr Akinola Ohen;+234-807-3144656;akinola.ohen@snft.ng;phone
+K2r-4Kir-3HFP;HFP-KN-KKU-1;26;1;Kano;KN;5;Kiru;KKU;rural;Kiru CHC;Primary;Public;n/a;Hospital focal person;HFP;1;Mrs Ololade Ogunbanwo Sosan;+234-64-1547828;o.sosan@ebokon.edu;phone
+K2r-4Kir-4HFP;HFP-KN-KKU-2;27;1;Kano;KN;5;Kiru;KKU;rural;Yako BCH;Primary;Public;n/a;Hospital focal person;HFP;2;Mrs Tamunodieprieye Emigo;+234-807-8700590;tamunodieprieye.emigo@sormas.ng;phone
+K2r-4Kir-5HFP;HFP-KN-KKU-3;28;1;Kano;KN;5;Kiru;KKU;rural;Stholic Clinic ;Primary;Private;n/a;Hospital focal person;HFP;3;Mr Okoro Keita;+234-64-8732658;okoro.keita@ebokon.com;phone
+K2r-4Kir-6HFP;HFP-KN-KKU-4;29;1;Kano;KN;5;Kiru;KKU;rural;Taimako Clinic;Primary;Private;n/a;Hospital focal person;HFP;4;Mr Omolade Bird;0706-3868460;o.bird@snft.org;phone
+K2r-4Kir-1SvO;SUO-KN-KKU-1;30;1;Kano;KN;5;Kiru;KKU;rural;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Oladipo Giwa;+234-807-3961446;oladipo.giwa@sormas.net;phone
+K1u-2Nas-2CtO;COO-KN-NSR-1;31;1;Kano;KN;6;Nassarawa;NSR;urban;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mrs Stella Uzochukwu;0803-5810347;stella.uzochukwu@snft.ng;phone
+K1u-2Nas-3HFP;HFP-KN-NSR-1;32;1;Kano;KN;6;Nassarawa;NSR;urban;Gwagwarwa PHC;Primary;Public;n/a;Hospital focal person;HFP;1;Mrs Gberbo Ikeke;064-2521205;gberbo.ikeke@sormas.ng;phone
+K1u-2Nas-5HFP;HFP-KN-NSR-2;33;1;Kano;KN;6;Nassarawa;NSR;urban;Ahmadiyya Hospital;Primary;Private;n/a;Hospital focal person;HFP;2;Mr Chinzor Oyeledun;+234-806-9479783;chinzor.oyeledun@ebokon.ng;phone
+K1u-2Nas-6HFP;HFP-KN-NSR-3;34;1;Kano;KN;6;Nassarawa;NSR;urban;Bamaiyi Hospital;Primary;Private;n/a;Hospital focal person;HFP;3;Mrs Ciara Emedolu;0813-6271092;ciara.emedolu@sormas.org;phone
+K1u-2Nas-4HFP;HFP-KN-NSR-4;35;1;Kano;KN;6;Nassarawa;NSR;urban;Sir Muhd Sunusi Hospital;Secondary;Public;n/a;Hospital focal person;HFP;4;Mr Oladipo Ikimi;0802-8586035;oladipo.ikimi@sormas.org;phone
+K1u-2Nas-1SvO;SUO-KN-NSR-1;36;1;Kano;KN;6;Nassarawa;NSR;urban;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Chidi Sherif;+234-805-4422688;chidi.sherif@sormas-n.ng;phone
+K1u-3Tar-2CtO;COO-KN-TRN-1;37;1;Kano;KN;7;Tarauni;TRN;urban;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mrs Omodolapo Atulewa;+234-806-4774806;o.atulewa@ebokon.ng;phone
+K1u-3Tar-3HFP;HFP-KN-TRN-1;38;1;Kano;KN;7;Tarauni;TRN;urban;Ja'oji PHC;Primary;Public;n/a;Hospital focal person;HFP;1;Mr Ibinabo Ararume;0705-8214679;ibinabo.ararume@ebokon.ng;phone
+K1u-3Tar-4HFP;HFP-KN-TRN-2;39;1;Kano;KN;7;Tarauni;TRN;urban;Unguwa Uku PHC;Primary;Public;n/a;Hospital focal person;HFP;2;Mrs Oluwaseyanu Adadevoh;+234-64-6139092;o.adadevoh@snft.ng;phone
+K1u-3Tar-5HFP;HFP-KN-TRN-3;40;1;Kano;KN;7;Tarauni;TRN;urban;Almu Hospital;Primary;Private;n/a;Hospital focal person;HFP;3;Mr Ogbu Iyam;+234-802-8699961;ogbu.iyam@ebokon.ng;phone
+K1u-3Tar-6HFP;HFP-KN-TRN-4;41;1;Kano;KN;7;Tarauni;TRN;urban;Annoury Hospital;Primary;Private;n/a;Hospital focal person;HFP;4;Mrs Isobel Henry Akarandut;0803-3256765;isobel henry.akarandut@snft.org;phone
+K1u-3Tar-1SvO;SUO-KN-TRN-1;42;1;Kano;KN;7;Tarauni;TRN;urban;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Osagie Effiom;064-4774875;o.effiom@sormas.ng;phone
+K1u-4Ung-2CtO;COO-KN-UGG-1;43;1;Kano;KN;8;Ungogo;UGG;urban;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mrs Fanique Inoniyegha;+234-64-1321386;fanique.inoniyegha@snft.com;phone
+K1u-4Ung-3HFP;HFP-KN-UGG-1;44;1;Kano;KN;8;Ungogo;UGG;urban;Ungogo PHC;Primary;Public;n/a;Hospital focal person;HFP;1;Mr Ovieoghene Kanayo;0806-5963343;ovieoghene.kanayo@ebokon.com;phone
+K1u-4Ung-5HFP;HFP-KN-UGG-2;45;1;Kano;KN;8;Ungogo;UGG;urban;Rahama Clinic;Primary;Private;n/a;Hospital focal person;HFP;2;Mr Affiong Nworuh;+234-708-8094536;affiong.nworuh@sormas-n.org;phone
+K1u-4Ung-6HFP;HFP-KN-UGG-3;46;1;Kano;KN;8;Ungogo;UGG;urban;Unicare Hospital;Primary;Private;n/a;Hospital focal person;HFP;3;Mrs Olasubomi Olomu;+234-802-7984625;o.olomu@sormas-n.edu;phone
+K1u-4Ung-4HFP;HFP-KN-UGG-4;47;1;Kano;KN;8;Ungogo;UGG;urban;Waziri Shehu Gidado;Secondary;Public;n/a;Hospital focal person;HFP;4;Mrs Chiapali Iyorhe;+234-64-4541835;chiapali.iyorhe@sormas-n.ng;phone
+K1u-4Ung-1SvO;SUO-KN-UGG-1;48;1;Kano;KN;8;Ungogo;UGG;urban;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Oseremen Ojukwu;+234-807-2353901;oseremen.ojukwu@snft.ng;phone
+K0c-3CsS;CAS-KN-ZZZ-1;49;1;Kano;KN;0;n/a;ZZZ;n/a;Yar Gaya Hospital;Tertiary;Public;Physician in charge;Case supervisor;CAS;1;Mr Ighogbetine Nguirmamaramama;0807-9280503;i.nguirmamaramama@sormas-n.ng;tablet
+K0c-4HFP;HFP-KN-ZZZ-1;50;1;Kano;KN;0;n/a;ZZZ;n/a;Yar Gaya Hospital;Tertiary;Public;n/a;Hospital focal person;HFP;1;Mr Ogadinma Kontagora;0806-1436484;ogadinma.kontagora@ebokon.net;phone
+K0c-2RmO;RUO-KN-ZZZ-1;51;1;Kano;KN;0;n/a;ZZZ;n/a;State HD;n/a;n/a;DSNO;Rumor officer;RUO;1;Mrs Tarela Idahor;064-4975489;tarela.idahor@sormas.com;tablet
+K0c-1SCO;SCS-KN-ZZZ-1;52;1;Kano;KN;0;n/a;ZZZ;n/a;State HD;n/a;n/a;Epidemiologist;Surveillance & Contact supervisor;SCS;1;Mr Adebowale Agbebaku;+234-64-9360249;adebowale.agbebaku@sormas-n.ng;tablet
+O1u-1INE-2CtO;COO-OY-AGG-1;53;2;Oyo;OY;9;Ibadan North East;AGG;urban;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mr Nonso Oguntokun;+234-64-3240902;n.oguntokun@snft.org;phone
+O1u-1INE-5HFP;HFP-OY-AGG-1;54;2;Oyo;OY;9;Ibadan North East;AGG;urban;Jobi Memorial Hospital, Paadi;???;Private;n/a;Hospital focal person;HFP;1;Mrs Ibukunoluwa Ebor;+234-813-9438400;i.ebor@ebokon.net;phone
+O1u-1INE-3HFP;HFP-OY-AGG-2;55;2;Oyo;OY;9;Ibadan North East;AGG;urban;Iwo road Health Centre;Primary;Public;n/a;Hospital focal person;HFP;2;Mr Akindela Maduabum;0802-8740908;akindela.maduabum@sormas.ng;phone
+O1u-1INE-4HFP;HFP-OY-AGG-3;56;2;Oyo;OY;9;Ibadan North East;AGG;urban;OkeAdu Health Centre;Primary;Public;n/a;Hospital focal person;HFP;3;Mrs Oluremi Bali;+234-802-8071537;o.bali@sormas-n.edu;phone
+O1u-1INE-6HFP;HFP-OY-AGG-4;57;2;Oyo;OY;9;Ibadan North East;AGG;urban;Oluyoro Catholic Hospital;Tertiary;Private;n/a;Hospital focal person;HFP;4;Mr Osabuhien Ofere;0708-5045025;o.ofere@sormas.ng;phone
+O1u-1INE-1SvO;SUO-OY-AGG-1;58;2;Oyo;OY;9;Ibadan North East;AGG;urban;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mrs Plangnan Idahor;0706-6323913;plangnan.idahor@sormas.org;phone
+O2r-2IrN-2CtO;COO-OY-AYT-1;59;2;Oyo;OY;10;Ibarapa North;AYT;rural;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mr Ogadinma Elumelu;+234-706-6900488;o.elumelu@ebokon.ng;phone
+O2r-2IrN-5HFP;HFP-OY-AYT-1;60;2;Oyo;OY;10;Ibarapa North;AYT;rural;Akindele Clinic;???;Private;n/a;Hospital focal person;HFP;1;Mr Ime  Iyke;+234-801-7199462;i.iyke@ebokon.org;phone
+O2r-2IrN-6HFP;HFP-OY-AYT-2;61;2;Oyo;OY;10;Ibarapa North;AYT;rural;Victory foundation;???;Private;n/a;Hospital focal person;HFP;2;Mr Oludare Omodiagbe;+234-708-7439417;o.omodiagbe@snft.org;phone
+O2r-2IrN-3HFP;HFP-OY-AYT-3;62;2;Oyo;OY;10;Ibarapa North;AYT;rural;PHC Okeola;Primary;Public;n/a;Hospital focal person;HFP;3;Mr Edoja Oshoala;0706-8339592;edoja.oshoala@ebokon.com;phone
+O2r-2IrN-4HFP;HFP-OY-AYT-4;63;2;Oyo;OY;10;Ibarapa North;AYT;rural;General Hospital;Secondary;Public;n/a;Hospital focal person;HFP;4;Mr Olatunbosun Ekoku;0806-1602169;o.ekoku@sormas.ng;phone
+O2r-2IrN-1SvO;SUO-OY-AYT-1;64;2;Oyo;OY;10;Ibarapa North;AYT;rural;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Decale Oya Decale Aminu;0807-9479514;decale oya decale.aminu@sormas-n.ng;phone
+O2r-1Atb-2CtO;COO-OY-FMT-1;65;2;Oyo;OY;11;Atiba;FMT;rural;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mrs Chisom Ihenacho;+234-705-9061219;chisom.ihenacho@sormas.ng;phone
+O2r-1Atb-5HFP;HFP-OY-FMT-1;66;2;Oyo;OY;11;Atiba;FMT;rural;Grace Hospital;???;Private;n/a;Hospital focal person;HFP;1;Mrs Oni Ezeife;+234-807-1819823;oni.ezeife@sormas.edu;phone
+O2r-1Atb-6HFP;HFP-OY-FMT-2;67;2;Oyo;OY;11;Atiba;FMT;rural;Oroki Medical Centre;???;Private;n/a;Hospital focal person;HFP;2;Mr Arome Ubido;+234-64-8063120;a.ubido@sormas-n.org;phone
+O2r-1Atb-3HFP;HFP-OY-FMT-3;68;2;Oyo;OY;11;Atiba;FMT;rural;Boroboro Health centre;Primary;Public;n/a;Hospital focal person;HFP;3;Mrs Chizoba Sodje;0807-7462040;chizoba.sodje@sormas.ng;phone
+O2r-1Atb-4HFP;HFP-OY-FMT-4;69;2;Oyo;OY;11;Atiba;FMT;rural;State Hospital;Secondary;???;n/a;Hospital focal person;HFP;4;Mr Adedeji Obanor;+234-705-3954290;adedeji.obanor@sormas.org;phone
+O2r-1Atb-1SvO;SUO-OY-FMT-1;70;2;Oyo;OY;11;Atiba;FMT;rural;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Ok Kefee;+234-64-4832208;o.kefee@sormas-n.ng;phone
+O2r-4Kaj-2CtO;COO-OY-KEH-1;71;2;Oyo;OY;12;Kajola;KEH;rural;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mr Chimere Oboh;+234-64-7269967;chimere.oboh@snft.ng;phone
+O2r-4Kaj-5HFP;HFP-OY-KEH-1;72;2;Oyo;OY;12;Kajola;KEH;rural;Baptist Medical centre Okeho;???;Private;n/a;Hospital focal person;HFP;1;Mr Okoro Osuchukwu;064-7892751;okoro.osuchukwu@sormas.org;phone
+O2r-4Kaj-6HFP;HFP-OY-KEH-2;73;2;Oyo;OY;12;Kajola;KEH;rural;Wuraola Hospital;???;Private;n/a;Hospital focal person;HFP;2;Mr Niamke Isa;+234-64-4364490;n.isa@sormas-n.edu;phone
+O2r-4Kaj-3HFP;HFP-OY-KEH-3;74;2;Oyo;OY;12;Kajola;KEH;rural;Ijo Primary Health Care Centre;Primary;Public;n/a;Hospital focal person;HFP;3;Mr Olatunbosun Kontagora;+234-809-7594027;olatunbosun.kontagora@sormas-n.ng;phone
+O2r-4Kaj-4HFP;HFP-OY-KEH-4;75;2;Oyo;OY;12;Kajola;KEH;rural;Okeho General Hospital;Secondary;Public;n/a;Hospital focal person;HFP;4;Mrs Temilore Brann;0802-2535870;t.brann@snft.ng;phone
+O2r-4Kaj-1SvO;SUO-OY-KEH-1;76;2;Oyo;OY;12;Kajola;KEH;rural;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mr Clinton Iyke;0818-6698369;clinton.iyke@sormas-n.ng;phone
+O2r-3Irp-2CtO;COO-OY-KSH-1;77;2;Oyo;OY;13;Irepo;KSH;rural;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mr Madukairo Katsina;+234-809-1126266;madukairo.katsina@ebokon.ng;phone
+O2r-3Irp-5HFP;HFP-OY-KSH-1;78;2;Oyo;OY;13;Irepo;KSH;rural;Elkeedam Clinic;???;Private;n/a;Hospital focal person;HFP;1;Mrs Oula Omeje;0803-7862950;o.omeje@snft.com;phone
+O2r-3Irp-3HFP;HFP-OY-KSH-2;79;2;Oyo;OY;13;Irepo;KSH;rural;Agede PHC;Primary;Public;n/a;Hospital focal person;HFP;2;Mrs Stella Ogungbe;+234-802-8302554;stella.ogungbe@sormas-n.net;phone
+O2r-3Irp-4HFP;HFP-OY-KSH-3;80;2;Oyo;OY;13;Irepo;KSH;rural;Kisi General Hospital;Secondary;Public;n/a;Hospital focal person;HFP;3;Mr Olatunbosun Azeez;+234-706-9013249;olatunbosun.azeez@sormas-n.edu;phone
+O2r-3Irp-6HFP;HFP-OY-KSH-4;81;2;Oyo;OY;13;Irepo;KSH;rural;Muslim Hospital;Secondary;Private;n/a;Hospital focal person;HFP;4;Mrs Adaobi Mshelia;+234-64-2771775;adaobi.mshelia@ebokon.ng;phone
+O2r-3Irp-1SvO;SUO-OY-KSH-1;82;2;Oyo;OY;13;Irepo;KSH;rural;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mrs Odera Envoh;+234-807-5354263;odera.envoh@sormas.ng;phone
+O1u-2INW-2CtO;COO-OY-NRK-1;83;2;Oyo;OY;14;Ibadan North West;NRK;urban;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mr Godwin  Eguavoen;+234-807-8150136;godwin .eguavoen@snft.ng;phone
+O1u-2INW-3HFP;HFP-OY-NRK-1;84;2;Oyo;OY;14;Ibadan North West;NRK;urban;Ayeye Primary Health Centre;Primary;Public;n/a;Hospital focal person;HFP;1;Mrs Onayi Nwuche;+234-64-7168019;o.nwuche@sormas-n.ng;phone
+O1u-2INW-4HFP;HFP-OY-NRK-2;85;2;Oyo;OY;14;Ibadan North West;NRK;urban;Jericho Specialist Hospital;Secondary;Public;n/a;Hospital focal person;HFP;2;Mrs Adaobi Chiejine;0809-2704507;adaobi.chiejine@ebokon.edu;phone
+O1u-2INW-5HFP;HFP-OY-NRK-3;86;2;Oyo;OY;14;Ibadan North West;NRK;urban;AlafiaHospital;Secondary;Private;n/a;Hospital focal person;HFP;3;Mr Akinola Rasaki;+234-813-4061538;a.rasaki@snft.ng;phone
+O1u-2INW-6HFP;HFP-OY-NRK-4;87;2;Oyo;OY;14;Ibadan North West;NRK;urban;Unity Medical Centre;Secondary;Private;n/a;Hospital focal person;HFP;4;Mrs Nadoca Guda;0705-3313120;n.guda@sormas-n.ng;phone
+O1u-2INW-1SvO;SUO-OY-NRK-1;88;2;Oyo;OY;14;Ibadan North West;NRK;urban;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mrs Toniah Egerega;0813-2904730;t.egerega@sormas.edu;phone
+O1u-3IrE-2CtO;COO-OY-RUW-1;89;2;Oyo;OY;15;Ibarapa East;RUW;urban;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mrs Omodolapo Uduak;064-4867971;omodolapo.uduak@sormas.ng;phone
+O1u-3IrE-3HFP;HFP-OY-RUW-1;90;2;Oyo;OY;15;Ibarapa East;RUW;urban;Oke Imale primary health centre;Primary;Public;n/a;Hospital focal person;HFP;1;Mr Kingsley  Onyemachi;+234-64-8086093;kingsley .onyemachi@sormas.ng;phone
+O1u-3IrE-4HFP;HFP-OY-RUW-2;91;2;Oyo;OY;15;Ibarapa East;RUW;urban;General Hospital, Eruwa;Secondary;Public;n/a;Hospital focal person;HFP;2;Mr Aryee Ezenwaka;0805-8217840;aryee.ezenwaka@snft.ng;phone
+O1u-3IrE-5HFP;HFP-OY-RUW-3;92;2;Oyo;OY;15;Ibarapa East;RUW;urban;Awojobi Clinic;Secondary;Private;n/a;Hospital focal person;HFP;3;Mrs Adaeze Keita;0805-5206116;a.keita@ebokon.ng;phone
+O1u-3IrE-6HFP;HFP-OY-RUW-4;93;2;Oyo;OY;15;Ibarapa East;RUW;urban;Rehoboth Hospital;Secondary;Private;n/a;Hospital focal person;HFP;4;Mrs Mesoma Ubah;0802-2882599;mesoma.ubah@ebokon.ng;phone
+O1u-3IrE-1SvO;SUO-OY-RUW-1;94;2;Oyo;OY;15;Ibarapa East;RUW;urban;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mrs Anike Ibe;+234-705-9375925;anike.ibe@sormas.org;phone
+O1u-4SaW-2CtO;COO-OY-SHK-1;95;2;Oyo;OY;16;Saki West;SHK;urban;LGA HD;n/a;n/a;ADSNO;Contact officer;COO;1;Mrs Oluwafunke Agbamuche;0818-1030491;o.agbamuche@sormas.org;phone
+O1u-4SaW-3HFP;HFP-OY-SHK-1;96;2;Oyo;OY;16;Saki West;SHK;urban;Isale Taba Maternity Centre;Primary;Public;n/a;Hospital focal person;HFP;1;Mr Oluwakemi Kontagora;064-5242868;oluwakemi.kontagora@ebokon.com;phone
+O1u-4SaW-4HFP;HFP-OY-SHK-2;97;2;Oyo;OY;16;Saki West;SHK;urban;State Hospital;Secondary;Public;n/a;Hospital focal person;HFP;2;Mrs Bukola Onyearugbulem;+234-708-4051668;bukola.onyearugbulem@sormas-n.edu;phone
+O1u-4SaW-5HFP;HFP-OY-SHK-3;98;2;Oyo;OY;16;Saki West;SHK;urban;Baptist Medical Centre;Secondary;Private;n/a;Hospital focal person;HFP;3;Mrs Efuose Omoko;+234-64-563535;efuose.omoko@snft.org;phone
+O1u-4SaW-6HFP;HFP-OY-SHK-4;99;2;Oyo;OY;16;Saki West;SHK;urban;Muslim Hospital;Secondary;Private;n/a;Hospital focal person;HFP;4;Mr Ovieoghene Yaji;+234-64-3017951;o.yaji@snft.edu;phone
+O1u-4SaW-1SvO;SUO-OY-SHK-1;100;2;Oyo;OY;16;Saki West;SHK;urban;LGA HD;n/a;n/a;DSNO;Surveillance officer;SUO;1;Mrs Omotese Ogugua;+234-64-7429600;omotese.ogugua@sormas-n.org;phone
+O0c-3CsS;CAS-OY-ZZZ-1;101;2;Oyo;OY;0;n/a;ZZZ;n/a;Isolation unit;n/a;n/a;Physician in charge;Case supervisor;CAS;1;Mrs Ololade Vanzekin;064-3042639;ololade.vanzekin@sormas-n.ng;tablet
+O0c-4HFP;HFP-OY-ZZZ-1;102;2;Oyo;OY;0;n/a;ZZZ;n/a;IDSR UCH;Tertiary;Public;n/a;Hospital focal person;HFP;1;Mrs Mujeedat Dabiri;064-666473;mujeedat.dabiri@snft.org;phone
+O0c-2RmO;RUO-OY-ZZZ-1;103;2;Oyo;OY;0;n/a;ZZZ;n/a;State HD;n/a;n/a;DSNO;Rumor officer;RUO;1;Mrs Omodolapo Okafor;+234-809-8462755;o.okafor@ebokon.ng;tablet
+O0c-1SCO;SCS-OY-ZZZ-1;104;2;Oyo;OY;0;n/a;ZZZ;n/a;State HD;n/a;n/a;Epidemiologist;Surveillance & Contact supervisor;SCS;1;Mr Irechukwu Akinfenwa;+234-818-6563482;i.akinfenwa@ebokon.edu;tablet

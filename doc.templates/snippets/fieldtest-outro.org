@@ -1,0 +1,13 @@
+#+Latex: \newpage
+At the end of the pilot, please do not forget to hand in this completed booklet to Dr. Ebiwumi	Aikhionbare. Your feedback is of great importance for improving the performance of SORMAS.
+
+For /Surveillance officers/ only: Please hand in the photocopies of the IDSR forms.
+
+\vspace{4\baselineskip}
+
+#+BEGIN_CENTER
+/Thank you very much for participating in the SORMAS-N field test.\\
+We hope you had a pleasant time./
+#+END_CENTER
+
+

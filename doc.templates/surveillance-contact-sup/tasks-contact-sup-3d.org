@@ -1,0 +1,16 @@
+/Concerning Measles and Cholera you have no tasks./
+
+Concerning Avian Influenza[fn:real-cos-3d]:
+
+/\textcolor{gray}{daily}/
+
+1. Create follow-up tasks (for 17 days, including first and final visit) for contact persons of a suspected or confirmed human or animal case of Avian Influenza.
+
+2. Assign tasks to /Contact officers/.
+
+3. List all contact persons with symptoms. 
+
+4. Have a look at each case and confirm those who fulfill the case definition. Immediately trigger action as appropriate.
+
+[fn:real-cos-3d] according to occurrence of real cases
+

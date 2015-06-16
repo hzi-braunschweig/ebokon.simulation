@@ -1,0 +1,33 @@
+Concerning exercise disease[fn:coo-ex]:
+
+/\textcolor{gray}{between 11 AM and 2PM}/
+
+1. Display the list of all your tasks.
+
+   /\ldots number of task/
+
+2. You are visiting contact persons. While you do your visits, you retrieve the following information.
+
+   - Is the person available and cooperative?
+
+   - Enter the contact visit information.
+
+   - Create an appointment for the next visit.
+
+   /\ldots daily list of visit information/
+
+3. Mark the following visits as /not possible/.
+
+   /\ldots daily list of schedule entries of visit which were not possible/
+
+4. During your visit you learned about additional contact persons and contact information (contact person in contact with case). Enter them into SORMAS-N.
+     # [List of contact-persons-2-case]
+
+   /\ldots daily list of contact information/
+
+5. During your visit you learned about cases of death. Enter this information into SORMAS-N.
+     # [List of contact-persons-2-case]
+
+   /\ldots list of persons that have died/
+
+[fn:coo-ex] according to the daily information given in the tasks section of the day

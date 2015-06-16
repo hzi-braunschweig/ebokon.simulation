@@ -1,0 +1,38 @@
+Concerning exercise disease[fn:suo-ex]:
+
+/\textcolor{gray}{before 10 AM}/
+
+1. Verify and complete information on rumors according to your investigation on site, which have resulted in the following information.
+
+   - Complete rumor information.
+
+   - Complete place information connected to the rumor.
+
+   - Complete person information connected to the rumor.
+
+   - Complete possible cases related to the rumor. Mark them as /possible case/.
+
+   #   - Complete contact person information.
+   
+   /\ldots daily list of rumors/
+
+   /\ldots sometimes with participating persons and possibly with their symptoms/
+
+   /\ldots each rumor ends with a $\blacksquare$/
+
+2. In your investigation you have identified the following new contacts (of persons which had contact to a known case). Enter them into SORMAS-N.
+
+   /\ldots list of contacts (persons with case information)/
+
+/\textcolor{gray}{after 3 PM}/
+
+3. [@3] Look for new reports of /possible cases/. Complete the missing information. 
+   # same list as informant, all correct
+
+   /\ldots list of cases (persons with symptoms)/
+ 
+4. Look for new reports of cases of death. Confirm the information.
+
+   /\ldots list of persons that have died/
+
+[fn:suo-ex] according to the daily information given in the tasks section of the day

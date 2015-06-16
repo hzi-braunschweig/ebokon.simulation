@@ -1,0 +1,9 @@
+Concerning Measles, Cholera and Avian Influenza[fn:inf-3d]:
+
+/\textcolor{gray}{daily}/
+
+1. Notify any case of these 3 diseases via SORMAS-N as well as via established IDSR procedures (paper) to the /Surveillance officer/ of your LGA.
+
+2. Send a daily zero-report of those 3 diseases via SORMAS-N (when applicable).
+
+[fn:inf-3d] according to occurrence of real cases

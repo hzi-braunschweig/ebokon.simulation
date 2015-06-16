@@ -1,0 +1,32 @@
+Concerning exercise disease[fn:ruo-ex]:
+
+/\textcolor{gray}{before 10 AM}/
+
+1. Enter the following rumors.
+ 
+   - Enter rumor information.
+ 
+   - Enter place information connected to the rumor.
+
+   - Enter person information connected to the rumor.
+
+   - Enter possible cases related to the rumor. Mark them as /possible case/.
+
+   - Enter contact person information.
+
+   # [List of rumor information (time, place, persons)]
+   # [to be confirmed by Surveillance Supervisor]
+   # [List of cases that should become “suspected case”]
+   # [List of contact person and contact]
+
+   /\ldots daily list of rumors/
+
+   /\ldots sometimes with participating persons and possibly with their symptoms/
+
+   /\ldots each rumor ends with a $\blacksquare$/
+
+2. You have received information about cases of death. Please notify them via SORMAS-N.
+
+   /\ldots list of persons that have died/
+
+[fn:ruo-ex] according to the daily information given in the tasks section of the day

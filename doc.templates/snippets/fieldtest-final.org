@@ -1,0 +1,103 @@
+0. Please write down your /role/ during the pilot phase (/Contact officer/, /Contact supervisor/ etc.).
+
+   \hrulefill
+
+1. How easy was it overall to work with SORMAS-N? Please mark a number.
+
+   #+Attr_Latex: :center nil :align rlllllllll :booktabs nil
+   | 1         |         2 |         3 |         4 |         5 |         6 |         7 |         8 |         9 | 10        |
+   | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+   | difficult |           |           |           |           |           |           |           |           | easy      |
+   #+Latex:  \medskip
+
+2. How useful is SORMAS-N in outbreak management? Please mark a number.
+
+   #+Attr_Latex: :center nil :align rlllllllll :booktabs nil
+   | 1                |         2 |         3 |         4 |         5 |         6 |         7 |         8 |         9 | 10        |
+   | $\square$        | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+   | \enspace useless |           |           |           |           |           |           |           |           | useful    |
+   #+Latex:  \medskip
+
+3. How useful did you find SORMAS-N in regular surveillance? Did it support you in your routine work? Please mark a number.
+ 
+   #+Attr_Latex: :center nil :align rlllllllll :booktabs nil
+   | 1                |         2 |         3 |         4 |         5 |         6 |         7 |         8 |         9 | 10        |
+   | $\square$        | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+   | \enspace useless |           |           |           |           |           |           |           |           | useful    |
+   #+Latex:  \medskip
+
+4. Would you recommend the tool to your colleagues?
+   
+   \quad $\square$ Yes
+   
+   \quad $\square$ Maybe
+   
+   \quad $\square$ No
+
+5. Have you used other outbreak management tools before? 
+
+   \quad $\square$ No
+
+   \quad $\square$ Yes
+  
+   \quad \quad Which one? 
+
+   \quad \quad \hrulefill
+
+   \quad \quad Would you (rather) use SORMAS-N?  
+ 
+   \quad \quad \quad $\square$ No
+
+   \quad \quad \quad $\square$ Yes
+
+   \quad \quad \quad Why?
+
+   \quad \quad \quad \hrulefill
+
+   \quad \quad \quad \hrulefill
+
+6. Please indicate the device you have used.
+
+   \quad $\square$ Smart-phone 
+
+   \quad $\square$ Tablet
+
+7. How often did you experience problems with access to and upload of your information?
+
+   \quad $\square$ Never
+
+   \quad $\square$ About once weekly
+
+   \quad $\square$ About once daily
+
+   \quad $\square$ More than once daily
+
+8. Did you experience problems more than once with charging the smart-phone?
+
+   \quad $\square$ Yes
+
+   \quad $\square$ No
+
+9. Which functions are missing in SORMAS-N?
+   
+   \hrulefill
+
+   \hrulefill
+
+   \hrulefill
+
+   \hrulefill
+
+   \hrulefill
+
+10. What else could be improved? 
+
+   \hrulefill
+
+   \hrulefill
+
+   \hrulefill
+
+   \hrulefill
+
+   \hrulefill

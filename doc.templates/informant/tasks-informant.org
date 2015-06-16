@@ -1,0 +1,17 @@
+Concerning exercise disease[fn:inf-ex]:
+
+/\textcolor{gray}{before 10 AM}/
+
+1. You have the following information about patients or health care workers in your facility about /exercise disease/. Use them to fulfill your duty as a /Hospital focal person/.
+
+   /\ldots list of possible cases (person information with symptoms)/
+
+# 20 %
+# phone, name missing or wrong
+# symptome many unknown
+
+2. Some patients have died. Please notify this via SORMAS-N.
+
+   /\ldots list of persons that have died/
+
+[fn:inf-ex] according to the daily information given in the tasks section of the day

@@ -1,0 +1,19 @@
+/\textcolor{gray}{before 10 AM}/
+
+1. Are any of the newly entered contact persons or contacts already in the system? Confirm all contact persons entered by the /Contact officers/.
+
+2. Create tasks for initial visits, contact visits and final visits for all new contact persons.
+   
+3. Assign all unassigned tasks to the /Contact officer/ of the LGA where the contact person resides.   
+
+/\textcolor{gray}{after 3 PM}/
+
+4. [@4]	List all contact persons with symptoms (/possible cases/). 
+
+5. Have a look at each /possible case/ and confirm those who fulfill the case definition as /suspected case/.
+
+6. List all contact persons of cases with 2 negative lab results (/non-cases/) that are still in contact tracing. Stop the contact tracing and create a final visit.
+
+7. Check the status of the assigned tasks. Look for tasks that are overdue.
+ 
+

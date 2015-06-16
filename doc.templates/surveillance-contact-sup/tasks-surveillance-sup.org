@@ -1,0 +1,16 @@
+/\textcolor{gray}{between 11 AM and 2 PM}/
+
+1.	List all rumors (the new ones highlighted) with /possible cases/ and contact persons. 
+    # no!! [List of rumors that become “suspected case”]
+2.	Have a look at each /possible case/ and confirm those who fulfill the case definition as /suspected case/.
+    # no!! [List of cases that become “suspected case”]
+
+/\textcolor{gray}{after 3 PM}/
+
+3. [@3]	Create a surveillance report. 
+   # no!! [Epi curve on cases with various statuses; Rumor locations etc.]
+
+4. Look at the rumor list and decide on the status of each rumor. Create necessary tasks for further investigation and assign them to /Surveillance officers/.  
+
+
+
