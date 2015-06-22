@@ -1,0 +1,1558 @@
+IdCase;Day;TaskType;TaskStatus;FirstName;LastName;Sex;Occupation;Age;DateOfBirth;DayReported;DateOfDeath;IdUser
+1;22;burial;open;Nonso;Fabunmi;male;apprentice;16;1998-08-14;15;2015-06-22;CAS-KN-ZZZ-1
+1;24;burial;done;Nonso;Fabunmi;male;apprentice;16;1998-08-14;15;2015-06-22;CAS-KN-ZZZ-1
+2;19;burial;open;Sesugh;Ogunode;male;school pupil;17;1998-05-03;15;2015-06-19;CAS-KN-ZZZ-1
+2;22;burial;done;Sesugh;Ogunode;male;school pupil;17;1998-05-03;15;2015-06-19;CAS-KN-ZZZ-1
+2;22;lab;overdue;Sesugh;Ogunode;male;school pupil;17;1998-05-03;15;2015-06-19;CAS-KN-ZZZ-1
+3;36;discharge;open;Ugoh;Maduabum;male;school pupil;13;2002-01-29;32;;CAS-KN-ZZZ-1
+3;37;discharge;done;Ugoh;Maduabum;male;school pupil;13;2002-01-29;32;;CAS-KN-ZZZ-1
+16;43;lab;overdue;Enosaze;Olowola;male;financial analyst;40;1975-04-01;39;;CAS-KN-ZZZ-1
+16;44;discharge;open;Enosaze;Olowola;male;financial analyst;40;1975-04-01;39;;CAS-KN-ZZZ-1
+16;46;discharge;done;Enosaze;Olowola;male;financial analyst;40;1975-04-01;39;;CAS-KN-ZZZ-1
+26;23;isolation;open;Ololade Ogunbanwo;Sosan;female;dental technician;43;1972-03-16;22;;CAS-KN-ZZZ-1
+26;24;isolation;done;Ololade Ogunbanwo;Sosan;female;dental technician;43;1972-03-16;22;;CAS-KN-ZZZ-1
+29;32;burial;open;Omolade;Bird;male;school pupil;13;2002-04-21;30;2015-07-02;CAS-KN-ZZZ-1
+29;33;burial;done;Omolade;Bird;male;school pupil;13;2002-04-21;30;2015-07-02;CAS-KN-ZZZ-1
+31;25;burial;open;Stella;Uzochukwu;female;producer;33;1982-12-04;19;2015-06-25;CAS-KN-ZZZ-1
+31;26;burial;done;Stella;Uzochukwu;female;producer;33;1982-12-04;19;2015-06-25;CAS-KN-ZZZ-1
+43;24;discharge;open;Fanique;Inoniyegha;female;nurse;34;1980-12-12;18;;CAS-KN-ZZZ-1
+43;25;discharge;done;Fanique;Inoniyegha;female;nurse;34;1980-12-12;18;;CAS-KN-ZZZ-1
+48;40;discharge;open;Oseremen;Ojukwu;male;children's nurse (child's nurse);49;1966-04-14;36;;CAS-KN-ZZZ-1
+48;43;discharge;done;Oseremen;Ojukwu;male;children's nurse (child's nurse);49;1966-04-14;36;;CAS-KN-ZZZ-1
+57;15;burial;open;Osabuhien;Ofere;male;police officer;24;1990-07-31;10;2015-06-15;CAS-KN-ZZZ-1
+57;16;burial;done;Osabuhien;Ofere;male;police officer;24;1990-07-31;10;2015-06-15;CAS-KN-ZZZ-1
+78;47;discharge;open;Oula;Omeje;female;nurse;54;1960-06-10;44;;CAS-KN-ZZZ-1
+78;50;discharge;done;Oula;Omeje;female;nurse;54;1960-06-10;44;;CAS-KN-ZZZ-1
+82;40;isolation;open;Odera;Envoh;female;out-of-school educator;41;1974-03-25;37;2015-07-14;CAS-KN-ZZZ-1
+82;43;isolation;done;Odera;Envoh;female;out-of-school educator;41;1974-03-25;37;2015-07-14;CAS-KN-ZZZ-1
+82;44;burial;open;Odera;Envoh;female;out-of-school educator;41;1974-03-25;37;2015-07-14;CAS-KN-ZZZ-1
+82;45;burial;done;Odera;Envoh;female;out-of-school educator;41;1974-03-25;37;2015-07-14;CAS-KN-ZZZ-1
+86;15;isolation;open;Akinola;Rasaki;male;trainee or apprentice chef ;32;1982-05-06;12;2015-06-18;CAS-KN-ZZZ-1
+86;17;isolation;done;Akinola;Rasaki;male;trainee or apprentice chef ;32;1982-05-06;12;2015-06-18;CAS-KN-ZZZ-1
+86;18;burial;open;Akinola;Rasaki;male;trainee or apprentice chef ;32;1982-05-06;12;2015-06-18;CAS-KN-ZZZ-1
+86;19;burial;done;Akinola;Rasaki;male;trainee or apprentice chef ;32;1982-05-06;12;2015-06-18;CAS-KN-ZZZ-1
+88;50;discharge;open;Toniah;Egerega;female;teacher;20;1994-04-07;44;;CAS-KN-ZZZ-1
+88;52;discharge;done;Toniah;Egerega;female;teacher;20;1994-04-07;44;;CAS-KN-ZZZ-1
+102;50;discharge;open;Mujeedat;Dabiri;female;company lawyer;40;1974-08-30;46;;CAS-KN-ZZZ-1
+102;51;discharge;done;Mujeedat;Dabiri;female;company lawyer;40;1974-08-30;46;;CAS-KN-ZZZ-1
+102;51;discharge;open;Mujeedat;Dabiri;female;company lawyer;40;1974-08-30;46;;CAS-KN-ZZZ-1
+102;53;discharge;done;Mujeedat;Dabiri;female;company lawyer;40;1974-08-30;46;;CAS-KN-ZZZ-1
+117;24;isolation;open;Efe;Elegbede;male;physician;55;1960-01-15;23;;CAS-KN-ZZZ-1
+117;26;isolation;done;Efe;Elegbede;male;physician;55;1960-01-15;23;;CAS-KN-ZZZ-1
+121;36;isolation;open;Ayodele;Oparathompson;male;school pupil;17;1997-01-06;36;2015-07-10;CAS-KN-ZZZ-1
+121;37;isolation;done;Ayodele;Oparathompson;male;school pupil;17;1997-01-06;36;2015-07-10;CAS-KN-ZZZ-1
+121;40;burial;open;Ayodele;Oparathompson;male;school pupil;17;1997-01-06;36;2015-07-10;CAS-KN-ZZZ-1
+121;43;burial;done;Ayodele;Oparathompson;male;school pupil;17;1997-01-06;36;2015-07-10;CAS-KN-ZZZ-1
+138;29;lab;overdue;Oluwatofunmi;Oluehi;female;marine engineer (ship's engineer and machine operator);50;1964-07-29;25;;CAS-KN-ZZZ-1
+144;46;burial;open;Moraya;Bozimo;female;police officer;54;1960-03-07;43;2015-07-16;CAS-KN-ZZZ-1
+144;47;burial;done;Moraya;Bozimo;female;police officer;54;1960-03-07;43;2015-07-16;CAS-KN-ZZZ-1
+147;40;isolation;open;Oluwamayowa;Yaradua;male;police officer;31;1983-07-15;39;;CAS-KN-ZZZ-1
+147;43;isolation;done;Oluwamayowa;Yaradua;male;police officer;31;1983-07-15;39;;CAS-KN-ZZZ-1
+149;40;burial;open;Olafimihan;Awosola;male;soldier;43;1971-03-08;38;2015-07-10;CAS-KN-ZZZ-1
+149;40;isolation;open;Olafimihan;Awosola;male;soldier;43;1971-03-08;38;2015-07-10;CAS-KN-ZZZ-1
+149;43;isolation;done;Olafimihan;Awosola;male;soldier;43;1971-03-08;38;2015-07-10;CAS-KN-ZZZ-1
+149;43;burial;done;Olafimihan;Awosola;male;soldier;43;1971-03-08;38;2015-07-10;CAS-KN-ZZZ-1
+150;45;burial;open;Ebube;Ejoor;male;blasters foreman or woman (explosives expert);53;1961-12-15;44;2015-07-15;CAS-KN-ZZZ-1
+150;46;burial;done;Ebube;Ejoor;male;blasters foreman or woman (explosives expert);53;1961-12-15;44;2015-07-15;CAS-KN-ZZZ-1
+150;46;isolation;open;Ebube;Ejoor;male;blasters foreman or woman (explosives expert);53;1961-12-15;44;2015-07-15;CAS-KN-ZZZ-1
+150;47;isolation;done;Ebube;Ejoor;male;blasters foreman or woman (explosives expert);53;1961-12-15;44;2015-07-15;CAS-KN-ZZZ-1
+151;43;burial;open;Eniola;Ossai;female;teacher;37;1977-11-20;39;2015-07-13;CAS-KN-ZZZ-1
+151;44;burial;done;Eniola;Ossai;female;teacher;37;1977-11-20;39;2015-07-13;CAS-KN-ZZZ-1
+154;47;burial;open;Okwong;Onwuzuruike;male;burial service;47;1967-07-24;43;2015-07-17;CAS-KN-ZZZ-1
+154;50;burial;done;Okwong;Onwuzuruike;male;burial service;47;1967-07-24;43;2015-07-17;CAS-KN-ZZZ-1
+157;15;isolation;open;Attahlerne;Obasi;male;management consultant;35;1980-04-05;12;2015-07-15;CAS-KN-ZZZ-1
+157;16;isolation;done;Attahlerne;Obasi;male;management consultant;35;1980-04-05;12;2015-07-15;CAS-KN-ZZZ-1
+157;45;burial;open;Attahlerne;Obasi;male;management consultant;35;1980-04-05;12;2015-07-15;CAS-KN-ZZZ-1
+157;46;burial;done;Attahlerne;Obasi;male;management consultant;35;1980-04-05;12;2015-07-15;CAS-KN-ZZZ-1
+161;47;discharge;open;Omowunmi;Obleajula;female;municipal street cleaner (communal cleaning worker);49;1966-05-25;44;;CAS-KN-ZZZ-1
+161;50;discharge;done;Omowunmi;Obleajula;female;municipal street cleaner (communal cleaning worker);49;1966-05-25;44;;CAS-KN-ZZZ-1
+161;50;discharge;open;Omowunmi;Obleajula;female;municipal street cleaner (communal cleaning worker);49;1966-05-25;44;;CAS-KN-ZZZ-1
+161;51;discharge;done;Omowunmi;Obleajula;female;municipal street cleaner (communal cleaning worker);49;1966-05-25;44;;CAS-KN-ZZZ-1
+167;22;lab;overdue;Akindela;Disu;male;soldier;22;1993-02-25;18;;CAS-KN-ZZZ-1
+167;22;isolation;open;Akindela;Disu;male;soldier;22;1993-02-25;18;;CAS-KN-ZZZ-1
+167;23;isolation;done;Akindela;Disu;male;soldier;22;1993-02-25;18;;CAS-KN-ZZZ-1
+190;26;burial;open;Eraikhoba;Ezeji;female;metal turner;19;1995-10-16;19;2015-06-26;CAS-KN-ZZZ-1
+190;29;burial;done;Eraikhoba;Ezeji;female;metal turner;19;1995-10-16;19;2015-06-26;CAS-KN-ZZZ-1
+197;11;burial;open;Eniola;Odegbami;female;stuntman (stuntwoman);61;1954-05-26;8;2015-06-11;CAS-KN-ZZZ-1
+197;15;burial;done;Eniola;Odegbami;female;stuntman (stuntwoman);61;1954-05-26;8;2015-06-11;CAS-KN-ZZZ-1
+205;11;isolation;open;Obiora;Obasanjo;male;rail vehicle mechanic;61;1954-10-04;10;2015-07-14;CAS-KN-ZZZ-1
+205;15;isolation;done;Obiora;Obasanjo;male;rail vehicle mechanic;61;1954-10-04;10;2015-07-14;CAS-KN-ZZZ-1
+205;44;burial;open;Obiora;Obasanjo;male;rail vehicle mechanic;61;1954-10-04;10;2015-07-14;CAS-KN-ZZZ-1
+205;46;burial;done;Obiora;Obasanjo;male;rail vehicle mechanic;61;1954-10-04;10;2015-07-14;CAS-KN-ZZZ-1
+210;43;isolation;open;Ldemudia;Oshikoya;male;mining mechanic (mining fitter);45;1969-12-13;40;2015-07-14;CAS-KN-ZZZ-1
+210;44;burial;open;Ldemudia;Oshikoya;male;mining mechanic (mining fitter);45;1969-12-13;40;2015-07-14;CAS-KN-ZZZ-1
+210;44;isolation;done;Ldemudia;Oshikoya;male;mining mechanic (mining fitter);45;1969-12-13;40;2015-07-14;CAS-KN-ZZZ-1
+210;46;burial;done;Ldemudia;Oshikoya;male;mining mechanic (mining fitter);45;1969-12-13;40;2015-07-14;CAS-KN-ZZZ-1
+213;33;discharge;open;Precious;Dako;female;nurse;54;1961-03-23;31;;CAS-KN-ZZZ-1
+213;36;discharge;done;Precious;Dako;female;nurse;54;1961-03-23;31;;CAS-KN-ZZZ-1
+215;15;discharge;open;Uju;Gyasi;female;operator in the tobacco industry;55;1959-05-06;10;;CAS-KN-ZZZ-1
+215;16;discharge;done;Uju;Gyasi;female;operator in the tobacco industry;55;1959-05-06;10;;CAS-KN-ZZZ-1
+216;33;burial;open;Abiakam;Kerry;male;hand lacemaker;56;1958-10-08;31;2015-07-03;CAS-KN-ZZZ-1
+216;36;burial;done;Abiakam;Kerry;male;hand lacemaker;56;1958-10-08;31;2015-07-03;CAS-KN-ZZZ-1
+217;43;discharge;open;Akhilomen;Amina;male;fortune teller;53;1961-12-17;38;;CAS-KN-ZZZ-1
+217;44;discharge;done;Akhilomen;Amina;male;fortune teller;53;1961-12-17;38;;CAS-KN-ZZZ-1
+226;43;lab;overdue;Affiong;Afolayan;female;blast-furnaceman or -woman;54;1960-11-22;36;;CAS-KN-ZZZ-1
+228;15;burial;open;Eunika;Adenihun;female;apprentice;15;1999-10-18;10;2015-06-15;CAS-KN-ZZZ-1
+228;17;burial;done;Eunika;Adenihun;female;apprentice;15;1999-10-18;10;2015-06-15;CAS-KN-ZZZ-1
+230;40;isolation;open;Decale Oya Decale;Olanare;male;actor or puppeteer or marionetteer (actor or actress);61;1954-04-21;39;;CAS-KN-ZZZ-1
+230;43;isolation;done;Decale Oya Decale;Olanare;male;actor or puppeteer or marionetteer (actor or actress);61;1954-04-21;39;;CAS-KN-ZZZ-1
+235;18;isolation;open;Abieyuwa;Nwakaeme;female;dancer;32;1983-01-31;17;2015-06-19;CAS-KN-ZZZ-1
+235;19;burial;open;Abieyuwa;Nwakaeme;female;dancer;32;1983-01-31;17;2015-06-19;CAS-KN-ZZZ-1
+235;19;isolation;done;Abieyuwa;Nwakaeme;female;dancer;32;1983-01-31;17;2015-06-19;CAS-KN-ZZZ-1
+235;22;burial;done;Abieyuwa;Nwakaeme;female;dancer;32;1983-01-31;17;2015-06-19;CAS-KN-ZZZ-1
+250;31;burial;open;Ijeoma;Ekoku;female;sales manager;43;1972-04-17;30;2015-07-01;CAS-KN-ZZZ-1
+250;32;burial;done;Ijeoma;Ekoku;female;sales manager;43;1972-04-17;30;2015-07-01;CAS-KN-ZZZ-1
+252;37;discharge;open;Olaoluwa;Ilori;male;burial service;39;1976-04-05;33;;CAS-KN-ZZZ-1
+252;38;discharge;done;Olaoluwa;Ilori;male;burial service;39;1976-04-05;33;;CAS-KN-ZZZ-1
+255;33;burial;open;Akhilomen;Effiom;male;priest or minister of religion (clergyman or -woman);34;1981-03-03;29;2015-07-03;CAS-KN-ZZZ-1
+255;36;burial;done;Akhilomen;Effiom;male;priest or minister of religion (clergyman or -woman);34;1981-03-03;29;2015-07-03;CAS-KN-ZZZ-1
+260;45;isolation;open;Oyindamola;Ikimi;female;sales manager;54;1960-09-18;44;2015-07-16;CAS-KN-ZZZ-1
+260;46;burial;open;Oyindamola;Ikimi;female;sales manager;54;1960-09-18;44;2015-07-16;CAS-KN-ZZZ-1
+260;47;burial;done;Oyindamola;Ikimi;female;sales manager;54;1960-09-18;44;2015-07-16;CAS-KN-ZZZ-1
+260;47;isolation;done;Oyindamola;Ikimi;female;sales manager;54;1960-09-18;44;2015-07-16;CAS-KN-ZZZ-1
+261;18;isolation;open;Enweliku;Sani;male;priest or minister of religion (clergyman or -woman);43;1972-11-05;17;2015-07-09;CAS-KN-ZZZ-1
+261;22;isolation;done;Enweliku;Sani;male;priest or minister of religion (clergyman or -woman);43;1972-11-05;17;2015-07-09;CAS-KN-ZZZ-1
+261;39;burial;open;Enweliku;Sani;male;priest or minister of religion (clergyman or -woman);43;1972-11-05;17;2015-07-09;CAS-KN-ZZZ-1
+261;43;burial;done;Enweliku;Sani;male;priest or minister of religion (clergyman or -woman);43;1972-11-05;17;2015-07-09;CAS-KN-ZZZ-1
+270;50;discharge;open;Ololade;Yakubu;male;glass melter;27;1987-06-11;45;;CAS-KN-ZZZ-1
+270;51;discharge;done;Ololade;Yakubu;male;glass melter;27;1987-06-11;45;;CAS-KN-ZZZ-1
+280;43;lab;overdue;Chioma;Inyam;female;milling-machine operator;37;1977-07-31;39;2015-07-13;CAS-KN-ZZZ-1
+280;43;burial;open;Chioma;Inyam;female;milling-machine operator;37;1977-07-31;39;2015-07-13;CAS-KN-ZZZ-1
+280;43;isolation;open;Chioma;Inyam;female;milling-machine operator;37;1977-07-31;39;2015-07-13;CAS-KN-ZZZ-1
+280;44;burial;done;Chioma;Inyam;female;milling-machine operator;37;1977-07-31;39;2015-07-13;CAS-KN-ZZZ-1
+280;45;isolation;done;Chioma;Inyam;female;milling-machine operator;37;1977-07-31;39;2015-07-13;CAS-KN-ZZZ-1
+281;12;isolation;open;Adaeze;Envoh;female;quality inspector ;25;1990-05-26;11;;CAS-KN-ZZZ-1
+281;15;isolation;done;Adaeze;Envoh;female;quality inspector ;25;1990-05-26;11;;CAS-KN-ZZZ-1
+291;22;lab;overdue;Omuwonuola;Rasaki;female;museum or art gallery curator;27;1987-09-09;18;;CAS-KN-ZZZ-1
+291;22;isolation;open;Omuwonuola;Rasaki;female;museum or art gallery curator;27;1987-09-09;18;;CAS-KN-ZZZ-1
+291;23;isolation;done;Omuwonuola;Rasaki;female;museum or art gallery curator;27;1987-09-09;18;;CAS-KN-ZZZ-1
+322;43;burial;open;Monijesu;Akinyemi;female;burial service;19;1995-10-17;38;2015-07-13;CAS-KN-ZZZ-1
+322;43;discharge;open;Monijesu;Akinyemi;female;burial service;19;1995-10-17;38;2015-07-13;CAS-KN-ZZZ-1
+322;45;burial;done;Monijesu;Akinyemi;female;burial service;19;1995-10-17;38;2015-07-13;CAS-KN-ZZZ-1
+322;45;discharge;done;Monijesu;Akinyemi;female;burial service;19;1995-10-17;38;2015-07-13;CAS-KN-ZZZ-1
+323;29;burial;open;Ebiwumi;Arinze;female;butler;58;1956-09-07;26;2015-06-29;CAS-KN-ZZZ-1
+323;31;burial;done;Ebiwumi;Arinze;female;butler;58;1956-09-07;26;2015-06-29;CAS-KN-ZZZ-1
+338;18;isolation;open;Chimere;Lanlehin;male;press officer (public relations officer);43;1971-01-08;17;;CAS-KN-ZZZ-1
+338;19;isolation;done;Chimere;Lanlehin;male;press officer (public relations officer);43;1971-01-08;17;;CAS-KN-ZZZ-1
+342;31;isolation;open;Omoregie;Osanebi;male;nurse;23;1992-04-20;30;;CAS-KN-ZZZ-1
+342;33;isolation;done;Omoregie;Osanebi;male;nurse;23;1992-04-20;30;;CAS-KN-ZZZ-1
+343;22;lab;overdue;Olubowale;Trill;male;apprentice;15;1999-09-11;17;2015-06-23;CAS-KN-ZZZ-1
+343;23;burial;open;Olubowale;Trill;male;apprentice;15;1999-09-11;17;2015-06-23;CAS-KN-ZZZ-1
+343;25;burial;done;Olubowale;Trill;male;apprentice;15;1999-09-11;17;2015-06-23;CAS-KN-ZZZ-1
+348;45;isolation;open;Adaze;Guda;male;building electrician;22;1992-11-17;44;;CAS-KN-ZZZ-1
+348;47;isolation;done;Adaze;Guda;male;building electrician;22;1992-11-17;44;;CAS-KN-ZZZ-1
+393;15;discharge;open;Olufunso;Agbebaku;male;soldier;52;1962-09-21;8;;CAS-KN-ZZZ-1
+393;16;discharge;done;Olufunso;Agbebaku;male;soldier;52;1962-09-21;8;;CAS-KN-ZZZ-1
+401;32;isolation;open;Essang;Kwikajet;male;farm worker or farm labourer;37;1977-05-07;30;;CAS-KN-ZZZ-1
+401;36;isolation;done;Essang;Kwikajet;male;farm worker or farm labourer;37;1977-05-07;30;;CAS-KN-ZZZ-1
+403;24;isolation;open;Oluwakemi;Agbo;female;draughtsperson (draughtsman or -woman);57;1957-08-28;24;2015-06-30;CAS-KN-ZZZ-1
+403;26;isolation;done;Oluwakemi;Agbo;female;draughtsperson (draughtsman or -woman);57;1957-08-28;24;2015-06-30;CAS-KN-ZZZ-1
+403;30;burial;open;Oluwakemi;Agbo;female;draughtsperson (draughtsman or -woman);57;1957-08-28;24;2015-06-30;CAS-KN-ZZZ-1
+403;31;burial;done;Oluwakemi;Agbo;female;draughtsperson (draughtsman or -woman);57;1957-08-28;24;2015-06-30;CAS-KN-ZZZ-1
+404;11;discharge;open;Odera;Ojomoh;female;surgical toolmaker (surgery toolmaker);53;1961-01-11;8;;CAS-KN-ZZZ-1
+404;12;discharge;done;Odera;Ojomoh;female;surgical toolmaker (surgery toolmaker);53;1961-01-11;8;;CAS-KN-ZZZ-1
+404;15;discharge;open;Odera;Ojomoh;female;surgical toolmaker (surgery toolmaker);53;1961-01-11;8;;CAS-KN-ZZZ-1
+404;16;discharge;done;Odera;Ojomoh;female;surgical toolmaker (surgery toolmaker);53;1961-01-11;8;;CAS-KN-ZZZ-1
+408;15;isolation;open;Oluwakemi;Onubiyi;male;burial service;25;1989-03-11;15;;CAS-KN-ZZZ-1
+408;16;isolation;done;Oluwakemi;Onubiyi;male;burial service;25;1989-03-11;15;;CAS-KN-ZZZ-1
+416;22;burial;open;Obioma;Igiebor;female;property manager;24;1990-08-23;18;2015-06-22;CAS-KN-ZZZ-1
+416;23;burial;done;Obioma;Igiebor;female;property manager;24;1990-08-23;18;2015-06-22;CAS-KN-ZZZ-1
+429;30;isolation;open;Akindela;Yakubu;male;teacher;44;1970-07-22;29;2015-07-03;CAS-KN-ZZZ-1
+429;32;isolation;done;Akindela;Yakubu;male;teacher;44;1970-07-22;29;2015-07-03;CAS-KN-ZZZ-1
+429;33;burial;open;Akindela;Yakubu;male;teacher;44;1970-07-22;29;2015-07-03;CAS-KN-ZZZ-1
+429;36;burial;done;Akindela;Yakubu;male;teacher;44;1970-07-22;29;2015-07-03;CAS-KN-ZZZ-1
+430;26;burial;open;Kenya;Ikimi;female;physician;52;1963-03-25;23;2015-06-26;CAS-KN-ZZZ-1
+430;29;burial;done;Kenya;Ikimi;female;physician;52;1963-03-25;23;2015-06-26;CAS-KN-ZZZ-1
+434;23;burial;open;Kingsley ;Ajudua;male;craft gilder;37;1977-01-09;18;2015-06-23;CAS-KN-ZZZ-1
+434;25;burial;done;Kingsley ;Ajudua;male;craft gilder;37;1977-01-09;18;2015-06-23;CAS-KN-ZZZ-1
+436;24;isolation;open;Temilore;Khreis;female;standards engineer;31;1984-12-04;24;;CAS-KN-ZZZ-1
+436;25;isolation;done;Temilore;Khreis;female;standards engineer;31;1984-12-04;24;;CAS-KN-ZZZ-1
+444;25;isolation;open;Oluwabunmi;Aikhionbare;male;refrigeration engineer (refrigeration mechanic);47;1967-06-17;24;;CAS-KN-ZZZ-1
+444;26;isolation;done;Oluwabunmi;Aikhionbare;male;refrigeration engineer (refrigeration mechanic);47;1967-06-17;24;;CAS-KN-ZZZ-1
+447;37;discharge;open;Chukwunonso;Marwa;male;tailor or dressmaker (tailor and dressmaker);22;1992-07-21;33;2015-07-08;CAS-KN-ZZZ-1
+447;38;burial;open;Chukwunonso;Marwa;male;tailor or dressmaker (tailor and dressmaker);22;1992-07-21;33;2015-07-08;CAS-KN-ZZZ-1
+447;38;discharge;done;Chukwunonso;Marwa;male;tailor or dressmaker (tailor and dressmaker);22;1992-07-21;33;2015-07-08;CAS-KN-ZZZ-1
+447;40;burial;done;Chukwunonso;Marwa;male;tailor or dressmaker (tailor and dressmaker);22;1992-07-21;33;2015-07-08;CAS-KN-ZZZ-1
+457;43;lab;overdue;Adesoye;Ameh;female;pawnbroker;49;1965-04-08;39;;CAS-KN-ZZZ-1
+457;43;isolation;open;Adesoye;Ameh;female;pawnbroker;49;1965-04-08;39;;CAS-KN-ZZZ-1
+457;45;isolation;done;Adesoye;Ameh;female;pawnbroker;49;1965-04-08;39;;CAS-KN-ZZZ-1
+472;37;burial;open;Godwin;Elumelu;male;police officer;60;1955-07-04;30;2015-07-07;CAS-KN-ZZZ-1
+472;38;burial;done;Godwin;Elumelu;male;police officer;60;1955-07-04;30;2015-07-07;CAS-KN-ZZZ-1
+479;12;burial;open;Okwong;Arase;male;shoemaker (cobbler);23;1992-05-05;9;2015-06-12;CAS-KN-ZZZ-1
+479;15;burial;done;Okwong;Arase;male;shoemaker (cobbler);23;1992-05-05;9;2015-06-12;CAS-KN-ZZZ-1
+487;32;isolation;open;Akintade;Yeiyah;female;teacher;46;1969-04-13;32;2015-07-08;CAS-KN-ZZZ-1
+487;33;isolation;done;Akintade;Yeiyah;female;teacher;46;1969-04-13;32;2015-07-08;CAS-KN-ZZZ-1
+487;38;burial;open;Akintade;Yeiyah;female;teacher;46;1969-04-13;32;2015-07-08;CAS-KN-ZZZ-1
+487;40;burial;done;Akintade;Yeiyah;female;teacher;46;1969-04-13;32;2015-07-08;CAS-KN-ZZZ-1
+495;33;isolation;open;Olaoluwa;Obleajula;male;keeper of records (archivist);56;1958-07-27;31;2015-07-07;CAS-KN-ZZZ-1
+495;36;isolation;done;Olaoluwa;Obleajula;male;keeper of records (archivist);56;1958-07-27;31;2015-07-07;CAS-KN-ZZZ-1
+495;37;burial;open;Olaoluwa;Obleajula;male;keeper of records (archivist);56;1958-07-27;31;2015-07-07;CAS-KN-ZZZ-1
+495;38;burial;done;Olaoluwa;Obleajula;male;keeper of records (archivist);56;1958-07-27;31;2015-07-07;CAS-KN-ZZZ-1
+496;36;isolation;open;Ajiriohene;Yaji;female;apprentice;15;1999-03-06;33;;CAS-KN-ZZZ-1
+496;37;isolation;done;Ajiriohene;Yaji;female;apprentice;15;1999-03-06;33;;CAS-KN-ZZZ-1
+497;50;discharge;open;Onayi;Kusare;female;geographer;58;1957-07-02;47;;CAS-KN-ZZZ-1
+497;51;discharge;done;Onayi;Kusare;female;geographer;58;1957-07-02;47;;CAS-KN-ZZZ-1
+501;43;lab;overdue;Tolani;Amachree;female;livestock farmer;29;1985-04-08;39;2015-07-15;CAS-KN-ZZZ-1
+501;43;isolation;open;Tolani;Amachree;female;livestock farmer;29;1985-04-08;39;2015-07-15;CAS-KN-ZZZ-1
+501;44;isolation;done;Tolani;Amachree;female;livestock farmer;29;1985-04-08;39;2015-07-15;CAS-KN-ZZZ-1
+501;45;burial;open;Tolani;Amachree;female;livestock farmer;29;1985-04-08;39;2015-07-15;CAS-KN-ZZZ-1
+501;47;burial;done;Tolani;Amachree;female;livestock farmer;29;1985-04-08;39;2015-07-15;CAS-KN-ZZZ-1
+503;22;lab;overdue;Omolara;Obano;female;school pupil;12;2003-01-23;18;;CAS-KN-ZZZ-1
+506;32;burial;open;Arome;Ajiborisha;male;physician;28;1986-08-07;26;2015-07-02;CAS-KN-ZZZ-1
+506;36;burial;done;Arome;Ajiborisha;male;physician;28;1986-08-07;26;2015-07-02;CAS-KN-ZZZ-1
+522;33;isolation;open;Azi;Bozimo;male;blast-furnaceman or -woman;48;1967-09-03;33;2015-07-07;CAS-KN-ZZZ-1
+522;36;isolation;done;Azi;Bozimo;male;blast-furnaceman or -woman;48;1967-09-03;33;2015-07-07;CAS-KN-ZZZ-1
+522;37;burial;open;Azi;Bozimo;male;blast-furnaceman or -woman;48;1967-09-03;33;2015-07-07;CAS-KN-ZZZ-1
+522;38;burial;done;Azi;Bozimo;male;blast-furnaceman or -woman;48;1967-09-03;33;2015-07-07;CAS-KN-ZZZ-1
+523;37;isolation;open;Oluwabunmi;Ofere;male;auxiliary shop assistant (shop worker or shelf filler);59;1955-12-13;37;2015-07-13;CAS-KN-ZZZ-1
+523;38;isolation;done;Oluwabunmi;Ofere;male;auxiliary shop assistant (shop worker or shelf filler);59;1955-12-13;37;2015-07-13;CAS-KN-ZZZ-1
+523;43;burial;open;Oluwabunmi;Ofere;male;auxiliary shop assistant (shop worker or shelf filler);59;1955-12-13;37;2015-07-13;CAS-KN-ZZZ-1
+523;44;burial;done;Oluwabunmi;Ofere;male;auxiliary shop assistant (shop worker or shelf filler);59;1955-12-13;37;2015-07-13;CAS-KN-ZZZ-1
+526;47;isolation;open;Esla;Chiom;male;river basin keeper (river manager);45;1969-12-14;44;;CAS-KN-ZZZ-1
+526;50;isolation;done;Esla;Chiom;male;river basin keeper (river manager);45;1969-12-14;44;;CAS-KN-ZZZ-1
+533;50;lab;overdue;Temilolaoluwa;Oshoala;female;watch-maker (watchmaker);49;1965-12-17;46;;CAS-KN-ZZZ-1
+533;54;discharge;open;Temilolaoluwa;Oshoala;female;watch-maker (watchmaker);49;1965-12-17;46;;CAS-KN-ZZZ-1
+533;57;discharge;done;Temilolaoluwa;Oshoala;female;watch-maker (watchmaker);49;1965-12-17;46;;CAS-KN-ZZZ-1
+537;22;discharge;open;Efemena;Ekpuk;female;school pupil;17;1997-06-28;15;;CAS-KN-ZZZ-1
+537;23;discharge;done;Efemena;Ekpuk;female;school pupil;17;1997-06-28;15;;CAS-KN-ZZZ-1
+543;22;lab;overdue;Omoregie;Odofin;male;school pupil;17;1998-01-24;18;;CAS-KN-ZZZ-1
+543;22;isolation;open;Omoregie;Odofin;male;school pupil;17;1998-01-24;18;;CAS-KN-ZZZ-1
+543;23;isolation;done;Omoregie;Odofin;male;school pupil;17;1998-01-24;18;;CAS-KN-ZZZ-1
+546;33;burial;open;Chinedu;Chikwelu;male;telecommunications cable fitter;41;1974-02-23;31;2015-07-03;CAS-KN-ZZZ-1
+546;36;burial;done;Chinedu;Chikwelu;male;telecommunications cable fitter;41;1974-02-23;31;2015-07-03;CAS-KN-ZZZ-1
+552;12;isolation;open;Ebiwumi;Mmoh;female;school pupil;13;2002-09-05;11;;CAS-KN-ZZZ-1
+552;15;isolation;done;Ebiwumi;Mmoh;female;school pupil;13;2002-09-05;11;;CAS-KN-ZZZ-1
+570;33;burial;open;Oba Ni Ohun;Ohu;male;school pupil;12;2002-07-21;29;2015-07-03;CAS-KN-ZZZ-1
+570;36;burial;done;Oba Ni Ohun;Ohu;male;school pupil;12;2002-07-21;29;2015-07-03;CAS-KN-ZZZ-1
+574;36;discharge;open;Temilore;Katsina;female;fringe (trimmings maker);54;1960-09-07;32;;CAS-KN-ZZZ-1
+574;37;discharge;done;Temilore;Katsina;female;fringe (trimmings maker);54;1960-09-07;32;;CAS-KN-ZZZ-1
+580;45;burial;open;Aitua;Aradeon;female;burial service;18;1997-04-14;43;2015-07-15;CAS-KN-ZZZ-1
+580;46;burial;done;Aitua;Aradeon;female;burial service;18;1997-04-14;43;2015-07-15;CAS-KN-ZZZ-1
+580;46;discharge;open;Aitua;Aradeon;female;burial service;18;1997-04-14;43;2015-07-15;CAS-KN-ZZZ-1
+580;47;discharge;done;Aitua;Aradeon;female;burial service;18;1997-04-14;43;2015-07-15;CAS-KN-ZZZ-1
+584;22;burial;open;Tolani;Kyari;female;railway carriage and wagon inspector;39;1975-10-14;15;2015-06-22;CAS-KN-ZZZ-1
+584;23;burial;done;Tolani;Kyari;female;railway carriage and wagon inspector;39;1975-10-14;15;2015-06-22;CAS-KN-ZZZ-1
+592;15;lab;overdue;Ololade Ogunbanwo;Nzekwu;female;travel agency clerk;23;1991-06-26;11;2015-06-16;CAS-KN-ZZZ-1
+592;15;isolation;open;Ololade Ogunbanwo;Nzekwu;female;travel agency clerk;23;1991-06-26;11;2015-06-16;CAS-KN-ZZZ-1
+592;16;burial;open;Ololade Ogunbanwo;Nzekwu;female;travel agency clerk;23;1991-06-26;11;2015-06-16;CAS-KN-ZZZ-1
+592;16;isolation;done;Ololade Ogunbanwo;Nzekwu;female;travel agency clerk;23;1991-06-26;11;2015-06-16;CAS-KN-ZZZ-1
+592;18;burial;done;Ololade Ogunbanwo;Nzekwu;female;travel agency clerk;23;1991-06-26;11;2015-06-16;CAS-KN-ZZZ-1
+600;11;burial;open;Adeleke;Adigun;male;burial service;23;1991-01-09;9;2015-06-11;CAS-KN-ZZZ-1
+600;15;burial;done;Adeleke;Adigun;male;burial service;23;1991-01-09;9;2015-06-11;CAS-KN-ZZZ-1
+603;36;burial;open;Olasubomi;Datoru;female;dentist or dental surgeon;21;1994-05-14;33;2015-07-06;CAS-KN-ZZZ-1
+603;36;isolation;open;Olasubomi;Datoru;female;dentist or dental surgeon;21;1994-05-14;33;2015-07-06;CAS-KN-ZZZ-1
+603;37;isolation;done;Olasubomi;Datoru;female;dentist or dental surgeon;21;1994-05-14;33;2015-07-06;CAS-KN-ZZZ-1
+603;38;burial;done;Olasubomi;Datoru;female;dentist or dental surgeon;21;1994-05-14;33;2015-07-06;CAS-KN-ZZZ-1
+605;17;burial;open;Akintommywa;Ihemadu;male;biotechnologist;24;1990-10-12;15;2015-06-17;CAS-KN-ZZZ-1
+605;18;burial;done;Akintommywa;Ihemadu;male;biotechnologist;24;1990-10-12;15;2015-06-17;CAS-KN-ZZZ-1
+617;36;lab;overdue;Yahaya;Dyegh;male;nurse;37;1978-08-01;31;;CAS-KN-ZZZ-1
+623;12;isolation;open;Attahlerne;Oni;male;craft glass etcher;38;1976-07-19;12;2015-06-16;CAS-KN-ZZZ-1
+623;15;isolation;done;Attahlerne;Oni;male;craft glass etcher;38;1976-07-19;12;2015-06-16;CAS-KN-ZZZ-1
+623;16;burial;open;Attahlerne;Oni;male;craft glass etcher;38;1976-07-19;12;2015-06-16;CAS-KN-ZZZ-1
+623;18;burial;done;Attahlerne;Oni;male;craft glass etcher;38;1976-07-19;12;2015-06-16;CAS-KN-ZZZ-1
+635;45;isolation;open;Ejiogu;Usman;female;nurse;36;1978-11-17;45;;CAS-KN-ZZZ-1
+635;46;isolation;done;Ejiogu;Usman;female;nurse;36;1978-11-17;45;;CAS-KN-ZZZ-1
+636;18;burial;open;Oula;Dikeh;female;capital markets clerk or officer;39;1975-10-21;16;2015-06-18;CAS-KN-ZZZ-1
+636;19;burial;done;Oula;Dikeh;female;capital markets clerk or officer;39;1975-10-21;16;2015-06-18;CAS-KN-ZZZ-1
+650;18;burial;open;Ching;Imasuen;male;school pupil;17;1997-11-25;17;2015-06-18;CAS-KN-ZZZ-1
+650;19;burial;done;Ching;Imasuen;male;school pupil;17;1997-11-25;17;2015-06-18;CAS-KN-ZZZ-1
+654;22;isolation;open;Olori;Iworima;female;judge;60;1954-06-11;19;2015-06-23;CAS-KN-ZZZ-1
+654;23;burial;open;Olori;Iworima;female;judge;60;1954-06-11;19;2015-06-23;CAS-KN-ZZZ-1
+654;23;isolation;done;Olori;Iworima;female;judge;60;1954-06-11;19;2015-06-23;CAS-KN-ZZZ-1
+654;25;burial;done;Olori;Iworima;female;judge;60;1954-06-11;19;2015-06-23;CAS-KN-ZZZ-1
+656;39;isolation;open;Kasheina;Kama;female;soldier;59;1955-11-13;36;;CAS-KN-ZZZ-1
+656;40;isolation;done;Kasheina;Kama;female;soldier;59;1955-11-13;36;;CAS-KN-ZZZ-1
+662;16;isolation;open;Chidinma;Offiah;female;soldier;35;1979-06-30;16;;CAS-KN-ZZZ-1
+662;17;isolation;done;Chidinma;Offiah;female;soldier;35;1979-06-30;16;;CAS-KN-ZZZ-1
+680;24;burial;open;Samiatu;Elegbede;female;nurse;33;1981-08-13;19;2015-06-24;CAS-KN-ZZZ-1
+680;25;burial;done;Samiatu;Elegbede;female;nurse;33;1981-08-13;19;2015-06-24;CAS-KN-ZZZ-1
+690;36;isolation;open;Olubowale;Somide;male;fashion designer;41;1974-05-01;33;2015-07-10;CAS-KN-ZZZ-1
+690;37;isolation;done;Olubowale;Somide;male;fashion designer;41;1974-05-01;33;2015-07-10;CAS-KN-ZZZ-1
+690;40;burial;open;Olubowale;Somide;male;fashion designer;41;1974-05-01;33;2015-07-10;CAS-KN-ZZZ-1
+690;43;burial;done;Olubowale;Somide;male;fashion designer;41;1974-05-01;33;2015-07-10;CAS-KN-ZZZ-1
+696;45;burial;open;Ilori;Oyesanya;male;management consultant;40;1975-08-02;43;2015-07-15;CAS-KN-ZZZ-1
+696;46;burial;done;Ilori;Oyesanya;male;management consultant;40;1975-08-02;43;2015-07-15;CAS-KN-ZZZ-1
+696;47;discharge;open;Ilori;Oyesanya;male;management consultant;40;1975-08-02;43;2015-07-15;CAS-KN-ZZZ-1
+696;50;discharge;done;Ilori;Oyesanya;male;management consultant;40;1975-08-02;43;2015-07-15;CAS-KN-ZZZ-1
+712;19;isolation;open;Godwin ;Ewang;male;apprentice;16;1998-12-09;17;2015-06-22;CAS-KN-ZZZ-1
+712;22;isolation;done;Godwin ;Ewang;male;apprentice;16;1998-12-09;17;2015-06-22;CAS-KN-ZZZ-1
+712;22;burial;open;Godwin ;Ewang;male;apprentice;16;1998-12-09;17;2015-06-22;CAS-KN-ZZZ-1
+712;23;burial;done;Godwin ;Ewang;male;apprentice;16;1998-12-09;17;2015-06-22;CAS-KN-ZZZ-1
+735;47;burial;open;Esla;Fajinmi;male;burial service;19;1996-04-14;45;2015-07-17;CAS-KN-ZZZ-1
+735;50;burial;done;Esla;Fajinmi;male;burial service;19;1996-04-14;45;2015-07-17;CAS-KN-ZZZ-1
+739;46;isolation;open;Bola;Izuchukwu;female;driller;36;1978-12-09;45;;CAS-KN-ZZZ-1
+739;47;isolation;done;Bola;Izuchukwu;female;driller;36;1978-12-09;45;;CAS-KN-ZZZ-1
+746;50;lab;overdue;Tamara-Preye;Akinyemi;female;police officer;24;1991-01-25;46;;CAS-KN-ZZZ-1
+746;50;isolation;open;Tamara-Preye;Akinyemi;female;police officer;24;1991-01-25;46;;CAS-KN-ZZZ-1
+746;51;isolation;done;Tamara-Preye;Akinyemi;female;police officer;24;1991-01-25;46;;CAS-KN-ZZZ-1
+754;40;isolation;open;Ugoh;Success;male;craft upholsterer;29;1985-04-08;40;;CAS-KN-ZZZ-1
+754;43;isolation;done;Ugoh;Success;male;craft upholsterer;29;1985-04-08;40;;CAS-KN-ZZZ-1
+763;31;discharge;open;Olubowale;Katusi;male;glass production worker (worker in the glass industry);57;1957-01-07;24;;CAS-KN-ZZZ-1
+763;32;discharge;done;Olubowale;Katusi;male;glass production worker (worker in the glass industry);57;1957-01-07;24;;CAS-KN-ZZZ-1
+771;22;lab;overdue;Oladipo;Waje;male;court executive officer (bailiff);52;1963-05-25;18;2015-06-25;CAS-KN-ZZZ-1
+771;22;isolation;open;Oladipo;Waje;male;court executive officer (bailiff);52;1963-05-25;18;2015-06-25;CAS-KN-ZZZ-1
+771;23;isolation;done;Oladipo;Waje;male;court executive officer (bailiff);52;1963-05-25;18;2015-06-25;CAS-KN-ZZZ-1
+771;25;burial;open;Oladipo;Waje;male;court executive officer (bailiff);52;1963-05-25;18;2015-06-25;CAS-KN-ZZZ-1
+771;26;burial;done;Oladipo;Waje;male;court executive officer (bailiff);52;1963-05-25;18;2015-06-25;CAS-KN-ZZZ-1
+772;12;isolation;open;Godwin;Edoheart;male;nurse;50;1964-06-29;11;2015-06-17;CAS-KN-ZZZ-1
+772;15;isolation;done;Godwin;Edoheart;male;nurse;50;1964-06-29;11;2015-06-17;CAS-KN-ZZZ-1
+772;17;burial;open;Godwin;Edoheart;male;nurse;50;1964-06-29;11;2015-06-17;CAS-KN-ZZZ-1
+772;18;burial;done;Godwin;Edoheart;male;nurse;50;1964-06-29;11;2015-06-17;CAS-KN-ZZZ-1
+773;45;isolation;open;Ugoh;Egwuekwe;male;biochemist;18;1997-08-05;44;2015-07-17;CAS-KN-ZZZ-1
+773;47;burial;open;Ugoh;Egwuekwe;male;biochemist;18;1997-08-05;44;2015-07-17;CAS-KN-ZZZ-1
+773;47;isolation;done;Ugoh;Egwuekwe;male;biochemist;18;1997-08-05;44;2015-07-17;CAS-KN-ZZZ-1
+773;50;burial;done;Ugoh;Egwuekwe;male;biochemist;18;1997-08-05;44;2015-07-17;CAS-KN-ZZZ-1
+781;23;isolation;open;Nwachalu;Inyam;female;apprentice;15;1999-07-18;19;;CAS-KN-ZZZ-1
+781;24;isolation;done;Nwachalu;Inyam;female;apprentice;15;1999-07-18;19;;CAS-KN-ZZZ-1
+797;29;isolation;open;Okwong;Henshaw;male;physician;23;1992-10-03;24;;CAS-KN-ZZZ-1
+797;30;isolation;done;Okwong;Henshaw;male;physician;23;1992-10-03;24;;CAS-KN-ZZZ-1
+799;24;isolation;open;Osose;Trill;female;soldier;21;1994-11-02;24;2015-06-30;CAS-KN-ZZZ-1
+799;25;isolation;done;Osose;Trill;female;soldier;21;1994-11-02;24;2015-06-30;CAS-KN-ZZZ-1
+799;30;burial;open;Osose;Trill;female;soldier;21;1994-11-02;24;2015-06-30;CAS-KN-ZZZ-1
+799;31;burial;done;Osose;Trill;female;soldier;21;1994-11-02;24;2015-06-30;CAS-KN-ZZZ-1
+802;43;isolation;open;Osazemen;Niger;male;nurse;19;1995-06-09;40;2015-07-16;CAS-KN-ZZZ-1
+802;45;isolation;done;Osazemen;Niger;male;nurse;19;1995-06-09;40;2015-07-16;CAS-KN-ZZZ-1
+802;46;burial;open;Osazemen;Niger;male;nurse;19;1995-06-09;40;2015-07-16;CAS-KN-ZZZ-1
+802;47;burial;done;Osazemen;Niger;male;nurse;19;1995-06-09;40;2015-07-16;CAS-KN-ZZZ-1
+807;15;lab;overdue;Ajiriohene;Adokwe;female;school pupil;17;1998-03-17;11;;CAS-KN-ZZZ-1
+807;18;discharge;open;Ajiriohene;Adokwe;female;school pupil;17;1998-03-17;11;;CAS-KN-ZZZ-1
+807;19;discharge;done;Ajiriohene;Adokwe;female;school pupil;17;1998-03-17;11;;CAS-KN-ZZZ-1
+809;43;burial;open;Adesoye;Oshaniwa;female;postal worker (postman or -woman);38;1976-08-31;38;2015-07-13;CAS-KN-ZZZ-1
+809;45;burial;done;Adesoye;Oshaniwa;female;postal worker (postman or -woman);38;1976-08-31;38;2015-07-13;CAS-KN-ZZZ-1
+820;39;isolation;open;Yakubu;Owubokiri;male;photographer;58;1957-08-01;38;2015-07-10;CAS-KN-ZZZ-1
+820;40;burial;open;Yakubu;Owubokiri;male;photographer;58;1957-08-01;38;2015-07-10;CAS-KN-ZZZ-1
+820;40;isolation;done;Yakubu;Owubokiri;male;photographer;58;1957-08-01;38;2015-07-10;CAS-KN-ZZZ-1
+820;43;burial;done;Yakubu;Owubokiri;male;photographer;58;1957-08-01;38;2015-07-10;CAS-KN-ZZZ-1
+829;44;isolation;open;Ma Lo Suwegbe;Lanlehin;male;stable hand or groom;48;1967-04-19;44;2015-07-17;CAS-KN-ZZZ-1
+829;45;isolation;done;Ma Lo Suwegbe;Lanlehin;male;stable hand or groom;48;1967-04-19;44;2015-07-17;CAS-KN-ZZZ-1
+829;47;burial;open;Ma Lo Suwegbe;Lanlehin;male;stable hand or groom;48;1967-04-19;44;2015-07-17;CAS-KN-ZZZ-1
+829;50;burial;done;Ma Lo Suwegbe;Lanlehin;male;stable hand or groom;48;1967-04-19;44;2015-07-17;CAS-KN-ZZZ-1
+833;45;isolation;open;Adaku;Imasuen;female;teacher;37;1977-11-26;45;2015-07-17;CAS-KN-ZZZ-1
+833;46;isolation;done;Adaku;Imasuen;female;teacher;37;1977-11-26;45;2015-07-17;CAS-KN-ZZZ-1
+833;47;burial;open;Adaku;Imasuen;female;teacher;37;1977-11-26;45;2015-07-17;CAS-KN-ZZZ-1
+833;50;burial;done;Adaku;Imasuen;female;teacher;37;1977-11-26;45;2015-07-17;CAS-KN-ZZZ-1
+836;40;isolation;open;Ololade;Tompolo;male;harbour guard;44;1971-01-25;38;;CAS-KN-ZZZ-1
+836;43;isolation;done;Ololade;Tompolo;male;harbour guard;44;1971-01-25;38;;CAS-KN-ZZZ-1
+854;45;burial;open;Olubowale;Barda;male;anthropologist;20;1994-07-22;43;2015-07-15;CAS-KN-ZZZ-1
+854;46;burial;done;Olubowale;Barda;male;anthropologist;20;1994-07-22;43;2015-07-15;CAS-KN-ZZZ-1
+855;50;lab;overdue;Ololade Ogunbanwo;Isa;female;mathematician;18;1996-11-16;45;;CAS-KN-ZZZ-1
+855;50;discharge;open;Ololade Ogunbanwo;Isa;female;mathematician;18;1996-11-16;45;;CAS-KN-ZZZ-1
+855;51;discharge;done;Ololade Ogunbanwo;Isa;female;mathematician;18;1996-11-16;45;;CAS-KN-ZZZ-1
+856;10;isolation;open;Fanique;Novia;female;soldier;49;1965-08-18;9;2015-06-12;CAS-KN-ZZZ-1
+856;11;isolation;done;Fanique;Novia;female;soldier;49;1965-08-18;9;2015-06-12;CAS-KN-ZZZ-1
+856;12;burial;open;Fanique;Novia;female;soldier;49;1965-08-18;9;2015-06-12;CAS-KN-ZZZ-1
+856;15;burial;done;Fanique;Novia;female;soldier;49;1965-08-18;9;2015-06-12;CAS-KN-ZZZ-1
+857;33;isolation;open;Odogwu;Akwashiki;male;school pupil;12;2002-06-10;31;;CAS-KN-ZZZ-1
+857;36;isolation;done;Odogwu;Akwashiki;male;school pupil;12;2002-06-10;31;;CAS-KN-ZZZ-1
+860;36;discharge;open;Umahi;Olajengbesi;male;nurse;48;1966-08-10;33;2015-07-07;CAS-KN-ZZZ-1
+860;37;burial;open;Umahi;Olajengbesi;male;nurse;48;1966-08-10;33;2015-07-07;CAS-KN-ZZZ-1
+860;37;discharge;done;Umahi;Olajengbesi;male;nurse;48;1966-08-10;33;2015-07-07;CAS-KN-ZZZ-1
+860;38;burial;done;Umahi;Olajengbesi;male;nurse;48;1966-08-10;33;2015-07-07;CAS-KN-ZZZ-1
+864;37;isolation;open;Ololade ;Nworuh;male;tram driver;63;1951-09-19;36;2015-07-08;CAS-KN-ZZZ-1
+864;38;burial;open;Ololade ;Nworuh;male;tram driver;63;1951-09-19;36;2015-07-08;CAS-KN-ZZZ-1
+864;39;isolation;done;Ololade ;Nworuh;male;tram driver;63;1951-09-19;36;2015-07-08;CAS-KN-ZZZ-1
+864;40;burial;done;Ololade ;Nworuh;male;tram driver;63;1951-09-19;36;2015-07-08;CAS-KN-ZZZ-1
+870;29;burial;open;Abieyuwa;Ajudua;female;soldier;53;1961-09-29;24;2015-06-29;CAS-KN-ZZZ-1
+870;31;burial;done;Abieyuwa;Ajudua;female;soldier;53;1961-09-29;24;2015-06-29;CAS-KN-ZZZ-1
+883;11;burial;open;Efe;Henty;male;philosopher;48;1966-09-25;8;2015-06-11;CAS-KN-ZZZ-1
+883;12;burial;done;Efe;Henty;male;philosopher;48;1966-09-25;8;2015-06-11;CAS-KN-ZZZ-1
+898;16;burial;open;Olubowale;Ekoku;male;electrical equipment inspector;39;1975-08-17;10;2015-06-16;CAS-KN-ZZZ-1
+898;18;burial;done;Olubowale;Ekoku;male;electrical equipment inspector;39;1975-08-17;10;2015-06-16;CAS-KN-ZZZ-1
+910;33;isolation;open;Ibukunoluwa;Abaye;female;textile printer;62;1952-09-10;32;2015-07-07;CAS-KN-ZZZ-1
+910;36;isolation;done;Ibukunoluwa;Abaye;female;textile printer;62;1952-09-10;32;2015-07-07;CAS-KN-ZZZ-1
+910;37;burial;open;Ibukunoluwa;Abaye;female;textile printer;62;1952-09-10;32;2015-07-07;CAS-KN-ZZZ-1
+910;38;burial;done;Ibukunoluwa;Abaye;female;textile printer;62;1952-09-10;32;2015-07-07;CAS-KN-ZZZ-1
+915;25;isolation;open;Omowunmi;Dako;female;police officer;25;1990-09-03;25;2015-07-01;CAS-KN-ZZZ-1
+915;26;isolation;done;Omowunmi;Dako;female;police officer;25;1990-09-03;25;2015-07-01;CAS-KN-ZZZ-1
+915;31;burial;open;Omowunmi;Dako;female;police officer;25;1990-09-03;25;2015-07-01;CAS-KN-ZZZ-1
+915;32;burial;done;Omowunmi;Dako;female;police officer;25;1990-09-03;25;2015-07-01;CAS-KN-ZZZ-1
+944;40;discharge;open;Fanique;Arinze;female;rubber processing machine operator or tyrefitter;38;1976-02-08;36;;CAS-KN-ZZZ-1
+944;43;discharge;done;Fanique;Arinze;female;rubber processing machine operator or tyrefitter;38;1976-02-08;36;;CAS-KN-ZZZ-1
+945;17;burial;open;Adaze;Akabueze;male;astronomer;20;1995-04-19;15;2015-06-17;CAS-KN-ZZZ-1
+945;18;burial;done;Adaze;Akabueze;male;astronomer;20;1995-04-19;15;2015-06-17;CAS-KN-ZZZ-1
+953;29;isolation;open;Chidima;Kiladejo;female;palmists;31;1983-04-06;29;2015-07-02;CAS-KN-ZZZ-1
+953;30;isolation;done;Chidima;Kiladejo;female;palmists;31;1983-04-06;29;2015-07-02;CAS-KN-ZZZ-1
+953;32;burial;open;Chidima;Kiladejo;female;palmists;31;1983-04-06;29;2015-07-02;CAS-KN-ZZZ-1
+953;33;burial;done;Chidima;Kiladejo;female;palmists;31;1983-04-06;29;2015-07-02;CAS-KN-ZZZ-1
+962;37;burial;open;Chisom;Akume;female;fire officer;44;1971-05-05;36;2015-07-07;CAS-KN-ZZZ-1
+962;38;burial;done;Chisom;Akume;female;fire officer;44;1971-05-05;36;2015-07-07;CAS-KN-ZZZ-1
+962;39;discharge;open;Chisom;Akume;female;fire officer;44;1971-05-05;36;2015-07-07;CAS-KN-ZZZ-1
+962;40;discharge;done;Chisom;Akume;female;fire officer;44;1971-05-05;36;2015-07-07;CAS-KN-ZZZ-1
+965;33;burial;open;Samiatu;Abeni;female;tram driver;31;1983-10-26;29;2015-07-03;CAS-KN-ZZZ-1
+965;36;burial;done;Samiatu;Abeni;female;tram driver;31;1983-10-26;29;2015-07-03;CAS-KN-ZZZ-1
+965;36;lab;overdue;Samiatu;Abeni;female;tram driver;31;1983-10-26;29;2015-07-03;CAS-KN-ZZZ-1
+967;29;lab;overdue;Omotese;Adigun;female;building fitter (building locksmith);33;1981-07-11;23;;CAS-KN-ZZZ-1
+968;17;isolation;open;Nadoca;Lagelu;female;bank clerk for commercial credit;57;1957-07-18;16;2015-06-24;CAS-KN-ZZZ-1
+968;18;isolation;done;Nadoca;Lagelu;female;bank clerk for commercial credit;57;1957-07-18;16;2015-06-24;CAS-KN-ZZZ-1
+968;24;burial;open;Nadoca;Lagelu;female;bank clerk for commercial credit;57;1957-07-18;16;2015-06-24;CAS-KN-ZZZ-1
+968;26;burial;done;Nadoca;Lagelu;female;bank clerk for commercial credit;57;1957-07-18;16;2015-06-24;CAS-KN-ZZZ-1
+970;29;burial;open;Akon;Rumfa;female;chimney sweep;41;1974-04-17;26;2015-06-29;CAS-KN-ZZZ-1
+970;30;burial;done;Akon;Rumfa;female;chimney sweep;41;1974-04-17;26;2015-06-29;CAS-KN-ZZZ-1
+976;50;isolation;open;Olubowale;Ajanwachukwu;male;burial service;31;1984-01-15;47;;CAS-KN-ZZZ-1
+976;52;isolation;done;Olubowale;Ajanwachukwu;male;burial service;31;1984-01-15;47;;CAS-KN-ZZZ-1
+995;51;discharge;open;Efemena;Chidozie;female;municipal services worker (communal service worker);23;1991-06-12;47;;CAS-KN-ZZZ-1
+995;52;discharge;done;Efemena;Chidozie;female;municipal services worker (communal service worker);23;1991-06-12;47;;CAS-KN-ZZZ-1
+995;53;discharge;open;Efemena;Chidozie;female;municipal services worker (communal service worker);23;1991-06-12;47;;CAS-KN-ZZZ-1
+995;54;discharge;done;Efemena;Chidozie;female;municipal services worker (communal service worker);23;1991-06-12;47;;CAS-KN-ZZZ-1
+997;25;isolation;open;Efuose;Kyari;female;school pupil;14;2000-06-15;23;;CAS-KN-ZZZ-1
+997;26;isolation;done;Efuose;Kyari;female;school pupil;14;2000-06-15;23;;CAS-KN-ZZZ-1
+1009;10;burial;open;Chukwudi;Igiebor;male;nurse;32;1982-12-22;8;2015-06-10;CAS-KN-ZZZ-1
+1009;11;burial;done;Chukwudi;Igiebor;male;nurse;32;1982-12-22;8;2015-06-10;CAS-KN-ZZZ-1
+1012;15;isolation;open;Yahaya;Oluehi;male;plywood maker;38;1976-12-11;12;;CAS-KN-ZZZ-1
+1012;16;isolation;done;Yahaya;Oluehi;male;plywood maker;38;1976-12-11;12;;CAS-KN-ZZZ-1
+1016;47;discharge;open;Ogadinma;Sukai;male;teacher;33;1981-09-29;45;2015-07-20;CAS-KN-ZZZ-1
+1016;50;discharge;done;Ogadinma;Sukai;male;teacher;33;1981-09-29;45;2015-07-20;CAS-KN-ZZZ-1
+1016;50;burial;open;Ogadinma;Sukai;male;teacher;33;1981-09-29;45;2015-07-20;CAS-KN-ZZZ-1
+1016;50;discharge;open;Ogadinma;Sukai;male;teacher;33;1981-09-29;45;2015-07-20;CAS-KN-ZZZ-1
+1016;51;burial;done;Ogadinma;Sukai;male;teacher;33;1981-09-29;45;2015-07-20;CAS-KN-ZZZ-1
+1016;51;discharge;done;Ogadinma;Sukai;male;teacher;33;1981-09-29;45;2015-07-20;CAS-KN-ZZZ-1
+1024;15;isolation;open;Chinyere;Keita;male;cellulose operator;29;1986-02-02;12;;CAS-KN-ZZZ-1
+1024;16;isolation;done;Chinyere;Keita;male;cellulose operator;29;1986-02-02;12;;CAS-KN-ZZZ-1
+1028;25;burial;open;Ozor;Kanayo;male;apprentice;15;2000-04-20;19;2015-06-25;CAS-KN-ZZZ-1
+1028;26;burial;done;Ozor;Kanayo;male;apprentice;15;2000-04-20;19;2015-06-25;CAS-KN-ZZZ-1
+1049;29;discharge;open;Stella;Afolabi;female;physician;44;1970-07-15;26;;CAS-KN-ZZZ-1
+1049;30;discharge;done;Stella;Afolabi;female;physician;44;1970-07-15;26;;CAS-KN-ZZZ-1
+1054;18;burial;open;Jomiloju;Isola;male;pilot[aircraft];44;1970-06-10;11;2015-06-18;CAS-KN-ZZZ-1
+1054;19;burial;done;Jomiloju;Isola;male;pilot[aircraft];44;1970-06-10;11;2015-06-18;CAS-KN-ZZZ-1
+1066;43;isolation;open;Gbolagade;Orakwue;male;company lawyer;32;1983-04-20;40;;CAS-KN-ZZZ-1
+1066;44;isolation;done;Gbolagade;Orakwue;male;company lawyer;32;1983-04-20;40;;CAS-KN-ZZZ-1
+1088;50;discharge;open;Olubowale;Iwuji;male;storekeeper (warehouse keeper);51;1964-03-14;44;;CAS-KN-ZZZ-1
+1088;51;discharge;done;Olubowale;Iwuji;male;storekeeper (warehouse keeper);51;1964-03-14;44;;CAS-KN-ZZZ-1
+1100;40;burial;open;Olubowale;Ndukwu;male;police officer;55;1959-10-11;38;2015-07-10;CAS-KN-ZZZ-1
+1100;40;isolation;open;Olubowale;Ndukwu;male;police officer;55;1959-10-11;38;2015-07-10;CAS-KN-ZZZ-1
+1100;43;isolation;done;Olubowale;Ndukwu;male;police officer;55;1959-10-11;38;2015-07-10;CAS-KN-ZZZ-1
+1100;43;burial;done;Olubowale;Ndukwu;male;police officer;55;1959-10-11;38;2015-07-10;CAS-KN-ZZZ-1
+1109;29;lab;overdue;Aryee;Khreis;male;teacher;43;1971-04-07;25;2015-06-29;CAS-KN-ZZZ-1
+1109;29;burial;open;Aryee;Khreis;male;teacher;43;1971-04-07;25;2015-06-29;CAS-KN-ZZZ-1
+1109;30;burial;done;Aryee;Khreis;male;teacher;43;1971-04-07;25;2015-06-29;CAS-KN-ZZZ-1
+1122;47;isolation;open;Chiamaka;Akwashiki;female;teacher;49;1965-06-12;46;;CAS-KN-ZZZ-1
+1122;50;isolation;done;Chiamaka;Akwashiki;female;teacher;49;1965-06-12;46;;CAS-KN-ZZZ-1
+1136;40;burial;open;Obano;Adeseun;male;physician;34;1980-08-15;36;2015-07-10;CAS-KN-ZZZ-1
+1136;40;discharge;open;Obano;Adeseun;male;physician;34;1980-08-15;36;2015-07-10;CAS-KN-ZZZ-1
+1136;43;discharge;done;Obano;Adeseun;male;physician;34;1980-08-15;36;2015-07-10;CAS-KN-ZZZ-1
+1136;43;burial;done;Obano;Adeseun;male;physician;34;1980-08-15;36;2015-07-10;CAS-KN-ZZZ-1
+1144;50;lab;overdue;Olubusadi;Lanlehin;male;flower or shrub or plant grower;38;1976-07-14;45;;CAS-KN-ZZZ-1
+1152;44;burial;open;Adeyinka;Aikhomu;female;building materials production operative;23;1991-08-06;40;2015-07-14;CAS-KN-ZZZ-1
+1152;45;burial;done;Adeyinka;Aikhomu;female;building materials production operative;23;1991-08-06;40;2015-07-14;CAS-KN-ZZZ-1
+1152;45;discharge;open;Adeyinka;Aikhomu;female;building materials production operative;23;1991-08-06;40;2015-07-14;CAS-KN-ZZZ-1
+1152;46;discharge;done;Adeyinka;Aikhomu;female;building materials production operative;23;1991-08-06;40;2015-07-14;CAS-KN-ZZZ-1
+1153;22;burial;open;Ebiwumi;Utondu;female;craft metalworker and brazier;31;1984-02-26;16;2015-06-22;CAS-KN-ZZZ-1
+1153;23;burial;done;Ebiwumi;Utondu;female;craft metalworker and brazier;31;1984-02-26;16;2015-06-22;CAS-KN-ZZZ-1
+1156;43;isolation;open;Madukairo;Maimalari;male;nurse;42;1972-06-06;39;;CAS-KN-ZZZ-1
+1156;44;isolation;done;Madukairo;Maimalari;male;nurse;42;1972-06-06;39;;CAS-KN-ZZZ-1
+1158;40;isolation;open;Ekpeyoawan;Envoh;female;sound engineer;58;1957-01-01;40;;CAS-KN-ZZZ-1
+1158;43;isolation;done;Ekpeyoawan;Envoh;female;sound engineer;58;1957-01-01;40;;CAS-KN-ZZZ-1
+1159;32;isolation;open;Nkimdi;Wahab;male;glazier;35;1980-08-04;30;;CAS-KN-ZZZ-1
+1159;33;isolation;done;Nkimdi;Wahab;male;glazier;35;1980-08-04;30;;CAS-KN-ZZZ-1
+1171;43;isolation;open;Sochikaima;Yobo;female;nurse;28;1987-03-30;40;;CAS-KN-ZZZ-1
+1171;45;isolation;done;Sochikaima;Yobo;female;nurse;28;1987-03-30;40;;CAS-KN-ZZZ-1
+1172;30;isolation;open;Gberbo;Folarin;female;hotel receptionist (receptionist);56;1959-07-03;29;2015-07-02;CAS-KN-ZZZ-1
+1172;31;isolation;done;Gberbo;Folarin;female;hotel receptionist (receptionist);56;1959-07-03;29;2015-07-02;CAS-KN-ZZZ-1
+1172;32;burial;open;Gberbo;Folarin;female;hotel receptionist (receptionist);56;1959-07-03;29;2015-07-02;CAS-KN-ZZZ-1
+1172;33;burial;done;Gberbo;Folarin;female;hotel receptionist (receptionist);56;1959-07-03;29;2015-07-02;CAS-KN-ZZZ-1
+1190;22;burial;open;Olatunji;Rumfa;male;animator;51;1963-06-22;17;2015-06-22;CAS-KN-ZZZ-1
+1190;23;burial;done;Olatunji;Rumfa;male;animator;51;1963-06-22;17;2015-06-22;CAS-KN-ZZZ-1
+1197;15;discharge;open;Ciara;Birninkudu;female;biotechnologist;30;1984-08-14;9;;CAS-KN-ZZZ-1
+1197;16;discharge;done;Ciara;Birninkudu;female;biotechnologist;30;1984-08-14;9;;CAS-KN-ZZZ-1
+1199;10;isolation;open;Anika;Brann;female;astronomer;37;1977-12-31;8;;CAS-KN-ZZZ-1
+1199;11;isolation;done;Anika;Brann;female;astronomer;37;1977-12-31;8;;CAS-KN-ZZZ-1
+1207;46;burial;open;Ada;Birninkudu;female;teacher;59;1955-08-16;40;2015-07-16;CAS-KN-ZZZ-1
+1207;47;burial;done;Ada;Birninkudu;female;teacher;59;1955-08-16;40;2015-07-16;CAS-KN-ZZZ-1
+1207;47;discharge;open;Ada;Birninkudu;female;teacher;59;1955-08-16;40;2015-07-16;CAS-KN-ZZZ-1
+1207;50;discharge;done;Ada;Birninkudu;female;teacher;59;1955-08-16;40;2015-07-16;CAS-KN-ZZZ-1
+1215;19;isolation;open;Adejoke;Novia;female;craft glass etcher;45;1970-03-24;19;2015-07-20;CAS-KN-ZZZ-1
+1215;22;isolation;done;Adejoke;Novia;female;craft glass etcher;45;1970-03-24;19;2015-07-20;CAS-KN-ZZZ-1
+1215;50;burial;open;Adejoke;Novia;female;craft glass etcher;45;1970-03-24;19;2015-07-20;CAS-KN-ZZZ-1
+1215;52;burial;done;Adejoke;Novia;female;craft glass etcher;45;1970-03-24;19;2015-07-20;CAS-KN-ZZZ-1
+1216;36;isolation;open;Temilore;Ossai;female;textile printer;22;1992-09-22;33;2015-07-14;CAS-KN-ZZZ-1
+1216;37;isolation;done;Temilore;Ossai;female;textile printer;22;1992-09-22;33;2015-07-14;CAS-KN-ZZZ-1
+1216;44;burial;open;Temilore;Ossai;female;textile printer;22;1992-09-22;33;2015-07-14;CAS-KN-ZZZ-1
+1216;45;burial;done;Temilore;Ossai;female;textile printer;22;1992-09-22;33;2015-07-14;CAS-KN-ZZZ-1
+1223;11;isolation;open;Chidinma;Popoola;female;typesetter;64;1951-03-23;11;2015-06-12;CAS-KN-ZZZ-1
+1223;12;burial;open;Chidinma;Popoola;female;typesetter;64;1951-03-23;11;2015-06-12;CAS-KN-ZZZ-1
+1223;12;isolation;done;Chidinma;Popoola;female;typesetter;64;1951-03-23;11;2015-06-12;CAS-KN-ZZZ-1
+1223;15;burial;done;Chidinma;Popoola;female;typesetter;64;1951-03-23;11;2015-06-12;CAS-KN-ZZZ-1
+1225;40;discharge;open;Chibuzoa;Arinze;male;soldier;41;1973-11-28;38;2015-07-13;CAS-KN-ZZZ-1
+1225;43;discharge;done;Chibuzoa;Arinze;male;soldier;41;1973-11-28;38;2015-07-13;CAS-KN-ZZZ-1
+1225;43;burial;open;Chibuzoa;Arinze;male;soldier;41;1973-11-28;38;2015-07-13;CAS-KN-ZZZ-1
+1225;44;burial;done;Chibuzoa;Arinze;male;soldier;41;1973-11-28;38;2015-07-13;CAS-KN-ZZZ-1
+1230;46;isolation;open;Olatunde;Uzoenyi;male;pollster;30;1985-05-15;46;;CAS-KN-ZZZ-1
+1230;47;isolation;done;Olatunde;Uzoenyi;male;pollster;30;1985-05-15;46;;CAS-KN-ZZZ-1
+1232;43;isolation;open;Oluwafunmilayo;Obademi;female;power truck driver;48;1967-01-28;39;;CAS-KN-ZZZ-1
+1232;44;isolation;done;Oluwafunmilayo;Obademi;female;power truck driver;48;1967-01-28;39;;CAS-KN-ZZZ-1
+1238;44;isolation;open;Asuquo;Brigidi;male;nurse;47;1967-12-27;44;2015-07-20;CAS-KN-ZZZ-1
+1238;45;isolation;done;Asuquo;Brigidi;male;nurse;47;1967-12-27;44;2015-07-20;CAS-KN-ZZZ-1
+1238;50;burial;open;Asuquo;Brigidi;male;nurse;47;1967-12-27;44;2015-07-20;CAS-KN-ZZZ-1
+1238;51;burial;done;Asuquo;Brigidi;male;nurse;47;1967-12-27;44;2015-07-20;CAS-KN-ZZZ-1
+1242;12;burial;open;Ayodele;Anka;male;driver of motor vehicles (motor vehicle driver);43;1971-09-26;9;2015-06-12;CAS-KN-ZZZ-1
+1242;15;burial;done;Ayodele;Anka;male;driver of motor vehicles (motor vehicle driver);43;1971-09-26;9;2015-06-12;CAS-KN-ZZZ-1
+1247;37;isolation;open;Osazemen;Nguirmamaramama;male;apprentice;16;1998-08-31;36;2015-07-13;CAS-KN-ZZZ-1
+1247;38;isolation;done;Osazemen;Nguirmamaramama;male;apprentice;16;1998-08-31;36;2015-07-13;CAS-KN-ZZZ-1
+1247;43;burial;open;Osazemen;Nguirmamaramama;male;apprentice;16;1998-08-31;36;2015-07-13;CAS-KN-ZZZ-1
+1247;44;burial;done;Osazemen;Nguirmamaramama;male;apprentice;16;1998-08-31;36;2015-07-13;CAS-KN-ZZZ-1
+1259;19;burial;open;Ikharo;Idoko;male;student;18;1996-09-17;16;2015-06-19;CAS-KN-ZZZ-1
+1259;22;burial;done;Ikharo;Idoko;male;student;18;1996-09-17;16;2015-06-19;CAS-KN-ZZZ-1
+1265;26;burial;open;Bukola;Babangida;female;conductor (tram or bus);55;1960-05-18;23;2015-06-26;CAS-KN-ZZZ-1
+1265;29;burial;done;Bukola;Babangida;female;conductor (tram or bus);55;1960-05-18;23;2015-06-26;CAS-KN-ZZZ-1
+1267;25;burial;open;Ololade;Oyesanya;male;stonemason or stonecutter (stonemason);49;1965-09-30;24;2015-06-25;CAS-KN-ZZZ-1
+1267;25;isolation;open;Ololade;Oyesanya;male;stonemason or stonecutter (stonemason);49;1965-09-30;24;2015-06-25;CAS-KN-ZZZ-1
+1267;26;burial;done;Ololade;Oyesanya;male;stonemason or stonecutter (stonemason);49;1965-09-30;24;2015-06-25;CAS-KN-ZZZ-1
+1267;26;isolation;done;Ololade;Oyesanya;male;stonemason or stonecutter (stonemason);49;1965-09-30;24;2015-06-25;CAS-KN-ZZZ-1
+1269;36;isolation;open;Esomchi;Sadiq;female;school pupil;13;2001-06-12;33;;CAS-KN-ZZZ-1
+1269;37;isolation;done;Esomchi;Sadiq;female;school pupil;13;2001-06-12;33;;CAS-KN-ZZZ-1
+1273;12;burial;open;Nkimdi;Fatai;male;livestock farmer;49;1965-06-17;9;2015-06-12;CAS-KN-ZZZ-1
+1273;15;burial;done;Nkimdi;Fatai;male;livestock farmer;49;1965-06-17;9;2015-06-12;CAS-KN-ZZZ-1
+1282;22;lab;overdue;Arome;Kareem;male;music director;31;1983-06-18;18;2015-06-22;CAS-KN-ZZZ-1
+1282;22;burial;open;Arome;Kareem;male;music director;31;1983-06-18;18;2015-06-22;CAS-KN-ZZZ-1
+1282;23;burial;done;Arome;Kareem;male;music director;31;1983-06-18;18;2015-06-22;CAS-KN-ZZZ-1
+1282;23;isolation;open;Arome;Kareem;male;music director;31;1983-06-18;18;2015-06-22;CAS-KN-ZZZ-1
+1282;24;isolation;done;Arome;Kareem;male;music director;31;1983-06-18;18;2015-06-22;CAS-KN-ZZZ-1
+1283;50;lab;overdue;Oghosa;Ilerika;male;soldier;51;1964-03-03;46;;CAS-KN-ZZZ-1
+1283;50;isolation;open;Oghosa;Ilerika;male;soldier;51;1964-03-03;46;;CAS-KN-ZZZ-1
+1283;51;isolation;done;Oghosa;Ilerika;male;soldier;51;1964-03-03;46;;CAS-KN-ZZZ-1
+1284;23;isolation;open;Adesoye;Novia;female;rail vehicle mechanic;60;1954-08-13;23;2015-06-29;CAS-KN-ZZZ-1
+1284;24;isolation;done;Adesoye;Novia;female;rail vehicle mechanic;60;1954-08-13;23;2015-06-29;CAS-KN-ZZZ-1
+1284;29;burial;open;Adesoye;Novia;female;rail vehicle mechanic;60;1954-08-13;23;2015-06-29;CAS-KN-ZZZ-1
+1284;30;burial;done;Adesoye;Novia;female;rail vehicle mechanic;60;1954-08-13;23;2015-06-29;CAS-KN-ZZZ-1
+1302;44;isolation;open;Oluremi;Rumfa;female;student;18;1996-12-17;43;;CAS-KN-ZZZ-1
+1302;45;isolation;done;Oluremi;Rumfa;female;student;18;1996-12-17;43;;CAS-KN-ZZZ-1
+1305;32;isolation;open;Ekom;Onikeke;female;school pupil;17;1997-09-24;31;2015-07-08;CAS-KN-ZZZ-1
+1305;33;isolation;done;Ekom;Onikeke;female;school pupil;17;1997-09-24;31;2015-07-08;CAS-KN-ZZZ-1
+1305;38;burial;open;Ekom;Onikeke;female;school pupil;17;1997-09-24;31;2015-07-08;CAS-KN-ZZZ-1
+1305;39;burial;done;Ekom;Onikeke;female;school pupil;17;1997-09-24;31;2015-07-08;CAS-KN-ZZZ-1
+1306;33;discharge;open;Nas;Sowande;male;interior designer interior designer;30;1985-01-31;30;;CAS-KN-ZZZ-1
+1306;36;discharge;done;Nas;Sowande;male;interior designer interior designer;30;1985-01-31;30;;CAS-KN-ZZZ-1
+1308;43;discharge;open;Monijesu;Adenihun;female;soldier;51;1963-06-13;39;2015-07-16;CAS-KN-ZZZ-1
+1308;44;discharge;done;Monijesu;Adenihun;female;soldier;51;1963-06-13;39;2015-07-16;CAS-KN-ZZZ-1
+1308;44;discharge;open;Monijesu;Adenihun;female;soldier;51;1963-06-13;39;2015-07-16;CAS-KN-ZZZ-1
+1308;45;discharge;done;Monijesu;Adenihun;female;soldier;51;1963-06-13;39;2015-07-16;CAS-KN-ZZZ-1
+1308;46;burial;open;Monijesu;Adenihun;female;soldier;51;1963-06-13;39;2015-07-16;CAS-KN-ZZZ-1
+1308;47;burial;done;Monijesu;Adenihun;female;soldier;51;1963-06-13;39;2015-07-16;CAS-KN-ZZZ-1
+1309;10;isolation;open;Osose;Adenowo;female;pipe fitter;55;1959-03-11;10;2015-06-17;CAS-KN-ZZZ-1
+1309;11;isolation;done;Osose;Adenowo;female;pipe fitter;55;1959-03-11;10;2015-06-17;CAS-KN-ZZZ-1
+1309;17;burial;open;Osose;Adenowo;female;pipe fitter;55;1959-03-11;10;2015-06-17;CAS-KN-ZZZ-1
+1309;19;burial;done;Osose;Adenowo;female;pipe fitter;55;1959-03-11;10;2015-06-17;CAS-KN-ZZZ-1
+1320;51;discharge;open;Dere;Eteimo;male;warehouse clerk;58;1956-08-29;47;;CAS-KN-ZZZ-1
+1320;52;discharge;done;Dere;Eteimo;male;warehouse clerk;58;1956-08-29;47;;CAS-KN-ZZZ-1
+1320;52;discharge;open;Dere;Eteimo;male;warehouse clerk;58;1956-08-29;47;;CAS-KN-ZZZ-1
+1320;53;discharge;done;Dere;Eteimo;male;warehouse clerk;58;1956-08-29;47;;CAS-KN-ZZZ-1
+1321;12;burial;open;Ogoma;Edoheart;female;school pupil;12;2003-11-04;9;2015-06-12;CAS-KN-ZZZ-1
+1321;15;burial;done;Ogoma;Edoheart;female;school pupil;12;2003-11-04;9;2015-06-12;CAS-KN-ZZZ-1
+1329;36;lab;overdue;Osarenren ;Aniche;male;harpooner;63;1951-10-29;32;;CAS-KN-ZZZ-1
+1329;36;isolation;open;Osarenren ;Aniche;male;harpooner;63;1951-10-29;32;;CAS-KN-ZZZ-1
+1329;38;isolation;done;Osarenren ;Aniche;male;harpooner;63;1951-10-29;32;;CAS-KN-ZZZ-1
+1333;18;burial;open;Olatunbosun;Eguavoen;male;police officer;47;1967-08-16;15;2015-06-18;CAS-KN-ZZZ-1
+1333;19;burial;done;Olatunbosun;Eguavoen;male;police officer;47;1967-08-16;15;2015-06-18;CAS-KN-ZZZ-1
+1345;37;isolation;open;Olubowale;Kama;male;meteorologist;36;1978-05-06;37;;CAS-KN-ZZZ-1
+1345;38;isolation;done;Olubowale;Kama;male;meteorologist;36;1978-05-06;37;;CAS-KN-ZZZ-1
+1361;47;burial;open;Ololade;Baruwa;male;make-up artist and wigmaker;26;1988-12-12;44;2015-07-17;CAS-KN-ZZZ-1
+1361;50;burial;done;Ololade;Baruwa;male;make-up artist and wigmaker;26;1988-12-12;44;2015-07-17;CAS-KN-ZZZ-1
+1365;15;lab;overdue;Emmanuela;Adadevoh;female;soldier;46;1968-07-27;11;2015-06-15;CAS-KN-ZZZ-1
+1365;15;burial;open;Emmanuela;Adadevoh;female;soldier;46;1968-07-27;11;2015-06-15;CAS-KN-ZZZ-1
+1365;17;burial;done;Emmanuela;Adadevoh;female;soldier;46;1968-07-27;11;2015-06-15;CAS-KN-ZZZ-1
+1375;25;burial;open;Wuraola;Akpovi;female;building machine operator;48;1966-01-10;23;2015-06-25;CAS-KN-ZZZ-1
+1375;26;burial;done;Wuraola;Akpovi;female;building machine operator;48;1966-01-10;23;2015-06-25;CAS-KN-ZZZ-1
+1376;22;discharge;open;Nnaemeka;Uche;male;school pupil;16;1999-11-01;16;;CAS-KN-ZZZ-1
+1376;23;discharge;done;Nnaemeka;Uche;male;school pupil;16;1999-11-01;16;;CAS-KN-ZZZ-1
+1383;16;isolation;open;Lola;Adokwe;female;student;21;1993-05-08;15;2015-07-09;CAS-KN-ZZZ-1
+1383;17;isolation;done;Lola;Adokwe;female;student;21;1993-05-08;15;2015-07-09;CAS-KN-ZZZ-1
+1383;39;burial;open;Lola;Adokwe;female;student;21;1993-05-08;15;2015-07-09;CAS-KN-ZZZ-1
+1383;40;burial;done;Lola;Adokwe;female;student;21;1993-05-08;15;2015-07-09;CAS-KN-ZZZ-1
+1390;38;isolation;open;Adze;Habe;male;mining finisher (mining dresser);26;1988-11-24;38;;CAS-KN-ZZZ-1
+1390;39;isolation;done;Adze;Habe;male;mining finisher (mining dresser);26;1988-11-24;38;;CAS-KN-ZZZ-1
+1391;29;isolation;open;Enoma;Rumfa;male;student;19;1995-07-09;26;;CAS-KN-ZZZ-1
+1391;30;isolation;done;Enoma;Rumfa;male;student;19;1995-07-09;26;;CAS-KN-ZZZ-1
+1393;15;burial;open;Ovieoghene;Igiebor;male;school pupil;17;1997-10-23;11;2015-06-15;CAS-KN-ZZZ-1
+1393;16;burial;done;Ovieoghene;Igiebor;male;school pupil;17;1997-10-23;11;2015-06-15;CAS-KN-ZZZ-1
+1398;36;isolation;open;Kairaluchukwu;Imasuen;female;ecologist (environmentalist);44;1970-09-06;36;2015-07-10;CAS-KN-ZZZ-1
+1398;37;isolation;done;Kairaluchukwu;Imasuen;female;ecologist (environmentalist);44;1970-09-06;36;2015-07-10;CAS-KN-ZZZ-1
+1398;40;burial;open;Kairaluchukwu;Imasuen;female;ecologist (environmentalist);44;1970-09-06;36;2015-07-10;CAS-KN-ZZZ-1
+1398;43;burial;done;Kairaluchukwu;Imasuen;female;ecologist (environmentalist);44;1970-09-06;36;2015-07-10;CAS-KN-ZZZ-1
+1399;25;burial;open;Makinde;Sherif;male;private detective;36;1978-02-11;19;2015-06-25;CAS-KN-ZZZ-1
+1399;29;burial;done;Makinde;Sherif;male;private detective;36;1978-02-11;19;2015-06-25;CAS-KN-ZZZ-1
+1402;43;isolation;open;Obehi;Solaja;male;psychiatrist;25;1989-07-10;40;2015-07-15;CAS-KN-ZZZ-1
+1402;44;isolation;done;Obehi;Solaja;male;psychiatrist;25;1989-07-10;40;2015-07-15;CAS-KN-ZZZ-1
+1402;45;burial;open;Obehi;Solaja;male;psychiatrist;25;1989-07-10;40;2015-07-15;CAS-KN-ZZZ-1
+1402;46;burial;done;Obehi;Solaja;male;psychiatrist;25;1989-07-10;40;2015-07-15;CAS-KN-ZZZ-1
+1405;36;lab;overdue;Chukwudi;Izonritei;male;building and road machinery mechanic;58;1956-11-10;32;2015-07-06;CAS-KN-ZZZ-1
+1405;36;burial;open;Chukwudi;Izonritei;male;building and road machinery mechanic;58;1956-11-10;32;2015-07-06;CAS-KN-ZZZ-1
+1405;38;burial;done;Chukwudi;Izonritei;male;building and road machinery mechanic;58;1956-11-10;32;2015-07-06;CAS-KN-ZZZ-1
+1414;24;isolation;open;Folaranmi;Abdullahi;male;cable car driver;39;1976-02-20;24;2015-06-26;CAS-KN-ZZZ-1
+1414;25;isolation;done;Folaranmi;Abdullahi;male;cable car driver;39;1976-02-20;24;2015-06-26;CAS-KN-ZZZ-1
+1414;26;burial;open;Folaranmi;Abdullahi;male;cable car driver;39;1976-02-20;24;2015-06-26;CAS-KN-ZZZ-1
+1414;29;burial;done;Folaranmi;Abdullahi;male;cable car driver;39;1976-02-20;24;2015-06-26;CAS-KN-ZZZ-1
+1425;40;isolation;open;Mesoma;Obiozor;female;school pupil;16;1998-11-24;39;2015-07-17;CAS-KN-ZZZ-1
+1425;43;isolation;done;Mesoma;Obiozor;female;school pupil;16;1998-11-24;39;2015-07-17;CAS-KN-ZZZ-1
+1425;47;burial;open;Mesoma;Obiozor;female;school pupil;16;1998-11-24;39;2015-07-17;CAS-KN-ZZZ-1
+1425;50;burial;done;Mesoma;Obiozor;female;school pupil;16;1998-11-24;39;2015-07-17;CAS-KN-ZZZ-1
+1426;45;isolation;open;Ndubuisi;Lagelu;male;psychotherapist;55;1959-12-19;44;;CAS-KN-ZZZ-1
+1426;46;isolation;done;Ndubuisi;Lagelu;male;psychotherapist;55;1959-12-19;44;;CAS-KN-ZZZ-1
+1432;19;isolation;open;Iyokpesomi;Oshikoya;female;physician;60;1954-10-07;19;;CAS-KN-ZZZ-1
+1432;22;isolation;done;Iyokpesomi;Oshikoya;female;physician;60;1954-10-07;19;;CAS-KN-ZZZ-1
+1440;31;burial;open;Ciara;Ogbonna;female;burial service;57;1957-07-07;29;2015-07-01;CAS-KN-ZZZ-1
+1440;33;burial;done;Ciara;Ogbonna;female;burial service;57;1957-07-07;29;2015-07-01;CAS-KN-ZZZ-1
+1450;36;isolation;open;Adeniji;Somide;male;student;20;1994-12-30;33;;CAS-KN-ZZZ-1
+1450;38;isolation;done;Adeniji;Somide;male;student;20;1994-12-30;33;;CAS-KN-ZZZ-1
+1456;29;burial;open;Ikharo;Ezeh;male;shunting team manager;26;1988-10-22;24;2015-06-29;CAS-KN-ZZZ-1
+1456;30;burial;done;Ikharo;Ezeh;male;shunting team manager;26;1988-10-22;24;2015-06-29;CAS-KN-ZZZ-1
+1463;19;burial;open;Ikeoluwatomiwaopayemi;Jibowu;female;physician;23;1992-07-04;15;2015-06-19;CAS-KN-ZZZ-1
+1463;22;burial;done;Ikeoluwatomiwaopayemi;Jibowu;female;physician;23;1992-07-04;15;2015-06-19;CAS-KN-ZZZ-1
+1472;33;burial;open;Gollibe;Ekpo;female;fashion designer;39;1975-04-09;31;2015-07-03;CAS-KN-ZZZ-1
+1472;36;burial;done;Gollibe;Ekpo;female;fashion designer;39;1975-04-09;31;2015-07-03;CAS-KN-ZZZ-1
+1481;18;isolation;open;Bukola;Ajibade;female;management accountant;58;1956-05-10;16;;CAS-KN-ZZZ-1
+1481;22;isolation;done;Bukola;Ajibade;female;management accountant;58;1956-05-10;16;;CAS-KN-ZZZ-1
+1482;31;isolation;open;Amara;Ukpai;female;burial service;59;1956-04-21;30;;CAS-KN-ZZZ-1
+1482;33;isolation;done;Amara;Ukpai;female;burial service;59;1956-04-21;30;;CAS-KN-ZZZ-1
+1490;33;burial;open;Chicobe;Akpala;female;soldier;53;1962-02-28;30;2015-07-03;CAS-KN-ZZZ-1
+1490;33;isolation;open;Chicobe;Akpala;female;soldier;53;1962-02-28;30;2015-07-03;CAS-KN-ZZZ-1
+1490;36;burial;done;Chicobe;Akpala;female;soldier;53;1962-02-28;30;2015-07-03;CAS-KN-ZZZ-1
+1490;36;isolation;done;Chicobe;Akpala;female;soldier;53;1962-02-28;30;2015-07-03;CAS-KN-ZZZ-1
+1500;44;isolation;open;Precious;Biobaku;female;nurse;37;1978-03-22;43;2015-07-15;CAS-KN-ZZZ-1
+1500;45;burial;open;Precious;Biobaku;female;nurse;37;1978-03-22;43;2015-07-15;CAS-KN-ZZZ-1
+1500;45;isolation;done;Precious;Biobaku;female;nurse;37;1978-03-22;43;2015-07-15;CAS-KN-ZZZ-1
+1500;47;burial;done;Precious;Biobaku;female;nurse;37;1978-03-22;43;2015-07-15;CAS-KN-ZZZ-1
+1536;26;burial;open;Olamide;Birninkudu;female;flight engineer;55;1959-12-21;24;2015-06-26;CAS-KN-ZZZ-1
+1536;29;burial;done;Olamide;Birninkudu;female;flight engineer;55;1959-12-21;24;2015-06-26;CAS-KN-ZZZ-1
+1537;24;burial;open;Ololade;Hussaini;female;teacher;49;1965-08-18;22;2015-06-24;CAS-KN-ZZZ-1
+1537;25;burial;done;Ololade;Hussaini;female;teacher;49;1965-08-18;22;2015-06-24;CAS-KN-ZZZ-1
+1538;47;burial;open;Onyinye;Isibor;male;high-rise work specialist (steeplejack);22;1992-08-17;44;2015-07-17;CAS-KN-ZZZ-1
+1538;50;burial;done;Onyinye;Isibor;male;high-rise work specialist (steeplejack);22;1992-08-17;44;2015-07-17;CAS-KN-ZZZ-1
+1548;10;isolation;open;Gbolagade;Atta;male;student;21;1994-10-05;10;;CAS-KN-ZZZ-1
+1548;11;isolation;done;Gbolagade;Atta;male;student;21;1994-10-05;10;;CAS-KN-ZZZ-1
+1558;33;burial;open;Iyokpesomi;Amueke;female;chemical industries operative (chemical operator);52;1962-06-09;32;2015-07-03;CAS-KN-ZZZ-1
+1558;33;isolation;open;Iyokpesomi;Amueke;female;chemical industries operative (chemical operator);52;1962-06-09;32;2015-07-03;CAS-KN-ZZZ-1
+1558;36;burial;done;Iyokpesomi;Amueke;female;chemical industries operative (chemical operator);52;1962-06-09;32;2015-07-03;CAS-KN-ZZZ-1
+1558;36;isolation;done;Iyokpesomi;Amueke;female;chemical industries operative (chemical operator);52;1962-06-09;32;2015-07-03;CAS-KN-ZZZ-1
+1564;22;burial;open;Bola;Bozimo;female;foreign exchange clerk;55;1959-12-11;18;2015-06-22;CAS-KN-ZZZ-1
+1564;23;burial;done;Bola;Bozimo;female;foreign exchange clerk;55;1959-12-11;18;2015-06-22;CAS-KN-ZZZ-1
+1569;19;isolation;open;Olubowale;Oyedepo;male;high-rise work specialist (steeplejack);36;1979-01-26;18;;CAS-KN-ZZZ-1
+1569;22;isolation;done;Olubowale;Oyedepo;male;high-rise work specialist (steeplejack);36;1979-01-26;18;;CAS-KN-ZZZ-1
+1579;15;isolation;open;Chidiebere;Obleajula;male;scene-shifter;28;1987-04-24;12;;CAS-KN-ZZZ-1
+1579;17;isolation;done;Chidiebere;Obleajula;male;scene-shifter;28;1987-04-24;12;;CAS-KN-ZZZ-1
+1581;29;lab;overdue;Akintommywa;Habe;male;school pupil;16;1999-01-18;25;;CAS-KN-ZZZ-1
+1582;43;discharge;open;Agbomma;Omo;female;radio and tv technician;57;1958-06-03;40;;CAS-KN-ZZZ-1
+1582;44;discharge;done;Agbomma;Omo;female;radio and tv technician;57;1958-06-03;40;;CAS-KN-ZZZ-1
+1597;45;isolation;open;Chiazokam Chichi;Daura;female;horse breeder (horse breeder and trainer);27;1987-08-16;44;2015-07-17;CAS-KN-ZZZ-1
+1597;46;isolation;done;Chiazokam Chichi;Daura;female;horse breeder (horse breeder and trainer);27;1987-08-16;44;2015-07-17;CAS-KN-ZZZ-1
+1597;47;burial;open;Chiazokam Chichi;Daura;female;horse breeder (horse breeder and trainer);27;1987-08-16;44;2015-07-17;CAS-KN-ZZZ-1
+1597;50;burial;done;Chiazokam Chichi;Daura;female;horse breeder (horse breeder and trainer);27;1987-08-16;44;2015-07-17;CAS-KN-ZZZ-1
+1609;43;lab;overdue;Omolade;Nworuh;male;physician;57;1958-04-15;36;;CAS-KN-ZZZ-1
+1616;26;burial;open;Adze;Ajunwa;male;ice-cream maker;46;1968-06-07;22;2015-06-26;CAS-KN-ZZZ-1
+1616;29;burial;done;Adze;Ajunwa;male;ice-cream maker;46;1968-06-07;22;2015-06-26;CAS-KN-ZZZ-1
+1638;18;burial;open;Iniobong;Barka;female;student;18;1996-07-17;16;2015-06-18;CAS-KN-ZZZ-1
+1638;22;burial;done;Iniobong;Barka;female;student;18;1996-07-17;16;2015-06-18;CAS-KN-ZZZ-1
+1641;32;isolation;open;Olufunso;Akilu;male;school pupil;12;2002-09-14;31;2015-07-03;CAS-KN-ZZZ-1
+1641;33;burial;open;Olufunso;Akilu;male;school pupil;12;2002-09-14;31;2015-07-03;CAS-KN-ZZZ-1
+1641;33;isolation;done;Olufunso;Akilu;male;school pupil;12;2002-09-14;31;2015-07-03;CAS-KN-ZZZ-1
+1641;36;burial;done;Olufunso;Akilu;male;school pupil;12;2002-09-14;31;2015-07-03;CAS-KN-ZZZ-1
+1646;44;isolation;open;Ciara;Mohamed;female;bookbinder;28;1986-11-11;40;2015-07-17;CAS-KN-ZZZ-1
+1646;46;isolation;done;Ciara;Mohamed;female;bookbinder;28;1986-11-11;40;2015-07-17;CAS-KN-ZZZ-1
+1646;47;burial;open;Ciara;Mohamed;female;bookbinder;28;1986-11-11;40;2015-07-17;CAS-KN-ZZZ-1
+1646;50;burial;done;Ciara;Mohamed;female;bookbinder;28;1986-11-11;40;2015-07-17;CAS-KN-ZZZ-1
+1651;43;isolation;open;Kairaluchukwu;Oresanya;female;viniculturist (wine-grower);25;1990-05-04;40;;CAS-KN-ZZZ-1
+1651;44;isolation;done;Kairaluchukwu;Oresanya;female;viniculturist (wine-grower);25;1990-05-04;40;;CAS-KN-ZZZ-1
+1653;47;discharge;open;Oghenetejiri;Eteimo;male;station manager;30;1984-12-08;45;;CAS-KN-ZZZ-1
+1653;50;discharge;done;Oghenetejiri;Eteimo;male;station manager;30;1984-12-08;45;;CAS-KN-ZZZ-1
+1666;19;burial;open;Ugoh;Ayeni;male;car mechanic ;27;1987-11-20;17;2015-06-19;CAS-KN-ZZZ-1
+1666;19;isolation;open;Ugoh;Ayeni;male;car mechanic ;27;1987-11-20;17;2015-06-19;CAS-KN-ZZZ-1
+1666;22;isolation;done;Ugoh;Ayeni;male;car mechanic ;27;1987-11-20;17;2015-06-19;CAS-KN-ZZZ-1
+1666;22;burial;done;Ugoh;Ayeni;male;car mechanic ;27;1987-11-20;17;2015-06-19;CAS-KN-ZZZ-1
+1667;25;isolation;open;Oladipo;Onyemachi;male;physician;59;1956-12-04;24;2015-06-29;CAS-KN-ZZZ-1
+1667;26;isolation;done;Oladipo;Onyemachi;male;physician;59;1956-12-04;24;2015-06-29;CAS-KN-ZZZ-1
+1667;29;burial;open;Oladipo;Onyemachi;male;physician;59;1956-12-04;24;2015-06-29;CAS-KN-ZZZ-1
+1667;30;burial;done;Oladipo;Onyemachi;male;physician;59;1956-12-04;24;2015-06-29;CAS-KN-ZZZ-1
+1671;22;isolation;open;Oshodi;Nwachi;male;ethnographer;49;1965-07-17;18;;CAS-KN-ZZZ-1
+1671;23;isolation;done;Oshodi;Nwachi;male;ethnographer;49;1965-07-17;18;;CAS-KN-ZZZ-1
+1693;31;isolation;open;Osose;Adeshina;female;burial service;41;1973-11-21;30;;CAS-KN-ZZZ-1
+1693;32;isolation;done;Osose;Adeshina;female;burial service;41;1973-11-21;30;;CAS-KN-ZZZ-1
+1701;43;discharge;open;Enosaze;Obaje;male;physician;34;1980-11-28;39;;CAS-KN-ZZZ-1
+1701;44;discharge;done;Enosaze;Obaje;male;physician;34;1980-11-28;39;;CAS-KN-ZZZ-1
+1703;18;isolation;open;Okomah;Amoo;male;multimedia programmer (web site designer);57;1958-04-24;16;;CAS-KN-ZZZ-1
+1703;19;isolation;done;Okomah;Amoo;male;multimedia programmer (web site designer);57;1958-04-24;16;;CAS-KN-ZZZ-1
+1710;37;isolation;open;Uju;Kingdom;female;hardener;41;1974-03-30;36;;CAS-KN-ZZZ-1
+1710;38;isolation;done;Uju;Kingdom;female;hardener;41;1974-03-30;36;;CAS-KN-ZZZ-1
+1714;26;isolation;open;Ekpeyoawan;Onubogu;female;tractor-driver;36;1978-07-23;26;2015-06-29;CAS-KN-ZZZ-1
+1714;29;isolation;done;Ekpeyoawan;Onubogu;female;tractor-driver;36;1978-07-23;26;2015-06-29;CAS-KN-ZZZ-1
+1714;29;burial;open;Ekpeyoawan;Onubogu;female;tractor-driver;36;1978-07-23;26;2015-06-29;CAS-KN-ZZZ-1
+1714;31;burial;done;Ekpeyoawan;Onubogu;female;tractor-driver;36;1978-07-23;26;2015-06-29;CAS-KN-ZZZ-1
+1720;10;burial;open;Onyinye;Babangida;male;stonemason or stonecutter (stonemason);32;1983-01-25;8;2015-06-10;CAS-KN-ZZZ-1
+1720;12;burial;done;Onyinye;Babangida;male;stonemason or stonecutter (stonemason);32;1983-01-25;8;2015-06-10;CAS-KN-ZZZ-1
+1721;51;discharge;open;Akintommywa;Afikuyomi;male;warehouse clerk;47;1968-05-15;47;;CAS-KN-ZZZ-1
+1721;52;discharge;done;Akintommywa;Afikuyomi;male;warehouse clerk;47;1968-05-15;47;;CAS-KN-ZZZ-1
+1725;47;isolation;open;Olubowale;Salami;male;teacher;24;1990-07-31;46;;CAS-KN-ZZZ-1
+1725;50;isolation;done;Olubowale;Salami;male;teacher;24;1990-07-31;46;;CAS-KN-ZZZ-1
+1730;33;burial;open;Chidera;Chikelu;female;student;20;1994-01-07;29;2015-07-03;CAS-KN-ZZZ-1
+1730;36;burial;done;Chidera;Chikelu;female;student;20;1994-01-07;29;2015-07-03;CAS-KN-ZZZ-1
+1746;23;burial;open;Odera;Adenowo;female;teacher;48;1967-11-05;22;2015-06-23;CAS-KN-ZZZ-1
+1746;24;burial;done;Odera;Adenowo;female;teacher;48;1967-11-05;22;2015-06-23;CAS-KN-ZZZ-1
+1759;44;burial;open;Ogunde;Agbo;male;police officer;29;1986-02-05;40;2015-07-14;CAS-KN-ZZZ-1
+1759;46;burial;done;Ogunde;Agbo;male;police officer;29;1986-02-05;40;2015-07-14;CAS-KN-ZZZ-1
+1766;15;lab;overdue;Boumi;Ekpotu;female;burial service;37;1977-09-15;11;2015-06-29;CAS-KN-ZZZ-1
+1766;15;isolation;open;Boumi;Ekpotu;female;burial service;37;1977-09-15;11;2015-06-29;CAS-KN-ZZZ-1
+1766;16;isolation;done;Boumi;Ekpotu;female;burial service;37;1977-09-15;11;2015-06-29;CAS-KN-ZZZ-1
+1766;29;burial;open;Boumi;Ekpotu;female;burial service;37;1977-09-15;11;2015-06-29;CAS-KN-ZZZ-1
+1766;30;burial;done;Boumi;Ekpotu;female;burial service;37;1977-09-15;11;2015-06-29;CAS-KN-ZZZ-1
+1769;40;isolation;open;Ebiwumi;Yaji;female;props master (properties staff member);36;1979-05-13;38;;CAS-KN-ZZZ-1
+1769;43;isolation;done;Ebiwumi;Yaji;female;props master (properties staff member);36;1979-05-13;38;;CAS-KN-ZZZ-1
+1770;29;burial;open;Precious;Babalola;female;mining mechanic (mining fitter);47;1967-08-30;22;2015-06-29;CAS-KN-ZZZ-1
+1770;30;burial;done;Precious;Babalola;female;mining mechanic (mining fitter);47;1967-08-30;22;2015-06-29;CAS-KN-ZZZ-1
+1777;50;discharge;open;Perosola;Fasanya;female;electrical equipment inspector;35;1979-12-15;43;;CAS-KN-ZZZ-1
+1777;51;discharge;done;Perosola;Fasanya;female;electrical equipment inspector;35;1979-12-15;43;;CAS-KN-ZZZ-1
+1783;23;burial;open;Adaku;Orakwue;female;production manager in textile industry;56;1959-05-05;19;2015-06-23;CAS-KN-ZZZ-1
+1783;24;burial;done;Adaku;Orakwue;female;production manager in textile industry;56;1959-05-05;19;2015-06-23;CAS-KN-ZZZ-1
+1785;30;burial;open;Ekom;Sode;female;herbalist;54;1960-02-11;29;2015-06-30;CAS-KN-ZZZ-1
+1785;31;burial;done;Ekom;Sode;female;herbalist;54;1960-02-11;29;2015-06-30;CAS-KN-ZZZ-1
+1790;44;isolation;open;Nta;Mmoh;male;on-line customer services operator;22;1992-03-08;40;;CAS-KN-ZZZ-1
+1790;45;isolation;done;Nta;Mmoh;male;on-line customer services operator;22;1992-03-08;40;;CAS-KN-ZZZ-1
+1793;43;lab;overdue;Amara;Akinyemi;female;dental surgery assistant (dental nurse);34;1980-10-13;39;;CAS-KN-ZZZ-1
+1793;44;discharge;open;Amara;Akinyemi;female;dental surgery assistant (dental nurse);34;1980-10-13;39;;CAS-KN-ZZZ-1
+1793;45;discharge;done;Amara;Akinyemi;female;dental surgery assistant (dental nurse);34;1980-10-13;39;;CAS-KN-ZZZ-1
+1805;44;discharge;open;Ldemudia;Omotosho;male;teacher;54;1961-07-05;39;;CAS-KN-ZZZ-1
+1805;45;discharge;done;Ldemudia;Omotosho;male;teacher;54;1961-07-05;39;;CAS-KN-ZZZ-1
+1805;46;discharge;open;Ldemudia;Omotosho;male;teacher;54;1961-07-05;39;;CAS-KN-ZZZ-1
+1805;47;discharge;done;Ldemudia;Omotosho;male;teacher;54;1961-07-05;39;;CAS-KN-ZZZ-1
+1806;22;lab;overdue;Oluwaseyi;Alaoakala;female;burial service;57;1957-09-21;18;;CAS-KN-ZZZ-1
+1816;36;lab;overdue;Oluremi;Oshoala;female;student;21;1993-10-08;32;2015-07-07;CAS-KN-ZZZ-1
+1816;37;burial;open;Oluremi;Oshoala;female;student;21;1993-10-08;32;2015-07-07;CAS-KN-ZZZ-1
+1816;38;burial;done;Oluremi;Oshoala;female;student;21;1993-10-08;32;2015-07-07;CAS-KN-ZZZ-1
+1822;36;lab;overdue;Olubowale;Elumelu;male;food industry technologist;33;1981-07-28;32;;CAS-KN-ZZZ-1
+1822;36;isolation;open;Olubowale;Elumelu;male;food industry technologist;33;1981-07-28;32;;CAS-KN-ZZZ-1
+1822;38;isolation;done;Olubowale;Elumelu;male;food industry technologist;33;1981-07-28;32;;CAS-KN-ZZZ-1
+1824;29;burial;open;Ikharo;Osita;male;fashion designer;57;1957-07-29;25;2015-06-29;CAS-KN-ZZZ-1
+1824;30;burial;done;Ikharo;Osita;male;fashion designer;57;1957-07-29;25;2015-06-29;CAS-KN-ZZZ-1
+1825;43;isolation;open;Temilolaoluwa;Erese;female;physician;22;1993-05-15;40;2015-07-14;CAS-KN-ZZZ-1
+1825;44;burial;open;Temilolaoluwa;Erese;female;physician;22;1993-05-15;40;2015-07-14;CAS-KN-ZZZ-1
+1825;44;isolation;done;Temilolaoluwa;Erese;female;physician;22;1993-05-15;40;2015-07-14;CAS-KN-ZZZ-1
+1825;45;burial;done;Temilolaoluwa;Erese;female;physician;22;1993-05-15;40;2015-07-14;CAS-KN-ZZZ-1
+1827;10;burial;open;Ohoma;Brigidi;female;nurse;32;1983-03-21;9;2015-06-10;CAS-KN-ZZZ-1
+1827;11;burial;done;Ohoma;Brigidi;female;nurse;32;1983-03-21;9;2015-06-10;CAS-KN-ZZZ-1
+1840;39;isolation;open;Osarenren ;Obleajula;male;soldier;36;1979-04-19;38;;CAS-KN-ZZZ-1
+1840;40;isolation;done;Osarenren ;Obleajula;male;soldier;36;1979-04-19;38;;CAS-KN-ZZZ-1
+1863;16;burial;open;Mesoma;Iyke;female;out-of-school educator;33;1981-09-28;12;2015-06-16;CAS-KN-ZZZ-1
+1863;18;burial;done;Mesoma;Iyke;female;out-of-school educator;33;1981-09-28;12;2015-06-16;CAS-KN-ZZZ-1
+1874;32;isolation;open;Chidima;Osagie;female;soldier;27;1988-02-23;31;;CAS-KN-ZZZ-1
+1874;36;isolation;done;Chidima;Osagie;female;soldier;27;1988-02-23;31;;CAS-KN-ZZZ-1
+1880;43;discharge;open;Ime ;Guda;male;car service worker (service station worker);33;1982-04-28;38;2015-07-14;CAS-KN-ZZZ-1
+1880;44;burial;open;Ime ;Guda;male;car service worker (service station worker);33;1982-04-28;38;2015-07-14;CAS-KN-ZZZ-1
+1880;44;discharge;done;Ime ;Guda;male;car service worker (service station worker);33;1982-04-28;38;2015-07-14;CAS-KN-ZZZ-1
+1880;45;burial;done;Ime ;Guda;male;car service worker (service station worker);33;1982-04-28;38;2015-07-14;CAS-KN-ZZZ-1
+1889;12;isolation;open;Niamke;Afikuyomi;male;tanner;28;1987-03-23;10;2015-06-15;CAS-KN-ZZZ-1
+1889;15;isolation;done;Niamke;Afikuyomi;male;tanner;28;1987-03-23;10;2015-06-15;CAS-KN-ZZZ-1
+1889;15;burial;open;Niamke;Afikuyomi;male;tanner;28;1987-03-23;10;2015-06-15;CAS-KN-ZZZ-1
+1889;16;burial;done;Niamke;Afikuyomi;male;tanner;28;1987-03-23;10;2015-06-15;CAS-KN-ZZZ-1
+1904;30;burial;open;Ighogbetine;Abati;male;nurse;63;1952-11-01;26;2015-06-30;CAS-KN-ZZZ-1
+1904;31;burial;done;Ighogbetine;Abati;male;nurse;63;1952-11-01;26;2015-06-30;CAS-KN-ZZZ-1
+1907;12;discharge;open;Ijeoma;Friday;female;school pupil;15;1999-04-11;8;;CAS-KN-ZZZ-1
+1907;15;discharge;done;Ijeoma;Friday;female;school pupil;15;1999-04-11;8;;CAS-KN-ZZZ-1
+1913;43;discharge;open;Obehi;Iwuji;male;physician;38;1977-03-31;39;;CAS-KN-ZZZ-1
+1913;44;discharge;done;Obehi;Iwuji;male;physician;38;1977-03-31;39;;CAS-KN-ZZZ-1
+1915;43;isolation;open;Olasubomi;Joseph;female;blacksmith (farrier);44;1971-05-23;40;;CAS-KN-ZZZ-1
+1915;44;isolation;done;Olasubomi;Joseph;female;blacksmith (farrier);44;1971-05-23;40;;CAS-KN-ZZZ-1
+1917;36;isolation;open;Adaze;Chiom;male;surveyor's assistant or helper;52;1962-11-15;33;2015-07-08;CAS-KN-ZZZ-1
+1917;38;burial;open;Adaze;Chiom;male;surveyor's assistant or helper;52;1962-11-15;33;2015-07-08;CAS-KN-ZZZ-1
+1917;38;isolation;done;Adaze;Chiom;male;surveyor's assistant or helper;52;1962-11-15;33;2015-07-08;CAS-KN-ZZZ-1
+1917;39;burial;done;Adaze;Chiom;male;surveyor's assistant or helper;52;1962-11-15;33;2015-07-08;CAS-KN-ZZZ-1
+1928;16;burial;open;Obehi;Ezeji;male;aircraft mechanic ;55;1959-10-14;15;2015-06-16;CAS-KN-ZZZ-1
+1928;17;burial;done;Obehi;Ezeji;male;aircraft mechanic ;55;1959-10-14;15;2015-06-16;CAS-KN-ZZZ-1
+1928;17;isolation;open;Obehi;Ezeji;male;aircraft mechanic ;55;1959-10-14;15;2015-06-16;CAS-KN-ZZZ-1
+1928;18;isolation;done;Obehi;Ezeji;male;aircraft mechanic ;55;1959-10-14;15;2015-06-16;CAS-KN-ZZZ-1
+1934;40;discharge;open;Obehi;Mosaku;male;train dispatcher;44;1970-10-07;36;2015-07-13;CAS-KN-ZZZ-1
+1934;43;discharge;done;Obehi;Mosaku;male;train dispatcher;44;1970-10-07;36;2015-07-13;CAS-KN-ZZZ-1
+1934;43;burial;open;Obehi;Mosaku;male;train dispatcher;44;1970-10-07;36;2015-07-13;CAS-KN-ZZZ-1
+1934;44;burial;done;Obehi;Mosaku;male;train dispatcher;44;1970-10-07;36;2015-07-13;CAS-KN-ZZZ-1
+1946;45;isolation;open;Efemena;Dabiri;female;purchasing officer (buyer or merchandiser);41;1973-06-16;44;;CAS-KN-ZZZ-1
+1946;46;isolation;done;Efemena;Dabiri;female;purchasing officer (buyer or merchandiser);41;1973-06-16;44;;CAS-KN-ZZZ-1
+1951;29;burial;open;Arome;Elias;male;dairy worker (dairy operator);54;1960-03-10;24;2015-06-29;CAS-KN-ZZZ-1
+1951;30;burial;done;Arome;Elias;male;dairy worker (dairy operator);54;1960-03-10;24;2015-06-29;CAS-KN-ZZZ-1
+1968;36;isolation;open;Chioma;Biobaku;female;school pupil;16;1998-12-29;33;2015-07-08;CAS-KN-ZZZ-1
+1968;37;isolation;done;Chioma;Biobaku;female;school pupil;16;1998-12-29;33;2015-07-08;CAS-KN-ZZZ-1
+1968;38;burial;open;Chioma;Biobaku;female;school pupil;16;1998-12-29;33;2015-07-08;CAS-KN-ZZZ-1
+1968;39;burial;done;Chioma;Biobaku;female;school pupil;16;1998-12-29;33;2015-07-08;CAS-KN-ZZZ-1
+1977;45;discharge;open;Ldemudia;Doda;male;nurse;37;1978-07-04;43;;CAS-KN-ZZZ-1
+1977;46;discharge;done;Ldemudia;Doda;male;nurse;37;1978-07-04;43;;CAS-KN-ZZZ-1
+1981;45;isolation;open;Adaze;Ajunwa;male;school pupil;17;1998-01-24;45;;CAS-KN-ZZZ-1
+1981;46;isolation;done;Adaze;Ajunwa;male;school pupil;17;1998-01-24;45;;CAS-KN-ZZZ-1
+2000;15;burial;open;Isobel Henry;Ekpotu;female;cutler;54;1960-07-10;12;2015-06-15;CAS-KN-ZZZ-1
+2000;16;burial;done;Isobel Henry;Ekpotu;female;cutler;54;1960-07-10;12;2015-06-15;CAS-KN-ZZZ-1
+2003;50;discharge;open;Abieyuwa;Sowande;female;soldier;39;1975-01-12;44;;CAS-KN-ZZZ-1
+2003;51;discharge;done;Abieyuwa;Sowande;female;soldier;39;1975-01-12;44;;CAS-KN-ZZZ-1
+2017;37;discharge;open;Isibor Henry;Jegede;male;school pupil;15;2000-02-23;33;2015-07-09;CAS-KN-ZZZ-1
+2017;38;discharge;done;Isibor Henry;Jegede;male;school pupil;15;2000-02-23;33;2015-07-09;CAS-KN-ZZZ-1
+2017;39;burial;open;Isibor Henry;Jegede;male;school pupil;15;2000-02-23;33;2015-07-09;CAS-KN-ZZZ-1
+2017;40;burial;done;Isibor Henry;Jegede;male;school pupil;15;2000-02-23;33;2015-07-09;CAS-KN-ZZZ-1
+2023;43;lab;overdue;Chioma;Elias;female;police officer;42;1972-09-23;39;;CAS-KN-ZZZ-1
+2031;44;burial;open;Kelechi;Khreis;male;school pupil;14;2001-03-19;43;2015-07-14;CAS-KN-ZZZ-1
+2031;46;burial;done;Kelechi;Khreis;male;school pupil;14;2001-03-19;43;2015-07-14;CAS-KN-ZZZ-1
+2031;46;discharge;open;Kelechi;Khreis;male;school pupil;14;2001-03-19;43;2015-07-14;CAS-KN-ZZZ-1
+2031;47;discharge;done;Kelechi;Khreis;male;school pupil;14;2001-03-19;43;2015-07-14;CAS-KN-ZZZ-1
+2033;29;burial;open;Chinelotam;Erese;female;school pupil;17;1997-01-06;25;2015-06-29;CAS-KN-ZZZ-1
+2033;30;burial;done;Chinelotam;Erese;female;school pupil;17;1997-01-06;25;2015-06-29;CAS-KN-ZZZ-1
+2035;19;isolation;open;Adeleke;Ogundana;male;commentator (reporter or journalist);31;1984-05-21;19;;CAS-KN-ZZZ-1
+2035;22;isolation;done;Adeleke;Ogundana;male;commentator (reporter or journalist);31;1984-05-21;19;;CAS-KN-ZZZ-1
+2040;15;isolation;open;Edeosa;Inoniyegha;female;manager;49;1966-04-02;12;;CAS-KN-ZZZ-1
+2040;16;isolation;done;Edeosa;Inoniyegha;female;manager;49;1966-04-02;12;;CAS-KN-ZZZ-1
+2042;44;isolation;open;Omoye;Elegbede;female;production manager (electronic appliances);36;1978-02-10;40;;CAS-KN-ZZZ-1
+2042;45;isolation;done;Omoye;Elegbede;female;production manager (electronic appliances);36;1978-02-10;40;;CAS-KN-ZZZ-1
+2047;38;burial;open;Efuose;Okodogbe;female;student;20;1994-09-11;32;2015-07-08;CAS-KN-ZZZ-1
+2047;40;burial;done;Efuose;Okodogbe;female;student;20;1994-09-11;32;2015-07-08;CAS-KN-ZZZ-1
+2056;15;lab;overdue;Nyasha;Omeili;female;nurse;36;1979-04-21;11;2015-06-17;CAS-KN-ZZZ-1
+2056;17;burial;open;Nyasha;Omeili;female;nurse;36;1979-04-21;11;2015-06-17;CAS-KN-ZZZ-1
+2056;19;burial;done;Nyasha;Omeili;female;nurse;36;1979-04-21;11;2015-06-17;CAS-KN-ZZZ-1
+2057;43;discharge;open;Osagie;Adeola;male;student;21;1994-01-23;37;;CAS-KN-ZZZ-1
+2057;44;discharge;done;Osagie;Adeola;male;student;21;1994-01-23;37;;CAS-KN-ZZZ-1
+2072;29;discharge;open;Oghosa;Elahor;male;stonemason or stonecutter (stonemason);43;1972-03-27;26;2015-07-01;CAS-KN-ZZZ-1
+2072;30;discharge;done;Oghosa;Elahor;male;stonemason or stonecutter (stonemason);43;1972-03-27;26;2015-07-01;CAS-KN-ZZZ-1
+2072;31;burial;open;Oghosa;Elahor;male;stonemason or stonecutter (stonemason);43;1972-03-27;26;2015-07-01;CAS-KN-ZZZ-1
+2072;33;burial;done;Oghosa;Elahor;male;stonemason or stonecutter (stonemason);43;1972-03-27;26;2015-07-01;CAS-KN-ZZZ-1
+2077;18;isolation;open;Ololade ;Envoh;male;auctioneer;58;1956-11-08;18;;CAS-KN-ZZZ-1
+2077;19;isolation;done;Ololade ;Envoh;male;auctioneer;58;1956-11-08;18;;CAS-KN-ZZZ-1
+2079;44;isolation;open;Nkimdi;Balogun;male;ore crusher (smelting and refinery);56;1958-06-14;43;2015-07-17;CAS-KN-ZZZ-1
+2079;45;isolation;done;Nkimdi;Balogun;male;ore crusher (smelting and refinery);56;1958-06-14;43;2015-07-17;CAS-KN-ZZZ-1
+2079;47;burial;open;Nkimdi;Balogun;male;ore crusher (smelting and refinery);56;1958-06-14;43;2015-07-17;CAS-KN-ZZZ-1
+2079;50;burial;done;Nkimdi;Balogun;male;ore crusher (smelting and refinery);56;1958-06-14;43;2015-07-17;CAS-KN-ZZZ-1
+2082;24;burial;open;Oluwakemi;Mosaku;female;pawnbroker;47;1967-12-30;19;2015-06-24;CAS-KN-ZZZ-1
+2082;25;burial;done;Oluwakemi;Mosaku;female;pawnbroker;47;1967-12-30;19;2015-06-24;CAS-KN-ZZZ-1
+2099;43;lab;overdue;Inyene Attah;Aromire;male;student;23;1992-06-04;39;;CAS-KN-ZZZ-1
+2099;43;isolation;open;Inyene Attah;Aromire;male;student;23;1992-06-04;39;;CAS-KN-ZZZ-1
+2099;44;isolation;done;Inyene Attah;Aromire;male;student;23;1992-06-04;39;;CAS-KN-ZZZ-1
+2110;36;burial;open;Odera;Onibiyo;female;student;20;1994-03-11;32;2015-07-06;CAS-KN-ZZZ-1
+2110;38;burial;done;Odera;Onibiyo;female;student;20;1994-03-11;32;2015-07-06;CAS-KN-ZZZ-1
+2146;44;burial;open;Adaze;Alade;male;mining machine operator;44;1970-11-29;40;2015-07-14;CAS-KN-ZZZ-1
+2146;45;discharge;open;Adaze;Alade;male;mining machine operator;44;1970-11-29;40;2015-07-14;CAS-KN-ZZZ-1
+2146;46;burial;done;Adaze;Alade;male;mining machine operator;44;1970-11-29;40;2015-07-14;CAS-KN-ZZZ-1
+2146;46;discharge;done;Adaze;Alade;male;mining machine operator;44;1970-11-29;40;2015-07-14;CAS-KN-ZZZ-1
+2150;25;burial;open;Chukwunonso;Okardi;male;aircraft instrument technician;35;1979-07-25;22;2015-06-25;CAS-KN-ZZZ-1
+2150;25;isolation;open;Chukwunonso;Okardi;male;aircraft instrument technician;35;1979-07-25;22;2015-06-25;CAS-KN-ZZZ-1
+2150;26;burial;done;Chukwunonso;Okardi;male;aircraft instrument technician;35;1979-07-25;22;2015-06-25;CAS-KN-ZZZ-1
+2150;26;isolation;done;Chukwunonso;Okardi;male;aircraft instrument technician;35;1979-07-25;22;2015-06-25;CAS-KN-ZZZ-1
+2158;33;isolation;open;Chidinma;Ofoegbu;female;police officer;53;1961-12-11;33;2015-07-08;CAS-KN-ZZZ-1
+2158;36;isolation;done;Chidinma;Ofoegbu;female;police officer;53;1961-12-11;33;2015-07-08;CAS-KN-ZZZ-1
+2158;38;burial;open;Chidinma;Ofoegbu;female;police officer;53;1961-12-11;33;2015-07-08;CAS-KN-ZZZ-1
+2158;40;burial;done;Chidinma;Ofoegbu;female;police officer;53;1961-12-11;33;2015-07-08;CAS-KN-ZZZ-1
+2164;33;burial;open;Ldemudia;Ayeni;male;student;18;1997-03-20;30;2015-07-03;CAS-KN-ZZZ-1
+2164;36;burial;done;Ldemudia;Ayeni;male;student;18;1997-03-20;30;2015-07-03;CAS-KN-ZZZ-1
+2174;43;discharge;open;Chiedozie;Adeseun;male;cutler;31;1983-03-07;38;;CAS-KN-ZZZ-1
+2174;44;discharge;done;Chiedozie;Adeseun;male;cutler;31;1983-03-07;38;;CAS-KN-ZZZ-1
+2174;44;discharge;open;Chiedozie;Adeseun;male;cutler;31;1983-03-07;38;;CAS-KN-ZZZ-1
+2174;45;discharge;done;Chiedozie;Adeseun;male;cutler;31;1983-03-07;38;;CAS-KN-ZZZ-1
+2180;9;isolation;open;Kosisochukwuo;Choji;female;student;21;1994-12-05;8;;CAS-KN-ZZZ-1
+2180;11;isolation;done;Kosisochukwuo;Choji;female;student;21;1994-12-05;8;;CAS-KN-ZZZ-1
+2188;15;isolation;open;Esohe Uzamere;Yaji;female;student;21;1993-06-30;11;;CAS-KN-ZZZ-1
+2188;17;isolation;done;Esohe Uzamere;Yaji;female;student;21;1993-06-30;11;;CAS-KN-ZZZ-1
+2195;47;isolation;open;Igbo;Dyegh;female;lighting technician;29;1986-02-17;46;;CAS-KN-ZZZ-1
+2195;50;isolation;done;Igbo;Dyegh;female;lighting technician;29;1986-02-17;46;;CAS-KN-ZZZ-1
+2207;40;isolation;open;Oluwatitofunmi;Bada;female;production manager in textile industry;39;1975-10-22;38;2015-07-16;CAS-KN-ZZZ-1
+2207;43;isolation;done;Oluwatitofunmi;Bada;female;production manager in textile industry;39;1975-10-22;38;2015-07-16;CAS-KN-ZZZ-1
+2207;46;burial;open;Oluwatitofunmi;Bada;female;production manager in textile industry;39;1975-10-22;38;2015-07-16;CAS-KN-ZZZ-1
+2207;50;burial;done;Oluwatitofunmi;Bada;female;production manager in textile industry;39;1975-10-22;38;2015-07-16;CAS-KN-ZZZ-1
+2219;43;burial;open;Adunni;Brann;male;public relations manager;33;1982-03-22;40;2015-07-13;CAS-KN-ZZZ-1
+2219;44;burial;done;Adunni;Brann;male;public relations manager;33;1982-03-22;40;2015-07-13;CAS-KN-ZZZ-1
+2219;46;discharge;open;Adunni;Brann;male;public relations manager;33;1982-03-22;40;2015-07-13;CAS-KN-ZZZ-1
+2219;47;discharge;done;Adunni;Brann;male;public relations manager;33;1982-03-22;40;2015-07-13;CAS-KN-ZZZ-1
+2228;45;isolation;open;Onoyem;Udojoh;male;metal refiner;38;1977-06-02;45;;CAS-KN-ZZZ-1
+2228;46;isolation;done;Onoyem;Udojoh;male;metal refiner;38;1977-06-02;45;;CAS-KN-ZZZ-1
+2234;44;isolation;open;Nkoyo;Okwara;male;school pupil;17;1998-01-13;44;;CAS-KN-ZZZ-1
+2234;45;isolation;done;Nkoyo;Okwara;male;school pupil;17;1998-01-13;44;;CAS-KN-ZZZ-1
+2248;47;isolation;open;Ejiogu;Iheruome;female;soldier;47;1968-10-05;46;;CAS-KN-ZZZ-1
+2248;50;isolation;done;Ejiogu;Iheruome;female;soldier;47;1968-10-05;46;;CAS-KN-ZZZ-1
+2249;18;burial;open;Perosola;Ahman;female;teacher;37;1977-01-07;16;2015-06-18;CAS-KN-ZZZ-1
+2249;19;burial;done;Perosola;Ahman;female;teacher;37;1977-01-07;16;2015-06-18;CAS-KN-ZZZ-1
+2251;47;discharge;open;Kingsley ;Vanzekin;male;choir master or mistress;55;1959-04-12;45;;CAS-KN-ZZZ-1
+2251;50;discharge;done;Kingsley ;Vanzekin;male;choir master or mistress;55;1959-04-12;45;;CAS-KN-ZZZ-1
+2251;50;discharge;open;Kingsley ;Vanzekin;male;choir master or mistress;55;1959-04-12;45;;CAS-KN-ZZZ-1
+2251;51;discharge;done;Kingsley ;Vanzekin;male;choir master or mistress;55;1959-04-12;45;;CAS-KN-ZZZ-1
+2257;36;isolation;open;Temilore;Omodiagbe;female;soldier;32;1983-02-19;36;;CAS-KN-ZZZ-1
+2257;37;isolation;done;Temilore;Omodiagbe;female;soldier;32;1983-02-19;36;;CAS-KN-ZZZ-1
+2265;15;lab;overdue;Eno-Obong;Kama;female;mining rescue worker (mining rescuer);37;1978-07-01;8;;CAS-KN-ZZZ-1
+2265;15;discharge;open;Eno-Obong;Kama;female;mining rescue worker (mining rescuer);37;1978-07-01;8;;CAS-KN-ZZZ-1
+2265;17;discharge;done;Eno-Obong;Kama;female;mining rescue worker (mining rescuer);37;1978-07-01;8;;CAS-KN-ZZZ-1
+2268;47;isolation;open;Adelie;Uzoenyi;female;shoemaker (cobbler);63;1951-05-08;45;;CAS-KN-ZZZ-1
+2268;50;isolation;done;Adelie;Uzoenyi;female;shoemaker (cobbler);63;1951-05-08;45;;CAS-KN-ZZZ-1
+2278;38;isolation;open;Akhilomen;Ajilore;male;safety and communication electrician;43;1972-04-04;37;2015-07-14;CAS-OY-ZZZ-1
+2278;39;isolation;done;Akhilomen;Ajilore;male;safety and communication electrician;43;1972-04-04;37;2015-07-14;CAS-OY-ZZZ-1
+2278;44;burial;open;Akhilomen;Ajilore;male;safety and communication electrician;43;1972-04-04;37;2015-07-14;CAS-OY-ZZZ-1
+2278;45;burial;done;Akhilomen;Ajilore;male;safety and communication electrician;43;1972-04-04;37;2015-07-14;CAS-OY-ZZZ-1
+2287;36;lab;overdue;Ekom;Deniran;female;burial service;27;1987-08-27;29;;CAS-OY-ZZZ-1
+2293;29;isolation;open;Omuwonuola;Dyegh;female;school pupil;12;2002-09-19;26;2015-07-02;CAS-OY-ZZZ-1
+2293;30;isolation;done;Omuwonuola;Dyegh;female;school pupil;12;2002-09-19;26;2015-07-02;CAS-OY-ZZZ-1
+2293;32;burial;open;Omuwonuola;Dyegh;female;school pupil;12;2002-09-19;26;2015-07-02;CAS-OY-ZZZ-1
+2293;33;burial;done;Omuwonuola;Dyegh;female;school pupil;12;2002-09-19;26;2015-07-02;CAS-OY-ZZZ-1
+2296;12;isolation;open;Chukwudi;Ameh;male;sales manager;58;1956-07-24;10;2015-06-18;CAS-OY-ZZZ-1
+2296;15;isolation;done;Chukwudi;Ameh;male;sales manager;58;1956-07-24;10;2015-06-18;CAS-OY-ZZZ-1
+2296;18;burial;open;Chukwudi;Ameh;male;sales manager;58;1956-07-24;10;2015-06-18;CAS-OY-ZZZ-1
+2296;19;burial;done;Chukwudi;Ameh;male;sales manager;58;1956-07-24;10;2015-06-18;CAS-OY-ZZZ-1
+2329;25;burial;open;Oluwasemilore;Akabueze;male;crate maker (cooper);27;1987-03-10;22;2015-06-25;CAS-OY-ZZZ-1
+2329;29;burial;done;Oluwasemilore;Akabueze;male;crate maker (cooper);27;1987-03-10;22;2015-06-25;CAS-OY-ZZZ-1
+2338;36;lab;overdue;Oluremi;Biobaku;female;student;23;1992-03-26;32;2015-07-08;CAS-OY-ZZZ-1
+2338;36;isolation;open;Oluremi;Biobaku;female;student;23;1992-03-26;32;2015-07-08;CAS-OY-ZZZ-1
+2338;37;isolation;done;Oluremi;Biobaku;female;student;23;1992-03-26;32;2015-07-08;CAS-OY-ZZZ-1
+2338;38;burial;open;Oluremi;Biobaku;female;student;23;1992-03-26;32;2015-07-08;CAS-OY-ZZZ-1
+2338;40;burial;done;Oluremi;Biobaku;female;student;23;1992-03-26;32;2015-07-08;CAS-OY-ZZZ-1
+2352;25;isolation;open;Ogunbanwo;Barka;male;construction or building site manager (site manager);38;1976-09-06;24;2015-07-01;CAS-OY-ZZZ-1
+2352;26;isolation;done;Ogunbanwo;Barka;male;construction or building site manager (site manager);38;1976-09-06;24;2015-07-01;CAS-OY-ZZZ-1
+2352;31;burial;open;Ogunbanwo;Barka;male;construction or building site manager (site manager);38;1976-09-06;24;2015-07-01;CAS-OY-ZZZ-1
+2352;32;burial;done;Ogunbanwo;Barka;male;construction or building site manager (site manager);38;1976-09-06;24;2015-07-01;CAS-OY-ZZZ-1
+2371;31;isolation;open;Okwong;Eteimo;male;student;19;1996-01-04;29;2015-07-06;CAS-OY-ZZZ-1
+2371;32;isolation;done;Okwong;Eteimo;male;student;19;1996-01-04;29;2015-07-06;CAS-OY-ZZZ-1
+2371;36;burial;open;Okwong;Eteimo;male;student;19;1996-01-04;29;2015-07-06;CAS-OY-ZZZ-1
+2371;37;burial;done;Okwong;Eteimo;male;student;19;1996-01-04;29;2015-07-06;CAS-OY-ZZZ-1
+2375;18;burial;open;Ebube;Ajanwachukwu;male;student;18;1997-03-03;12;2015-06-18;CAS-OY-ZZZ-1
+2375;22;burial;done;Ebube;Ajanwachukwu;male;student;18;1997-03-03;12;2015-06-18;CAS-OY-ZZZ-1
+2378;22;burial;open;Afulenu;Orode;female;audio graphic designer;39;1976-07-01;17;2015-06-22;CAS-OY-ZZZ-1
+2378;23;burial;done;Afulenu;Orode;female;audio graphic designer;39;1976-07-01;17;2015-06-22;CAS-OY-ZZZ-1
+2385;30;isolation;open;Chinwe Ekeledo;Benjamin;female;police officer;39;1975-04-12;29;;CAS-OY-ZZZ-1
+2385;31;isolation;done;Chinwe Ekeledo;Benjamin;female;police officer;39;1975-04-12;29;;CAS-OY-ZZZ-1
+2386;19;isolation;open;Maryjane;Asiegbo;female;physician;56;1958-09-14;19;;CAS-OY-ZZZ-1
+2386;22;isolation;done;Maryjane;Asiegbo;female;physician;56;1958-09-14;19;;CAS-OY-ZZZ-1
+2388;32;isolation;open;Chisom;Ezinwa;female;cable car driver;17;1998-02-01;31;2015-07-06;CAS-OY-ZZZ-1
+2388;36;isolation;done;Chisom;Ezinwa;female;cable car driver;17;1998-02-01;31;2015-07-06;CAS-OY-ZZZ-1
+2388;36;burial;open;Chisom;Ezinwa;female;cable car driver;17;1998-02-01;31;2015-07-06;CAS-OY-ZZZ-1
+2388;37;burial;done;Chisom;Ezinwa;female;cable car driver;17;1998-02-01;31;2015-07-06;CAS-OY-ZZZ-1
+2395;38;isolation;open;Ikennah;Amoo;male;lottery ticket street vendor;48;1967-05-05;36;;CAS-OY-ZZZ-1
+2395;40;isolation;done;Ikennah;Amoo;male;lottery ticket street vendor;48;1967-05-05;36;;CAS-OY-ZZZ-1
+2402;32;burial;open;Chinzor;Enzinwa;male;shop cashier (checkout operator);45;1969-11-13;29;2015-07-02;CAS-OY-ZZZ-1
+2402;36;burial;done;Chinzor;Enzinwa;male;shop cashier (checkout operator);45;1969-11-13;29;2015-07-02;CAS-OY-ZZZ-1
+2405;22;isolation;open;Olatunbosun;Ogugua;male;student;24;1991-04-25;19;;CAS-OY-ZZZ-1
+2405;23;isolation;done;Olatunbosun;Ogugua;male;student;24;1991-04-25;19;;CAS-OY-ZZZ-1
+2407;22;isolation;open;Faderera;Bali;female;office junior;29;1986-04-22;19;2015-06-26;CAS-OY-ZZZ-1
+2407;23;isolation;done;Faderera;Bali;female;office junior;29;1986-04-22;19;2015-06-26;CAS-OY-ZZZ-1
+2407;26;burial;open;Faderera;Bali;female;office junior;29;1986-04-22;19;2015-06-26;CAS-OY-ZZZ-1
+2407;29;burial;done;Faderera;Bali;female;office junior;29;1986-04-22;19;2015-06-26;CAS-OY-ZZZ-1
+2408;29;isolation;open;Aleem Sulymon Opeyemi;Ekubia;male;burial service;38;1977-02-14;29;;CAS-OY-ZZZ-1
+2408;30;isolation;done;Aleem Sulymon Opeyemi;Ekubia;male;burial service;38;1977-02-14;29;;CAS-OY-ZZZ-1
+2409;46;burial;open;Omoye;Nwakaeme;female;school pupil;13;2001-08-08;45;2015-07-16;CAS-OY-ZZZ-1
+2409;46;isolation;open;Omoye;Nwakaeme;female;school pupil;13;2001-08-08;45;2015-07-16;CAS-OY-ZZZ-1
+2409;50;burial;done;Omoye;Nwakaeme;female;school pupil;13;2001-08-08;45;2015-07-16;CAS-OY-ZZZ-1
+2409;50;isolation;done;Omoye;Nwakaeme;female;school pupil;13;2001-08-08;45;2015-07-16;CAS-OY-ZZZ-1
+2414;40;isolation;open;Adeloye;Adeniken;male;student;25;1990-01-05;39;;CAS-OY-ZZZ-1
+2414;43;isolation;done;Adeloye;Adeniken;male;student;25;1990-01-05;39;;CAS-OY-ZZZ-1
+2421;47;burial;open;Nkoyo;Eguavoen;female;student;25;1989-05-30;45;2015-07-17;CAS-OY-ZZZ-1
+2421;50;burial;done;Nkoyo;Eguavoen;female;student;25;1989-05-30;45;2015-07-17;CAS-OY-ZZZ-1
+2421;50;discharge;open;Nkoyo;Eguavoen;female;student;25;1989-05-30;45;2015-07-17;CAS-OY-ZZZ-1
+2421;51;discharge;done;Nkoyo;Eguavoen;female;student;25;1989-05-30;45;2015-07-17;CAS-OY-ZZZ-1
+2438;17;isolation;open;Edoja;Chiejine;male;craft metalworker and brazier;41;1973-11-14;16;;CAS-OY-ZZZ-1
+2438;18;isolation;done;Edoja;Chiejine;male;craft metalworker and brazier;41;1973-11-14;16;;CAS-OY-ZZZ-1
+2452;40;burial;open;Nadoca;Alake;female;construction or building site manager (site manager);58;1957-03-21;39;2015-07-10;CAS-OY-ZZZ-1
+2452;43;burial;done;Nadoca;Alake;female;construction or building site manager (site manager);58;1957-03-21;39;2015-07-10;CAS-OY-ZZZ-1
+2452;43;discharge;open;Nadoca;Alake;female;construction or building site manager (site manager);58;1957-03-21;39;2015-07-10;CAS-OY-ZZZ-1
+2452;44;discharge;done;Nadoca;Alake;female;construction or building site manager (site manager);58;1957-03-21;39;2015-07-10;CAS-OY-ZZZ-1
+2452;44;discharge;open;Nadoca;Alake;female;construction or building site manager (site manager);58;1957-03-21;39;2015-07-10;CAS-OY-ZZZ-1
+2452;45;discharge;done;Nadoca;Alake;female;construction or building site manager (site manager);58;1957-03-21;39;2015-07-10;CAS-OY-ZZZ-1
+2458;29;isolation;open;Oghenetejiri;Igwebuike;male;nurse;62;1953-03-02;26;2015-07-10;CAS-OY-ZZZ-1
+2458;31;isolation;done;Oghenetejiri;Igwebuike;male;nurse;62;1953-03-02;26;2015-07-10;CAS-OY-ZZZ-1
+2458;40;burial;open;Oghenetejiri;Igwebuike;male;nurse;62;1953-03-02;26;2015-07-10;CAS-OY-ZZZ-1
+2458;43;burial;done;Oghenetejiri;Igwebuike;male;nurse;62;1953-03-02;26;2015-07-10;CAS-OY-ZZZ-1
+2460;33;isolation;open;Attahlerne;Yekini;male;train driver (engine driver);34;1981-01-17;30;;CAS-OY-ZZZ-1
+2460;36;isolation;done;Attahlerne;Yekini;male;train driver (engine driver);34;1981-01-17;30;;CAS-OY-ZZZ-1
+2470;43;lab;overdue;Adaeze;Erese;female;physician;34;1980-06-14;38;;CAS-OY-ZZZ-1
+2477;46;burial;open;Osarenren ;Lagelu;male;railway track construction fitter;41;1973-10-18;45;2015-07-16;CAS-OY-ZZZ-1
+2477;47;burial;done;Osarenren ;Lagelu;male;railway track construction fitter;41;1973-10-18;45;2015-07-16;CAS-OY-ZZZ-1
+2477;50;discharge;open;Osarenren ;Lagelu;male;railway track construction fitter;41;1973-10-18;45;2015-07-16;CAS-OY-ZZZ-1
+2477;51;discharge;done;Osarenren ;Lagelu;male;railway track construction fitter;41;1973-10-18;45;2015-07-16;CAS-OY-ZZZ-1
+2491;44;burial;open;Osabuhien;Irobiso;male;student;21;1994-02-28;43;2015-07-14;CAS-OY-ZZZ-1
+2491;45;burial;done;Osabuhien;Irobiso;male;student;21;1994-02-28;43;2015-07-14;CAS-OY-ZZZ-1
+2491;50;discharge;open;Osabuhien;Irobiso;male;student;21;1994-02-28;43;2015-07-14;CAS-OY-ZZZ-1
+2491;51;discharge;done;Osabuhien;Irobiso;male;student;21;1994-02-28;43;2015-07-14;CAS-OY-ZZZ-1
+2496;26;isolation;open;Ehiszogie;Babalola;female;standards engineer;61;1953-09-15;26;2015-07-01;CAS-OY-ZZZ-1
+2496;29;isolation;done;Ehiszogie;Babalola;female;standards engineer;61;1953-09-15;26;2015-07-01;CAS-OY-ZZZ-1
+2496;31;burial;open;Ehiszogie;Babalola;female;standards engineer;61;1953-09-15;26;2015-07-01;CAS-OY-ZZZ-1
+2496;32;burial;done;Ehiszogie;Babalola;female;standards engineer;61;1953-09-15;26;2015-07-01;CAS-OY-ZZZ-1
+2502;11;isolation;open;Ogbu;Ezeh;male;chipboard or fibreboard production operative;53;1962-02-04;11;2015-06-12;CAS-OY-ZZZ-1
+2502;12;burial;open;Ogbu;Ezeh;male;chipboard or fibreboard production operative;53;1962-02-04;11;2015-06-12;CAS-OY-ZZZ-1
+2502;12;isolation;done;Ogbu;Ezeh;male;chipboard or fibreboard production operative;53;1962-02-04;11;2015-06-12;CAS-OY-ZZZ-1
+2502;15;burial;done;Ogbu;Ezeh;male;chipboard or fibreboard production operative;53;1962-02-04;11;2015-06-12;CAS-OY-ZZZ-1
+2512;39;discharge;open;Omuwonuola;Ayeni;female;burial service;32;1982-12-09;33;;CAS-OY-ZZZ-1
+2512;43;discharge;done;Omuwonuola;Ayeni;female;burial service;32;1982-12-09;33;;CAS-OY-ZZZ-1
+2527;33;isolation;open;Oladayo;Aluma;male;teacher;40;1975-10-03;31;2015-07-14;CAS-OY-ZZZ-1
+2527;36;isolation;done;Oladayo;Aluma;male;teacher;40;1975-10-03;31;2015-07-14;CAS-OY-ZZZ-1
+2527;44;burial;open;Oladayo;Aluma;male;teacher;40;1975-10-03;31;2015-07-14;CAS-OY-ZZZ-1
+2527;45;burial;done;Oladayo;Aluma;male;teacher;40;1975-10-03;31;2015-07-14;CAS-OY-ZZZ-1
+2537;36;isolation;open;Ibukunoluwa;Diori;female;student;20;1995-12-01;36;2015-07-10;CAS-OY-ZZZ-1
+2537;37;isolation;done;Ibukunoluwa;Diori;female;student;20;1995-12-01;36;2015-07-10;CAS-OY-ZZZ-1
+2537;40;burial;open;Ibukunoluwa;Diori;female;student;20;1995-12-01;36;2015-07-10;CAS-OY-ZZZ-1
+2537;43;burial;done;Ibukunoluwa;Diori;female;student;20;1995-12-01;36;2015-07-10;CAS-OY-ZZZ-1
+2551;25;isolation;open;Olubowale;Akwashiki;male;producer;58;1957-05-23;24;2015-07-10;CAS-OY-ZZZ-1
+2551;26;isolation;done;Olubowale;Akwashiki;male;producer;58;1957-05-23;24;2015-07-10;CAS-OY-ZZZ-1
+2551;40;burial;open;Olubowale;Akwashiki;male;producer;58;1957-05-23;24;2015-07-10;CAS-OY-ZZZ-1
+2551;43;burial;done;Olubowale;Akwashiki;male;producer;58;1957-05-23;24;2015-07-10;CAS-OY-ZZZ-1
+2553;22;isolation;open;Loutoyopnica;Celestine;female;geographer;58;1956-06-28;19;2015-06-25;CAS-OY-ZZZ-1
+2553;23;isolation;done;Loutoyopnica;Celestine;female;geographer;58;1956-06-28;19;2015-06-25;CAS-OY-ZZZ-1
+2553;25;burial;open;Loutoyopnica;Celestine;female;geographer;58;1956-06-28;19;2015-06-25;CAS-OY-ZZZ-1
+2553;29;burial;done;Loutoyopnica;Celestine;female;geographer;58;1956-06-28;19;2015-06-25;CAS-OY-ZZZ-1
+2558;31;burial;open;Osazemen;Etafia;male;power truck driver;57;1957-09-22;25;2015-07-01;CAS-OY-ZZZ-1
+2558;32;burial;done;Osazemen;Etafia;male;power truck driver;57;1957-09-22;25;2015-07-01;CAS-OY-ZZZ-1
+2562;50;lab;overdue;Ciara;Dilomprizulike;female;blast-furnaceman or -woman;64;1950-07-19;44;;CAS-OY-ZZZ-1
+2562;50;discharge;open;Ciara;Dilomprizulike;female;blast-furnaceman or -woman;64;1950-07-19;44;;CAS-OY-ZZZ-1
+2562;52;discharge;done;Ciara;Dilomprizulike;female;blast-furnaceman or -woman;64;1950-07-19;44;;CAS-OY-ZZZ-1
+2566;32;isolation;open;Ibironke;Akinfenwa;female;craft stonemason;35;1979-12-06;32;2015-07-09;CAS-OY-ZZZ-1
+2566;33;isolation;done;Ibironke;Akinfenwa;female;craft stonemason;35;1979-12-06;32;2015-07-09;CAS-OY-ZZZ-1
+2566;39;burial;open;Ibironke;Akinfenwa;female;craft stonemason;35;1979-12-06;32;2015-07-09;CAS-OY-ZZZ-1
+2566;40;burial;done;Ibironke;Akinfenwa;female;craft stonemason;35;1979-12-06;32;2015-07-09;CAS-OY-ZZZ-1
+2567;44;isolation;open;Udensi;Falola;male;school pupil;12;2002-09-12;44;2015-07-16;CAS-OY-ZZZ-1
+2567;45;isolation;done;Udensi;Falola;male;school pupil;12;2002-09-12;44;2015-07-16;CAS-OY-ZZZ-1
+2567;46;burial;open;Udensi;Falola;male;school pupil;12;2002-09-12;44;2015-07-16;CAS-OY-ZZZ-1
+2567;50;burial;done;Udensi;Falola;male;school pupil;12;2002-09-12;44;2015-07-16;CAS-OY-ZZZ-1
+2568;15;discharge;open;Ekpeyoawan;Egerega;female;ceramics or pottery maker;22;1992-08-29;9;;CAS-OY-ZZZ-1
+2568;16;discharge;done;Ekpeyoawan;Egerega;female;ceramics or pottery maker;22;1992-08-29;9;;CAS-OY-ZZZ-1
+2574;36;lab;overdue;Odosa Goodness;Mmoh;female;ceramic model maker;24;1991-04-16;32;;CAS-OY-ZZZ-1
+2574;36;discharge;open;Odosa Goodness;Mmoh;female;ceramic model maker;24;1991-04-16;32;;CAS-OY-ZZZ-1
+2574;37;discharge;done;Odosa Goodness;Mmoh;female;ceramic model maker;24;1991-04-16;32;;CAS-OY-ZZZ-1
+2580;50;lab;overdue;Obiora;Maina;male;clerk for cash or credit card systems;29;1985-08-13;45;;CAS-OY-ZZZ-1
+2583;38;burial;open;Precious;Amoo;female;fine artist;59;1955-09-22;37;2015-07-08;CAS-OY-ZZZ-1
+2583;40;burial;done;Precious;Amoo;female;fine artist;59;1955-09-22;37;2015-07-08;CAS-OY-ZZZ-1
+2617;24;isolation;open;Umahi;Ezinwa;male;nurse;35;1979-12-26;24;;CAS-OY-ZZZ-1
+2617;25;isolation;done;Umahi;Ezinwa;male;nurse;35;1979-12-26;24;;CAS-OY-ZZZ-1
+2620;45;discharge;open;Ikennah;Obleajula;male;police officer;58;1957-03-22;40;;CAS-OY-ZZZ-1
+2620;46;discharge;done;Ikennah;Obleajula;male;police officer;58;1957-03-22;40;;CAS-OY-ZZZ-1
+2630;31;isolation;open;Ololade;Yeiyah;female;radio and tv technician;37;1978-03-24;30;;CAS-OY-ZZZ-1
+2630;32;isolation;done;Ololade;Yeiyah;female;radio and tv technician;37;1978-03-24;30;;CAS-OY-ZZZ-1
+2636;37;discharge;open;Chicobe;Arinze;female;palmists;49;1965-01-07;33;;CAS-OY-ZZZ-1
+2636;38;discharge;done;Chicobe;Arinze;female;palmists;49;1965-01-07;33;;CAS-OY-ZZZ-1
+2653;16;burial;open;Ching;Ajilore;male;hardener;39;1976-03-27;9;2015-06-16;CAS-OY-ZZZ-1
+2653;18;burial;done;Ching;Ajilore;male;hardener;39;1976-03-27;9;2015-06-16;CAS-OY-ZZZ-1
+2657;31;burial;open;Adeleke;Mudasiru;male;physician;35;1979-10-13;29;2015-07-01;CAS-OY-ZZZ-1
+2657;32;burial;done;Adeleke;Mudasiru;male;physician;35;1979-10-13;29;2015-07-01;CAS-OY-ZZZ-1
+2659;43;lab;overdue;Feyisara;Ogbonna;female;pest control officer;30;1984-05-30;39;2015-07-14;CAS-OY-ZZZ-1
+2659;44;burial;open;Feyisara;Ogbonna;female;pest control officer;30;1984-05-30;39;2015-07-14;CAS-OY-ZZZ-1
+2659;45;burial;done;Feyisara;Ogbonna;female;pest control officer;30;1984-05-30;39;2015-07-14;CAS-OY-ZZZ-1
+2659;45;discharge;open;Feyisara;Ogbonna;female;pest control officer;30;1984-05-30;39;2015-07-14;CAS-OY-ZZZ-1
+2659;46;discharge;done;Feyisara;Ogbonna;female;pest control officer;30;1984-05-30;39;2015-07-14;CAS-OY-ZZZ-1
+2672;29;burial;open;Oluwamayowa;Yaradua;male;soldier;56;1958-07-24;24;2015-06-29;CAS-OY-ZZZ-1
+2672;31;burial;done;Oluwamayowa;Yaradua;male;soldier;56;1958-07-24;24;2015-06-29;CAS-OY-ZZZ-1
+2678;37;discharge;open;Salim;Mshelia;male;songwriter;53;1961-11-25;33;;CAS-OY-ZZZ-1
+2678;38;discharge;done;Salim;Mshelia;male;songwriter;53;1961-11-25;33;;CAS-OY-ZZZ-1
+2682;29;lab;overdue;Maryjane;Erese;female;student;18;1996-11-24;25;;CAS-OY-ZZZ-1
+2695;26;burial;open;Sesugh;Aminu;male;police officer;24;1990-10-10;25;2015-06-26;CAS-OY-ZZZ-1
+2695;29;burial;done;Sesugh;Aminu;male;police officer;24;1990-10-10;25;2015-06-26;CAS-OY-ZZZ-1
+2695;29;lab;overdue;Sesugh;Aminu;male;police officer;24;1990-10-10;25;2015-06-26;CAS-OY-ZZZ-1
+2705;43;lab;overdue;Ofey;Agooba;female;paramedic (ambulance worker);53;1961-07-07;39;;CAS-OY-ZZZ-1
+2716;29;burial;open;Kolufunse;Edeh;male;school pupil;12;2003-06-04;24;2015-06-29;CAS-OY-ZZZ-1
+2716;31;burial;done;Kolufunse;Edeh;male;school pupil;12;2003-06-04;24;2015-06-29;CAS-OY-ZZZ-1
+2717;43;discharge;open;Faderera;Aromire;female;knitter;34;1980-05-09;40;;CAS-OY-ZZZ-1
+2717;44;discharge;done;Faderera;Aromire;female;knitter;34;1980-05-09;40;;CAS-OY-ZZZ-1
+2717;44;discharge;open;Faderera;Aromire;female;knitter;34;1980-05-09;40;;CAS-OY-ZZZ-1
+2717;45;discharge;done;Faderera;Aromire;female;knitter;34;1980-05-09;40;;CAS-OY-ZZZ-1
+2732;30;isolation;open;Akinola;Ojokolo;male;burial service;34;1980-12-22;30;2015-07-02;CAS-OY-ZZZ-1
+2732;32;burial;open;Akinola;Ojokolo;male;burial service;34;1980-12-22;30;2015-07-02;CAS-OY-ZZZ-1
+2732;32;isolation;done;Akinola;Ojokolo;male;burial service;34;1980-12-22;30;2015-07-02;CAS-OY-ZZZ-1
+2732;33;burial;done;Akinola;Ojokolo;male;burial service;34;1980-12-22;30;2015-07-02;CAS-OY-ZZZ-1
+2735;45;isolation;open;Ighogbetine;Egwuekwe;male;mechanic (measurement and control technician);53;1961-06-09;43;;CAS-OY-ZZZ-1
+2735;46;isolation;done;Ighogbetine;Egwuekwe;male;mechanic (measurement and control technician);53;1961-06-09;43;;CAS-OY-ZZZ-1
+2738;15;isolation;open;Godfrey ;Oyedele;male;state attorney (public prosecutor);59;1955-03-11;15;;CAS-OY-ZZZ-1
+2738;16;isolation;done;Godfrey ;Oyedele;male;state attorney (public prosecutor);59;1955-03-11;15;;CAS-OY-ZZZ-1
+2745;36;lab;overdue;Kelechi;Nguirmamaramama;male;commercial lawyer ;37;1977-09-11;32;2015-07-06;CAS-OY-ZZZ-1
+2745;36;burial;open;Kelechi;Nguirmamaramama;male;commercial lawyer ;37;1977-09-11;32;2015-07-06;CAS-OY-ZZZ-1
+2745;37;burial;done;Kelechi;Nguirmamaramama;male;commercial lawyer ;37;1977-09-11;32;2015-07-06;CAS-OY-ZZZ-1
+2746;44;burial;open;Temilore;Aromire;female;paramedic (ambulance worker);38;1976-11-06;40;2015-07-14;CAS-OY-ZZZ-1
+2746;44;discharge;open;Temilore;Aromire;female;paramedic (ambulance worker);38;1976-11-06;40;2015-07-14;CAS-OY-ZZZ-1
+2746;45;burial;done;Temilore;Aromire;female;paramedic (ambulance worker);38;1976-11-06;40;2015-07-14;CAS-OY-ZZZ-1
+2746;45;discharge;done;Temilore;Aromire;female;paramedic (ambulance worker);38;1976-11-06;40;2015-07-14;CAS-OY-ZZZ-1
+2746;46;discharge;open;Temilore;Aromire;female;paramedic (ambulance worker);38;1976-11-06;40;2015-07-14;CAS-OY-ZZZ-1
+2746;47;discharge;done;Temilore;Aromire;female;paramedic (ambulance worker);38;1976-11-06;40;2015-07-14;CAS-OY-ZZZ-1
+2749;22;lab;overdue;Kosisochukwuo;Obiora;female;stove fitter;45;1969-08-26;18;;CAS-OY-ZZZ-1
+2751;24;burial;open;Yakubu;Ogbonna;male;school pupil;16;1998-11-18;19;2015-06-24;CAS-OY-ZZZ-1
+2751;25;burial;done;Yakubu;Ogbonna;male;school pupil;16;1998-11-18;19;2015-06-24;CAS-OY-ZZZ-1
+2753;43;isolation;open;Martins;Adokwe;male;burial service;28;1987-01-22;43;;CAS-OY-ZZZ-1
+2753;44;isolation;done;Martins;Adokwe;male;burial service;28;1987-01-22;43;;CAS-OY-ZZZ-1
+2758;36;isolation;open;Chinue;Ohu;female;student;18;1996-09-15;33;2015-07-08;CAS-OY-ZZZ-1
+2758;38;burial;open;Chinue;Ohu;female;student;18;1996-09-15;33;2015-07-08;CAS-OY-ZZZ-1
+2758;38;isolation;done;Chinue;Ohu;female;student;18;1996-09-15;33;2015-07-08;CAS-OY-ZZZ-1
+2758;39;burial;done;Chinue;Ohu;female;student;18;1996-09-15;33;2015-07-08;CAS-OY-ZZZ-1
+2759;16;isolation;open;Esohe Uzamere;Asuquo;female;dust control technician;59;1956-03-03;15;2015-06-22;CAS-OY-ZZZ-1
+2759;17;isolation;done;Esohe Uzamere;Asuquo;female;dust control technician;59;1956-03-03;15;2015-06-22;CAS-OY-ZZZ-1
+2759;22;burial;open;Esohe Uzamere;Asuquo;female;dust control technician;59;1956-03-03;15;2015-06-22;CAS-OY-ZZZ-1
+2759;23;burial;done;Esohe Uzamere;Asuquo;female;dust control technician;59;1956-03-03;15;2015-06-22;CAS-OY-ZZZ-1
+2764;46;discharge;open;Salim;Ede;male;physician;57;1958-01-02;44;;CAS-OY-ZZZ-1
+2764;50;discharge;done;Salim;Ede;male;physician;57;1958-01-02;44;;CAS-OY-ZZZ-1
+2777;43;discharge;open;Aryee;Ameobi;male;camera mechanic;53;1962-01-29;40;2015-07-14;CAS-OY-ZZZ-1
+2777;44;burial;open;Aryee;Ameobi;male;camera mechanic;53;1962-01-29;40;2015-07-14;CAS-OY-ZZZ-1
+2777;44;discharge;done;Aryee;Ameobi;male;camera mechanic;53;1962-01-29;40;2015-07-14;CAS-OY-ZZZ-1
+2777;45;burial;done;Aryee;Ameobi;male;camera mechanic;53;1962-01-29;40;2015-07-14;CAS-OY-ZZZ-1
+2778;46;isolation;open;Obi;Babalakin;male;hotel receptionist (receptionist);25;1990-12-01;46;;CAS-OY-ZZZ-1
+2778;47;isolation;done;Obi;Babalakin;male;hotel receptionist (receptionist);25;1990-12-01;46;;CAS-OY-ZZZ-1
+2785;36;isolation;open;Jomiloju;Fidelis;male;art critic and historian;25;1989-06-17;36;2015-07-10;CAS-OY-ZZZ-1
+2785;37;isolation;done;Jomiloju;Fidelis;male;art critic and historian;25;1989-06-17;36;2015-07-10;CAS-OY-ZZZ-1
+2785;40;burial;open;Jomiloju;Fidelis;male;art critic and historian;25;1989-06-17;36;2015-07-10;CAS-OY-ZZZ-1
+2785;43;burial;done;Jomiloju;Fidelis;male;art critic and historian;25;1989-06-17;36;2015-07-10;CAS-OY-ZZZ-1
+2792;22;lab;overdue;Olaoluwa;Ahman;male;soldier;26;1989-03-15;18;2015-06-23;CAS-OY-ZZZ-1
+2792;23;burial;open;Olaoluwa;Ahman;male;soldier;26;1989-03-15;18;2015-06-23;CAS-OY-ZZZ-1
+2792;24;burial;done;Olaoluwa;Ahman;male;soldier;26;1989-03-15;18;2015-06-23;CAS-OY-ZZZ-1
+2794;22;lab;overdue;Abiakam;Ameobi;male;soldier;40;1975-03-29;18;;CAS-OY-ZZZ-1
+2824;26;burial;open;Ayotide;Amadiume;female;soldier;61;1954-04-18;23;2015-06-26;CAS-OY-ZZZ-1
+2824;29;burial;done;Ayotide;Amadiume;female;soldier;61;1954-04-18;23;2015-06-26;CAS-OY-ZZZ-1
+2827;29;lab;overdue;Chisom;Obasanho;female;career guidance counsellor (careers adviser);59;1956-05-05;25;;CAS-OY-ZZZ-1
+2832;26;isolation;open;Oyindamola;Kontagora;female;management consultant;58;1956-09-18;23;2015-06-29;CAS-OY-ZZZ-1
+2832;29;isolation;done;Oyindamola;Kontagora;female;management consultant;58;1956-09-18;23;2015-06-29;CAS-OY-ZZZ-1
+2832;29;burial;open;Oyindamola;Kontagora;female;management consultant;58;1956-09-18;23;2015-06-29;CAS-OY-ZZZ-1
+2832;30;burial;done;Oyindamola;Kontagora;female;management consultant;58;1956-09-18;23;2015-06-29;CAS-OY-ZZZ-1
+2834;50;lab;overdue;Chinue;Daramola;female;burial service;28;1986-10-24;46;;CAS-OY-ZZZ-1
+2834;50;isolation;open;Chinue;Daramola;female;burial service;28;1986-10-24;46;;CAS-OY-ZZZ-1
+2834;51;isolation;done;Chinue;Daramola;female;burial service;28;1986-10-24;46;;CAS-OY-ZZZ-1
+2838;44;discharge;open;Feyisara;Ilori;female;teacher;17;1998-04-28;40;2015-07-17;CAS-OY-ZZZ-1
+2838;45;discharge;done;Feyisara;Ilori;female;teacher;17;1998-04-28;40;2015-07-17;CAS-OY-ZZZ-1
+2838;47;burial;open;Feyisara;Ilori;female;teacher;17;1998-04-28;40;2015-07-17;CAS-OY-ZZZ-1
+2838;50;burial;done;Feyisara;Ilori;female;teacher;17;1998-04-28;40;2015-07-17;CAS-OY-ZZZ-1
+2843;24;burial;open;Chiburem;Akilu;female;film or videotape editor;46;1969-02-25;17;2015-06-24;CAS-OY-ZZZ-1
+2843;25;burial;done;Chiburem;Akilu;female;film or videotape editor;46;1969-02-25;17;2015-06-24;CAS-OY-ZZZ-1
+2847;22;lab;overdue;Blessing;Salami;male;burial service;46;1969-03-05;18;;CAS-OY-ZZZ-1
+2847;22;isolation;open;Blessing;Salami;male;burial service;46;1969-03-05;18;;CAS-OY-ZZZ-1
+2847;23;isolation;done;Blessing;Salami;male;burial service;46;1969-03-05;18;;CAS-OY-ZZZ-1
+2862;51;discharge;open;Ibinabo;Aromire;male;telecommunications installation and repair technician;29;1986-02-04;46;;CAS-OY-ZZZ-1
+2862;52;discharge;done;Ibinabo;Aromire;male;telecommunications installation and repair technician;29;1986-02-04;46;;CAS-OY-ZZZ-1
+2886;26;isolation;open;Oluwatofunmi;Obiajunwa;female;multimedia designer;36;1979-01-04;25;;CAS-OY-ZZZ-1
+2886;29;isolation;done;Oluwatofunmi;Obiajunwa;female;multimedia designer;36;1979-01-04;25;;CAS-OY-ZZZ-1
+2887;19;isolation;open;Ijeoma;Aileru;female;physician;25;1989-06-30;17;;CAS-OY-ZZZ-1
+2887;22;isolation;done;Ijeoma;Aileru;female;physician;25;1989-06-30;17;;CAS-OY-ZZZ-1
+2897;44;isolation;open;Oluwakemi;Mitee;male;debt collector;56;1958-09-13;43;2015-07-16;CAS-OY-ZZZ-1
+2897;45;isolation;done;Oluwakemi;Mitee;male;debt collector;56;1958-09-13;43;2015-07-16;CAS-OY-ZZZ-1
+2897;46;burial;open;Oluwakemi;Mitee;male;debt collector;56;1958-09-13;43;2015-07-16;CAS-OY-ZZZ-1
+2897;50;burial;done;Oluwakemi;Mitee;male;debt collector;56;1958-09-13;43;2015-07-16;CAS-OY-ZZZ-1
+2906;46;isolation;open;Arome;Ogugua;male;burial service;57;1958-01-31;45;;CAS-OY-ZZZ-1
+2906;50;isolation;done;Arome;Ogugua;male;burial service;57;1958-01-31;45;;CAS-OY-ZZZ-1
+2909;40;burial;open;Timi;Abedi;male;student;19;1996-08-03;37;2015-07-10;CAS-OY-ZZZ-1
+2909;40;discharge;open;Timi;Abedi;male;student;19;1996-08-03;37;2015-07-10;CAS-OY-ZZZ-1
+2909;43;burial;done;Timi;Abedi;male;student;19;1996-08-03;37;2015-07-10;CAS-OY-ZZZ-1
+2909;43;discharge;done;Timi;Abedi;male;student;19;1996-08-03;37;2015-07-10;CAS-OY-ZZZ-1
+2912;38;burial;open;Tiwatopelodolurun;Tompolo;female;teacher;27;1988-03-24;32;2015-07-08;CAS-OY-ZZZ-1
+2912;39;burial;done;Tiwatopelodolurun;Tompolo;female;teacher;27;1988-03-24;32;2015-07-08;CAS-OY-ZZZ-1
+2922;30;isolation;open;Temilore;Ojokolo;female;pharmacist;62;1952-08-27;30;2015-07-01;CAS-OY-ZZZ-1
+2922;31;burial;open;Temilore;Ojokolo;female;pharmacist;62;1952-08-27;30;2015-07-01;CAS-OY-ZZZ-1
+2922;31;isolation;done;Temilore;Ojokolo;female;pharmacist;62;1952-08-27;30;2015-07-01;CAS-OY-ZZZ-1
+2922;32;burial;done;Temilore;Ojokolo;female;pharmacist;62;1952-08-27;30;2015-07-01;CAS-OY-ZZZ-1
+2949;33;burial;open;Efemena;Edet;female;police officer;64;1950-07-18;31;2015-07-03;CAS-OY-ZZZ-1
+2949;36;burial;done;Efemena;Edet;female;police officer;64;1950-07-18;31;2015-07-03;CAS-OY-ZZZ-1
+2966;45;isolation;open;Alao;Guda;male;teacher;62;1953-01-25;45;2015-07-16;CAS-OY-ZZZ-1
+2966;46;burial;open;Alao;Guda;male;teacher;62;1953-01-25;45;2015-07-16;CAS-OY-ZZZ-1
+2966;47;burial;done;Alao;Guda;male;teacher;62;1953-01-25;45;2015-07-16;CAS-OY-ZZZ-1
+2966;47;isolation;done;Alao;Guda;male;teacher;62;1953-01-25;45;2015-07-16;CAS-OY-ZZZ-1
+2971;22;discharge;open;Adama;Ahman;female;specialist in animal husbandry (livestock specialist);44;1970-07-15;17;;CAS-OY-ZZZ-1
+2971;23;discharge;done;Adama;Ahman;female;specialist in animal husbandry (livestock specialist);44;1970-07-15;17;;CAS-OY-ZZZ-1
+2975;32;burial;open;Nifemi;Adeola;male;audio graphic designer;26;1988-07-21;29;2015-07-02;CAS-OY-ZZZ-1
+2975;33;burial;done;Nifemi;Adeola;male;audio graphic designer;26;1988-07-21;29;2015-07-02;CAS-OY-ZZZ-1
+2976;31;isolation;open;Olubowale;Ameh;male;school pupil;12;2002-11-07;30;2015-07-07;CAS-OY-ZZZ-1
+2976;32;isolation;done;Olubowale;Ameh;male;school pupil;12;2002-11-07;30;2015-07-07;CAS-OY-ZZZ-1
+2976;37;burial;open;Olubowale;Ameh;male;school pupil;12;2002-11-07;30;2015-07-07;CAS-OY-ZZZ-1
+2976;39;burial;done;Olubowale;Ameh;male;school pupil;12;2002-11-07;30;2015-07-07;CAS-OY-ZZZ-1
+2978;29;burial;open;Ajiriohene;Ibekwe;female;brewer and maltster;63;1952-04-16;24;2015-06-29;CAS-OY-ZZZ-1
+2978;31;burial;done;Ajiriohene;Ibekwe;female;brewer and maltster;63;1952-04-16;24;2015-06-29;CAS-OY-ZZZ-1
+2982;23;isolation;open;Olatunjl;Achuzie;male;physician;57;1957-07-10;23;2015-06-29;CAS-OY-ZZZ-1
+2982;24;isolation;done;Olatunjl;Achuzie;male;physician;57;1957-07-10;23;2015-06-29;CAS-OY-ZZZ-1
+2982;29;burial;open;Olatunjl;Achuzie;male;physician;57;1957-07-10;23;2015-06-29;CAS-OY-ZZZ-1
+2982;31;burial;done;Olatunjl;Achuzie;male;physician;57;1957-07-10;23;2015-06-29;CAS-OY-ZZZ-1
+2983;12;discharge;open;Chibuzoa;Fidelis;female;student;20;1995-01-02;9;;CAS-OY-ZZZ-1
+2983;15;discharge;done;Chibuzoa;Fidelis;female;student;20;1995-01-02;9;;CAS-OY-ZZZ-1
+2988;46;burial;open;Iniobong;Kusare;female;soldier;61;1953-11-27;44;2015-07-16;CAS-OY-ZZZ-1
+2988;50;burial;done;Iniobong;Kusare;female;soldier;61;1953-11-27;44;2015-07-16;CAS-OY-ZZZ-1
+2989;37;discharge;open;Chinenye;Amokachi;female;police officer;46;1969-01-29;32;;CAS-OY-ZZZ-1
+2989;38;discharge;done;Chinenye;Amokachi;female;police officer;46;1969-01-29;32;;CAS-OY-ZZZ-1
+2997;18;burial;open;Mujeedat;Edem;female;construction carpenter (joiner);24;1990-08-26;15;2015-06-18;CAS-OY-ZZZ-1
+2997;19;burial;done;Mujeedat;Edem;female;construction carpenter (joiner);24;1990-08-26;15;2015-06-18;CAS-OY-ZZZ-1
+2998;16;isolation;open;Olubowale;Akwashiki;male;school pupil;12;2003-10-04;15;2015-06-19;CAS-OY-ZZZ-1
+2998;18;isolation;done;Olubowale;Akwashiki;male;school pupil;12;2003-10-04;15;2015-06-19;CAS-OY-ZZZ-1
+2998;19;burial;open;Olubowale;Akwashiki;male;school pupil;12;2003-10-04;15;2015-06-19;CAS-OY-ZZZ-1
+2998;22;burial;done;Olubowale;Akwashiki;male;school pupil;12;2003-10-04;15;2015-06-19;CAS-OY-ZZZ-1
+3018;15;lab;overdue;Tiwatopelodolurun;Tom;female;biochemist;57;1958-03-05;11;;CAS-OY-ZZZ-1
+3020;36;lab;overdue;Ijeoma;Latifu;female;soldier;25;1989-11-11;32;;CAS-OY-ZZZ-1
+3022;50;lab;overdue;Oba Ni Ohun;Olunloyo;male;student;18;1996-07-10;46;;CAS-OY-ZZZ-1
+3022;50;isolation;open;Oba Ni Ohun;Olunloyo;male;student;18;1996-07-10;46;;CAS-OY-ZZZ-1
+3022;52;isolation;done;Oba Ni Ohun;Olunloyo;male;student;18;1996-07-10;46;;CAS-OY-ZZZ-1
+3039;46;isolation;open;Ayeola;Group;female;service mechanic or repairer;50;1964-12-17;45;;CAS-OY-ZZZ-1
+3039;47;isolation;done;Ayeola;Group;female;service mechanic or repairer;50;1964-12-17;45;;CAS-OY-ZZZ-1
+3061;32;isolation;open;Precious;Adewunmi;female;soldier;47;1967-07-23;31;2015-07-08;CAS-OY-ZZZ-1
+3061;36;isolation;done;Precious;Adewunmi;female;soldier;47;1967-07-23;31;2015-07-08;CAS-OY-ZZZ-1
+3061;38;burial;open;Precious;Adewunmi;female;soldier;47;1967-07-23;31;2015-07-08;CAS-OY-ZZZ-1
+3061;39;burial;done;Precious;Adewunmi;female;soldier;47;1967-07-23;31;2015-07-08;CAS-OY-ZZZ-1
+3062;26;isolation;open;Ololade;Folawiyo;female;lifeguard (swimming instructor);35;1979-11-22;26;2015-07-14;CAS-OY-ZZZ-1
+3062;29;isolation;done;Ololade;Folawiyo;female;lifeguard (swimming instructor);35;1979-11-22;26;2015-07-14;CAS-OY-ZZZ-1
+3062;44;burial;open;Ololade;Folawiyo;female;lifeguard (swimming instructor);35;1979-11-22;26;2015-07-14;CAS-OY-ZZZ-1
+3062;46;burial;done;Ololade;Folawiyo;female;lifeguard (swimming instructor);35;1979-11-22;26;2015-07-14;CAS-OY-ZZZ-1
+3072;40;discharge;open;Edoja;Shittu;male;car service worker (service station worker);28;1987-01-17;37;;CAS-OY-ZZZ-1
+3072;43;discharge;done;Edoja;Shittu;male;car service worker (service station worker);28;1987-01-17;37;;CAS-OY-ZZZ-1
+3073;43;lab;overdue;Edoja;Oyesanya;male;auditor;26;1988-11-11;39;2015-07-13;CAS-OY-ZZZ-1
+3073;43;burial;open;Edoja;Oyesanya;male;auditor;26;1988-11-11;39;2015-07-13;CAS-OY-ZZZ-1
+3073;43;isolation;open;Edoja;Oyesanya;male;auditor;26;1988-11-11;39;2015-07-13;CAS-OY-ZZZ-1
+3073;44;isolation;done;Edoja;Oyesanya;male;auditor;26;1988-11-11;39;2015-07-13;CAS-OY-ZZZ-1
+3073;45;burial;done;Edoja;Oyesanya;male;auditor;26;1988-11-11;39;2015-07-13;CAS-OY-ZZZ-1
+3080;18;isolation;open;Chiamaka;Ezinwa;female;referee (umpire);27;1988-03-30;16;2015-06-19;CAS-OY-ZZZ-1
+3080;19;burial;open;Chiamaka;Ezinwa;female;referee (umpire);27;1988-03-30;16;2015-06-19;CAS-OY-ZZZ-1
+3080;19;isolation;done;Chiamaka;Ezinwa;female;referee (umpire);27;1988-03-30;16;2015-06-19;CAS-OY-ZZZ-1
+3080;22;burial;done;Chiamaka;Ezinwa;female;referee (umpire);27;1988-03-30;16;2015-06-19;CAS-OY-ZZZ-1
+3086;43;discharge;open;Ciara;Oladele;female;doorkeeper or porter;27;1988-03-18;38;2015-07-14;CAS-OY-ZZZ-1
+3086;44;burial;open;Ciara;Oladele;female;doorkeeper or porter;27;1988-03-18;38;2015-07-14;CAS-OY-ZZZ-1
+3086;44;discharge;done;Ciara;Oladele;female;doorkeeper or porter;27;1988-03-18;38;2015-07-14;CAS-OY-ZZZ-1
+3086;45;burial;done;Ciara;Oladele;female;doorkeeper or porter;27;1988-03-18;38;2015-07-14;CAS-OY-ZZZ-1
+3087;43;lab;overdue;Chinedu;Izonritei;male;valuer;60;1954-06-27;39;;CAS-OY-ZZZ-1
+3099;40;isolation;open;Ndubuisi;Nguirmamaramama;male;concrete worker (concreter);23;1991-07-27;39;;CAS-OY-ZZZ-1
+3099;43;isolation;done;Ndubuisi;Nguirmamaramama;male;concrete worker (concreter);23;1991-07-27;39;;CAS-OY-ZZZ-1
+3120;33;burial;open;Arnissa;Babalakin;female;orthotist (prosthetist);28;1986-05-10;30;2015-07-03;CAS-OY-ZZZ-1
+3120;36;burial;done;Arnissa;Babalakin;female;orthotist (prosthetist);28;1986-05-10;30;2015-07-03;CAS-OY-ZZZ-1
+3126;15;burial;open;Attahlerne;Erese;male;trainee;15;1999-12-12;11;2015-06-15;CAS-OY-ZZZ-1
+3126;16;burial;done;Attahlerne;Erese;male;trainee;15;1999-12-12;11;2015-06-15;CAS-OY-ZZZ-1
+3134;43;burial;open;Omotese;Ezeh;female;fish warden (water keeper or bailiff);54;1960-07-22;38;2015-07-13;CAS-OY-ZZZ-1
+3134;43;discharge;open;Omotese;Ezeh;female;fish warden (water keeper or bailiff);54;1960-07-22;38;2015-07-13;CAS-OY-ZZZ-1
+3134;44;discharge;done;Omotese;Ezeh;female;fish warden (water keeper or bailiff);54;1960-07-22;38;2015-07-13;CAS-OY-ZZZ-1
+3134;45;burial;done;Omotese;Ezeh;female;fish warden (water keeper or bailiff);54;1960-07-22;38;2015-07-13;CAS-OY-ZZZ-1
+3142;44;burial;open;Mesoma;Isibor;female;student;20;1995-02-20;38;2015-07-14;CAS-OY-ZZZ-1
+3142;46;burial;done;Mesoma;Isibor;female;student;20;1995-02-20;38;2015-07-14;CAS-OY-ZZZ-1
+3144;43;lab;overdue;Ekpeyoawan;Kabokeme;female;trainee;15;1999-06-24;39;;CAS-OY-ZZZ-1
+3144;43;isolation;open;Ekpeyoawan;Kabokeme;female;trainee;15;1999-06-24;39;;CAS-OY-ZZZ-1
+3144;44;isolation;done;Ekpeyoawan;Kabokeme;female;trainee;15;1999-06-24;39;;CAS-OY-ZZZ-1
+3173;43;isolation;open;Osarenren ;Ogungbe;male;metal worker or Steelworker (Foundry Worker);60;1955-07-03;40;2015-07-14;CAS-OY-ZZZ-1
+3173;44;burial;open;Osarenren ;Ogungbe;male;metal worker or Steelworker (Foundry Worker);60;1955-07-03;40;2015-07-14;CAS-OY-ZZZ-1
+3173;45;burial;done;Osarenren ;Ogungbe;male;metal worker or Steelworker (Foundry Worker);60;1955-07-03;40;2015-07-14;CAS-OY-ZZZ-1
+3173;45;isolation;done;Osarenren ;Ogungbe;male;metal worker or Steelworker (Foundry Worker);60;1955-07-03;40;2015-07-14;CAS-OY-ZZZ-1
+3174;43;isolation;open;Blessing;Daku;male;pilot (harbours and ports);34;1980-09-25;40;2015-07-14;CAS-OY-ZZZ-1
+3174;44;burial;open;Blessing;Daku;male;pilot (harbours and ports);34;1980-09-25;40;2015-07-14;CAS-OY-ZZZ-1
+3174;44;isolation;done;Blessing;Daku;male;pilot (harbours and ports);34;1980-09-25;40;2015-07-14;CAS-OY-ZZZ-1
+3174;45;burial;done;Blessing;Daku;male;pilot (harbours and ports);34;1980-09-25;40;2015-07-14;CAS-OY-ZZZ-1
+3178;32;isolation;open;Obehi;Baruwa;male;boatman or -woman (bargee);27;1988-02-28;31;2015-07-09;CAS-OY-ZZZ-1
+3178;33;isolation;done;Obehi;Baruwa;male;boatman or -woman (bargee);27;1988-02-28;31;2015-07-09;CAS-OY-ZZZ-1
+3178;39;burial;open;Obehi;Baruwa;male;boatman or -woman (bargee);27;1988-02-28;31;2015-07-09;CAS-OY-ZZZ-1
+3178;40;burial;done;Obehi;Baruwa;male;boatman or -woman (bargee);27;1988-02-28;31;2015-07-09;CAS-OY-ZZZ-1
+3197;37;burial;open;Obiora;Arase;male;pest control officer;32;1982-07-25;33;2015-07-07;CAS-OY-ZZZ-1
+3197;39;burial;done;Obiora;Arase;male;pest control officer;32;1982-07-25;33;2015-07-07;CAS-OY-ZZZ-1
+3207;46;burial;open;Nta;Mshelia;male;poultry breeder (poultry farmer);38;1977-04-01;44;2015-07-16;CAS-OY-ZZZ-1
+3207;47;burial;done;Nta;Mshelia;male;poultry breeder (poultry farmer);38;1977-04-01;44;2015-07-16;CAS-OY-ZZZ-1
+3215;18;burial;open;Chisom;Sambo;female;real estate agent (estate agent);33;1982-11-05;15;2015-06-18;CAS-OY-ZZZ-1
+3215;19;burial;done;Chisom;Sambo;female;real estate agent (estate agent);33;1982-11-05;15;2015-06-18;CAS-OY-ZZZ-1
+3218;12;isolation;open;Oluwabunmi;Anyiam;male;craft upholsterer;48;1966-07-13;12;2015-06-17;CAS-OY-ZZZ-1
+3218;15;isolation;done;Oluwabunmi;Anyiam;male;craft upholsterer;48;1966-07-13;12;2015-06-17;CAS-OY-ZZZ-1
+3218;17;burial;open;Oluwabunmi;Anyiam;male;craft upholsterer;48;1966-07-13;12;2015-06-17;CAS-OY-ZZZ-1
+3218;18;burial;done;Oluwabunmi;Anyiam;male;craft upholsterer;48;1966-07-13;12;2015-06-17;CAS-OY-ZZZ-1
+3219;46;burial;open;Bolarinwa;Odunlami;male;soldier;57;1957-06-27;40;2015-07-16;CAS-OY-ZZZ-1
+3219;50;burial;done;Bolarinwa;Odunlami;male;soldier;57;1957-06-27;40;2015-07-16;CAS-OY-ZZZ-1
+3224;44;discharge;open;Ndubuisi;Akabueze;male;ship's captain;26;1988-10-28;39;;CAS-OY-ZZZ-1
+3224;45;discharge;done;Ndubuisi;Akabueze;male;ship's captain;26;1988-10-28;39;;CAS-OY-ZZZ-1
+3238;12;isolation;open;Ikeoluwatomiwaopayemi;Dooyum;female;railway carriage and wagon inspector;56;1958-12-19;12;2015-06-16;CAS-OY-ZZZ-1
+3238;15;isolation;done;Ikeoluwatomiwaopayemi;Dooyum;female;railway carriage and wagon inspector;56;1958-12-19;12;2015-06-16;CAS-OY-ZZZ-1
+3238;16;burial;open;Ikeoluwatomiwaopayemi;Dooyum;female;railway carriage and wagon inspector;56;1958-12-19;12;2015-06-16;CAS-OY-ZZZ-1
+3238;17;burial;done;Ikeoluwatomiwaopayemi;Dooyum;female;railway carriage and wagon inspector;56;1958-12-19;12;2015-06-16;CAS-OY-ZZZ-1
+3239;11;discharge;open;Adaze;Henshaw;male;student;20;1994-07-26;8;;CAS-OY-ZZZ-1
+3239;12;discharge;done;Adaze;Henshaw;male;student;20;1994-07-26;8;;CAS-OY-ZZZ-1
+3248;29;lab;overdue;Ugochukwu ;Shonibare;male;nurse;58;1957-01-22;25;2015-07-01;CAS-OY-ZZZ-1
+3248;31;burial;open;Ugochukwu ;Shonibare;male;nurse;58;1957-01-22;25;2015-07-01;CAS-OY-ZZZ-1
+3248;32;burial;done;Ugochukwu ;Shonibare;male;nurse;58;1957-01-22;25;2015-07-01;CAS-OY-ZZZ-1
+3251;47;burial;open;Agbomma;Ogungbe;female;school pupil;14;2001-11-01;45;2015-07-17;CAS-OY-ZZZ-1
+3251;50;burial;done;Agbomma;Ogungbe;female;school pupil;14;2001-11-01;45;2015-07-17;CAS-OY-ZZZ-1
+3265;43;discharge;open;Godfrey ;Abdullahi;male;trainee;16;1999-07-04;38;;CAS-OY-ZZZ-1
+3265;44;discharge;done;Godfrey ;Abdullahi;male;trainee;16;1999-07-04;38;;CAS-OY-ZZZ-1
+3269;15;lab;overdue;Omolade;Sambo;male;lottery ticket street vendor;31;1983-08-15;11;;CAS-OY-ZZZ-1
+3281;18;isolation;open;Odogwu;Oshaniwa;male;geographer;39;1975-11-08;18;;CAS-OY-ZZZ-1
+3281;22;isolation;done;Odogwu;Oshaniwa;male;geographer;39;1975-11-08;18;;CAS-OY-ZZZ-1
+3284;12;burial;open;Ogaden;Iroha;female;soldier;24;1991-02-01;10;2015-06-12;CAS-OY-ZZZ-1
+3284;15;burial;done;Ogaden;Iroha;female;soldier;24;1991-02-01;10;2015-06-12;CAS-OY-ZZZ-1
+3287;30;isolation;open;Sochikaima;Iheanacho;female;customs officer (customs inspector);33;1982-02-26;29;2015-07-02;CAS-OY-ZZZ-1
+3287;31;isolation;done;Sochikaima;Iheanacho;female;customs officer (customs inspector);33;1982-02-26;29;2015-07-02;CAS-OY-ZZZ-1
+3287;32;burial;open;Sochikaima;Iheanacho;female;customs officer (customs inspector);33;1982-02-26;29;2015-07-02;CAS-OY-ZZZ-1
+3287;36;burial;done;Sochikaima;Iheanacho;female;customs officer (customs inspector);33;1982-02-26;29;2015-07-02;CAS-OY-ZZZ-1
+3292;18;burial;open;Madukairo;Ohu;male;school pupil;12;2003-03-15;15;2015-06-18;CAS-OY-ZZZ-1
+3292;19;burial;done;Madukairo;Ohu;male;school pupil;12;2003-03-15;15;2015-06-18;CAS-OY-ZZZ-1
+3298;9;burial;open;Onyinye;Alozie;male;school pupil;12;2002-12-19;8;2015-06-09;CAS-OY-ZZZ-1
+3298;10;burial;done;Onyinye;Alozie;male;school pupil;12;2002-12-19;8;2015-06-09;CAS-OY-ZZZ-1
+3303;29;burial;open;Gberbo;Ojomoh;female;glass production worker (worker in the glass industry);64;1950-11-19;24;2015-06-29;CAS-OY-ZZZ-1
+3303;30;burial;done;Gberbo;Ojomoh;female;glass production worker (worker in the glass industry);64;1950-11-19;24;2015-06-29;CAS-OY-ZZZ-1
+3319;25;burial;open;Titilayo;Musa;female;police officer;38;1976-08-31;19;2015-06-25;CAS-OY-ZZZ-1
+3319;26;burial;done;Titilayo;Musa;female;police officer;38;1976-08-31;19;2015-06-25;CAS-OY-ZZZ-1
+3323;32;burial;open;Ijeoma;Kanayo;female;ceramicist (potter);37;1977-11-06;26;2015-07-02;CAS-OY-ZZZ-1
+3323;33;burial;done;Ijeoma;Kanayo;female;ceramicist (potter);37;1977-11-06;26;2015-07-02;CAS-OY-ZZZ-1
+3327;17;burial;open;Oladayo;Oluyole;male;musician;34;1980-08-06;15;2015-06-17;CAS-OY-ZZZ-1
+3327;18;burial;done;Oladayo;Oluyole;male;musician;34;1980-08-06;15;2015-06-17;CAS-OY-ZZZ-1
+3332;50;lab;overdue;Alao;Yeiyah;male;nurse;40;1974-09-12;45;;CAS-OY-ZZZ-1
+3332;50;discharge;open;Alao;Yeiyah;male;nurse;40;1974-09-12;45;;CAS-OY-ZZZ-1
+3332;51;discharge;done;Alao;Yeiyah;male;nurse;40;1974-09-12;45;;CAS-OY-ZZZ-1
+3338;43;lab;overdue;Usochukwuka;Oyedele;female;teacher;63;1951-11-17;39;2015-07-13;CAS-OY-ZZZ-1
+3338;43;burial;open;Usochukwuka;Oyedele;female;teacher;63;1951-11-17;39;2015-07-13;CAS-OY-ZZZ-1
+3338;43;isolation;open;Usochukwuka;Oyedele;female;teacher;63;1951-11-17;39;2015-07-13;CAS-OY-ZZZ-1
+3338;44;burial;done;Usochukwuka;Oyedele;female;teacher;63;1951-11-17;39;2015-07-13;CAS-OY-ZZZ-1
+3338;45;isolation;done;Usochukwuka;Oyedele;female;teacher;63;1951-11-17;39;2015-07-13;CAS-OY-ZZZ-1
+3339;44;burial;open;Olufunso;Sambo;male;radio and tv transmission engineering technician;42;1972-04-11;40;2015-07-14;CAS-OY-ZZZ-1
+3339;44;discharge;open;Olufunso;Sambo;male;radio and tv transmission engineering technician;42;1972-04-11;40;2015-07-14;CAS-OY-ZZZ-1
+3339;45;discharge;done;Olufunso;Sambo;male;radio and tv transmission engineering technician;42;1972-04-11;40;2015-07-14;CAS-OY-ZZZ-1
+3339;46;burial;done;Olufunso;Sambo;male;radio and tv transmission engineering technician;42;1972-04-11;40;2015-07-14;CAS-OY-ZZZ-1
+3345;19;burial;open;Ada;Gobir;female;art glazier and window-pane maker (craft glazier);22;1992-12-09;19;2015-06-19;CAS-OY-ZZZ-1
+3345;22;burial;done;Ada;Gobir;female;art glazier and window-pane maker (craft glazier);22;1992-12-09;19;2015-06-19;CAS-OY-ZZZ-1
+3386;33;burial;open;Nnaemeka;Olajuwon;male;specialist in animal husbandry (livestock specialist);55;1959-03-07;31;2015-07-03;CAS-OY-ZZZ-1
+3386;36;burial;done;Nnaemeka;Olajuwon;male;specialist in animal husbandry (livestock specialist);55;1959-03-07;31;2015-07-03;CAS-OY-ZZZ-1
+3388;39;discharge;open;Oluwafunke;Elegbede;female;burial service;41;1974-10-03;36;;CAS-OY-ZZZ-1
+3388;40;discharge;done;Oluwafunke;Elegbede;female;burial service;41;1974-10-03;36;;CAS-OY-ZZZ-1
+3391;44;burial;open;Madukairo;Olayombo;male;trainee or apprentice chef ;54;1961-09-03;40;2015-07-14;CAS-OY-ZZZ-1
+3391;45;burial;done;Madukairo;Olayombo;male;trainee or apprentice chef ;54;1961-09-03;40;2015-07-14;CAS-OY-ZZZ-1
+3391;45;discharge;open;Madukairo;Olayombo;male;trainee or apprentice chef ;54;1961-09-03;40;2015-07-14;CAS-OY-ZZZ-1
+3391;46;discharge;done;Madukairo;Olayombo;male;trainee or apprentice chef ;54;1961-09-03;40;2015-07-14;CAS-OY-ZZZ-1
+3396;39;discharge;open;Aniyemawen;Ishiaku;female;apprentice;17;1998-01-03;36;;CAS-OY-ZZZ-1
+3396;40;discharge;done;Aniyemawen;Ishiaku;female;apprentice;17;1998-01-03;36;;CAS-OY-ZZZ-1
+3396;44;isolation;open;Aniyemawen;Ishiaku;female;apprentice;17;1998-01-03;36;;CAS-OY-ZZZ-1
+3396;46;isolation;done;Aniyemawen;Ishiaku;female;apprentice;17;1998-01-03;36;;CAS-OY-ZZZ-1
+3406;15;isolation;open;Oluwatitofunmi;Abdullahi;female;physician;28;1987-02-27;12;2015-06-19;CAS-OY-ZZZ-1
+3406;17;isolation;done;Oluwatitofunmi;Abdullahi;female;physician;28;1987-02-27;12;2015-06-19;CAS-OY-ZZZ-1
+3406;19;burial;open;Oluwatitofunmi;Abdullahi;female;physician;28;1987-02-27;12;2015-06-19;CAS-OY-ZZZ-1
+3406;22;burial;done;Oluwatitofunmi;Abdullahi;female;physician;28;1987-02-27;12;2015-06-19;CAS-OY-ZZZ-1
+3415;30;burial;open;Ifeanyi;Eteimo;male;orthopaedic shoemaker (orthopaedic bootmaker);64;1951-05-22;24;2015-06-30;CAS-OY-ZZZ-1
+3415;31;burial;done;Ifeanyi;Eteimo;male;orthopaedic shoemaker (orthopaedic bootmaker);64;1951-05-22;24;2015-06-30;CAS-OY-ZZZ-1
+3419;33;burial;open;Esema;Kanu;male;burial service;51;1964-05-01;32;2015-07-03;CAS-OY-ZZZ-1
+3419;36;burial;done;Esema;Kanu;male;burial service;51;1964-05-01;32;2015-07-03;CAS-OY-ZZZ-1
+3419;36;discharge;open;Esema;Kanu;male;burial service;51;1964-05-01;32;2015-07-03;CAS-OY-ZZZ-1
+3419;38;discharge;done;Esema;Kanu;male;burial service;51;1964-05-01;32;2015-07-03;CAS-OY-ZZZ-1
+3430;47;burial;open;Adaeze;Omodiagbe;female;scene painter;29;1985-10-19;44;2015-07-17;CAS-OY-ZZZ-1
+3430;50;burial;done;Adaeze;Omodiagbe;female;scene painter;29;1985-10-19;44;2015-07-17;CAS-OY-ZZZ-1
+3430;52;discharge;open;Adaeze;Omodiagbe;female;scene painter;29;1985-10-19;44;2015-07-17;CAS-OY-ZZZ-1
+3430;53;discharge;done;Adaeze;Omodiagbe;female;scene painter;29;1985-10-19;44;2015-07-17;CAS-OY-ZZZ-1
+3443;39;burial;open;Uche;Ndukwu;male;drilling rig operator (driller);23;1991-07-22;37;2015-07-09;CAS-OY-ZZZ-1
+3443;40;burial;done;Uche;Ndukwu;male;drilling rig operator (driller);23;1991-07-22;37;2015-07-09;CAS-OY-ZZZ-1
+3467;47;burial;open;Bola;Aromire;female;electrician;23;1991-08-15;43;2015-07-17;CAS-OY-ZZZ-1
+3467;50;burial;done;Bola;Aromire;female;electrician;23;1991-08-15;43;2015-07-17;CAS-OY-ZZZ-1
+3479;44;burial;open;Olaoluwa;Iwuji;male;soldier;51;1963-09-07;40;2015-07-14;CAS-OY-ZZZ-1
+3479;46;burial;done;Olaoluwa;Iwuji;male;soldier;51;1963-09-07;40;2015-07-14;CAS-OY-ZZZ-1
+3487;32;burial;open;Sherifat;Sherif;female;physician;27;1987-08-27;26;2015-07-02;CAS-OY-ZZZ-1
+3487;33;burial;done;Sherifat;Sherif;female;physician;27;1987-08-27;26;2015-07-02;CAS-OY-ZZZ-1
+3502;32;burial;open;Affiong;Elumelu;male;heating engineer (heating and ventilating engineer);63;1951-11-07;29;2015-07-02;CAS-OY-ZZZ-1
+3502;33;burial;done;Affiong;Elumelu;male;heating engineer (heating and ventilating engineer);63;1951-11-07;29;2015-07-02;CAS-OY-ZZZ-1
+3511;47;isolation;open;Blessing;Oresanya;male;heating engineer (heating and ventilating engineer);62;1952-07-29;45;;CAS-OY-ZZZ-1
+3511;50;isolation;done;Blessing;Oresanya;male;heating engineer (heating and ventilating engineer);62;1952-07-29;45;;CAS-OY-ZZZ-1
+3514;50;discharge;open;Osagie;Ike;male;soldier;27;1988-01-24;45;;CAS-OY-ZZZ-1
+3514;51;discharge;done;Osagie;Ike;male;soldier;27;1988-01-24;45;;CAS-OY-ZZZ-1
+3519;29;burial;open;Kelechi;Jegede;male;computer network manager;58;1957-05-25;23;2015-06-29;CAS-OY-ZZZ-1
+3519;31;burial;done;Kelechi;Jegede;male;computer network manager;58;1957-05-25;23;2015-06-29;CAS-OY-ZZZ-1
+3535;25;burial;open;Chiedozie;Akinola;male;apprentice;17;1997-07-16;25;2015-06-25;CAS-OY-ZZZ-1
+3535;29;burial;done;Chiedozie;Akinola;male;apprentice;17;1997-07-16;25;2015-06-25;CAS-OY-ZZZ-1
+3565;46;isolation;open;Ibironke;Orode;female;burial service;56;1959-04-04;45;;CAS-OY-ZZZ-1
+3565;50;isolation;done;Ibironke;Orode;female;burial service;56;1959-04-04;45;;CAS-OY-ZZZ-1
+3569;31;isolation;open;Eno-Obong;Simon;female;trainee;16;1998-05-09;29;2015-07-02;CAS-OY-ZZZ-1
+3569;32;burial;open;Eno-Obong;Simon;female;trainee;16;1998-05-09;29;2015-07-02;CAS-OY-ZZZ-1
+3569;33;isolation;done;Eno-Obong;Simon;female;trainee;16;1998-05-09;29;2015-07-02;CAS-OY-ZZZ-1
+3569;36;burial;done;Eno-Obong;Simon;female;trainee;16;1998-05-09;29;2015-07-02;CAS-OY-ZZZ-1
+3575;50;discharge;open;Temilore;Gumba;female;fringe (trimmings maker);60;1954-12-26;47;;CAS-OY-ZZZ-1
+3575;51;discharge;done;Temilore;Gumba;female;fringe (trimmings maker);60;1954-12-26;47;;CAS-OY-ZZZ-1
+3575;51;discharge;open;Temilore;Gumba;female;fringe (trimmings maker);60;1954-12-26;47;;CAS-OY-ZZZ-1
+3575;52;discharge;done;Temilore;Gumba;female;fringe (trimmings maker);60;1954-12-26;47;;CAS-OY-ZZZ-1
+3582;44;burial;open;Olufunso;Dawodu;male;school inspector;41;1974-02-28;40;2015-07-14;CAS-OY-ZZZ-1
+3582;44;discharge;open;Olufunso;Dawodu;male;school inspector;41;1974-02-28;40;2015-07-14;CAS-OY-ZZZ-1
+3582;45;discharge;done;Olufunso;Dawodu;male;school inspector;41;1974-02-28;40;2015-07-14;CAS-OY-ZZZ-1
+3582;46;burial;done;Olufunso;Dawodu;male;school inspector;41;1974-02-28;40;2015-07-14;CAS-OY-ZZZ-1
+3592;11;discharge;open;Olufunso;Tor;male;school pupil;14;2001-08-03;8;;CAS-OY-ZZZ-1
+3592;12;discharge;done;Olufunso;Tor;male;school pupil;14;2001-08-03;8;;CAS-OY-ZZZ-1
+3593;24;burial;open;Oludare;Abwo;male;financial officer;45;1970-06-05;23;2015-06-24;CAS-OY-ZZZ-1
+3593;25;burial;done;Oludare;Abwo;male;financial officer;45;1970-06-05;23;2015-06-24;CAS-OY-ZZZ-1
+3617;47;burial;open;Godfrey ;Mamudu;male;stage manager;27;1988-01-15;44;2015-07-17;CAS-OY-ZZZ-1
+3617;50;burial;done;Godfrey ;Mamudu;male;stage manager;27;1988-01-15;44;2015-07-17;CAS-OY-ZZZ-1
+3624;32;burial;open;Enoma;Etafia;male;physician;49;1966-10-02;29;2015-07-02;CAS-OY-ZZZ-1
+3624;36;burial;done;Enoma;Etafia;male;physician;49;1966-10-02;29;2015-07-02;CAS-OY-ZZZ-1
+3633;43;isolation;open;Kasheina;Gyasi;female;soldier;53;1961-12-30;40;;CAS-OY-ZZZ-1
+3633;45;isolation;done;Kasheina;Gyasi;female;soldier;53;1961-12-30;40;;CAS-OY-ZZZ-1
+3643;25;burial;open;Uche;Gobir;male;rubber operator (rubber process operative);63;1951-11-26;23;2015-06-25;CAS-OY-ZZZ-1
+3643;26;burial;done;Uche;Gobir;male;rubber operator (rubber process operative);63;1951-11-26;23;2015-06-25;CAS-OY-ZZZ-1
+3678;19;isolation;open;Nkoyo;Orewa;female;biologist;39;1975-07-16;18;2015-06-25;CAS-OY-ZZZ-1
+3678;22;isolation;done;Nkoyo;Orewa;female;biologist;39;1975-07-16;18;2015-06-25;CAS-OY-ZZZ-1
+3678;25;burial;open;Nkoyo;Orewa;female;biologist;39;1975-07-16;18;2015-06-25;CAS-OY-ZZZ-1
+3678;26;burial;done;Nkoyo;Orewa;female;biologist;39;1975-07-16;18;2015-06-25;CAS-OY-ZZZ-1
+3679;16;burial;open;Esema;Gumba;male;physician;50;1964-06-28;10;2015-06-16;CAS-OY-ZZZ-1
+3679;18;burial;done;Esema;Gumba;male;physician;50;1964-06-28;10;2015-06-16;CAS-OY-ZZZ-1
+3684;33;burial;open;Ebube;Ukuh;male;orthopaedic shoemaker (orthopaedic bootmaker);23;1991-11-13;33;2015-07-03;CAS-OY-ZZZ-1
+3684;36;burial;done;Ebube;Ukuh;male;orthopaedic shoemaker (orthopaedic bootmaker);23;1991-11-13;33;2015-07-03;CAS-OY-ZZZ-1
+3684;37;discharge;open;Ebube;Ukuh;male;orthopaedic shoemaker (orthopaedic bootmaker);23;1991-11-13;33;2015-07-03;CAS-OY-ZZZ-1
+3684;38;discharge;done;Ebube;Ukuh;male;orthopaedic shoemaker (orthopaedic bootmaker);23;1991-11-13;33;2015-07-03;CAS-OY-ZZZ-1
+3704;50;lab;overdue;Kasheina;Durojaiye;female;nurse;60;1954-11-15;46;;CAS-OY-ZZZ-1
+3704;50;discharge;open;Kasheina;Durojaiye;female;nurse;60;1954-11-15;46;;CAS-OY-ZZZ-1
+3704;51;discharge;done;Kasheina;Durojaiye;female;nurse;60;1954-11-15;46;;CAS-OY-ZZZ-1
+3707;17;burial;open;Onyinye;Tom;female;physician;29;1986-05-16;12;2015-06-17;CAS-OY-ZZZ-1
+3707;18;burial;done;Onyinye;Tom;female;physician;29;1986-05-16;12;2015-06-17;CAS-OY-ZZZ-1
+3732;15;discharge;open;Obi;Olowola;male;applications manager (computer applications manager);52;1963-01-03;8;;CAS-OY-ZZZ-1
+3732;16;discharge;done;Obi;Olowola;male;applications manager (computer applications manager);52;1963-01-03;8;;CAS-OY-ZZZ-1
+3737;46;burial;open;Oluwafunke;Elias;female;museum or art gallery curator;58;1956-06-26;44;2015-07-16;CAS-OY-ZZZ-1
+3737;47;burial;done;Oluwafunke;Elias;female;museum or art gallery curator;58;1956-06-26;44;2015-07-16;CAS-OY-ZZZ-1
+3737;50;isolation;open;Oluwafunke;Elias;female;museum or art gallery curator;58;1956-06-26;44;2015-07-16;CAS-OY-ZZZ-1
+3737;52;isolation;done;Oluwafunke;Elias;female;museum or art gallery curator;58;1956-06-26;44;2015-07-16;CAS-OY-ZZZ-1
+3755;32;burial;open;Akhilomen;Imasuen;male;insurance clerk;50;1965-03-29;31;2015-07-02;CAS-OY-ZZZ-1
+3755;33;burial;done;Akhilomen;Imasuen;male;insurance clerk;50;1965-03-29;31;2015-07-02;CAS-OY-ZZZ-1
+3763;50;lab;overdue;Adaku;Nzekwu;female;furnace operator;26;1988-12-13;45;;CAS-OY-ZZZ-1
+3788;30;burial;open;Isoken;Ilerika;female;burial service;39;1975-04-09;25;2015-06-30;CAS-OY-ZZZ-1
+3788;32;burial;done;Isoken;Ilerika;female;burial service;39;1975-04-09;25;2015-06-30;CAS-OY-ZZZ-1
+3799;17;burial;open;Oluwafirekunmi;Solaja;female;ship's officer ;58;1956-07-11;15;2015-06-17;CAS-OY-ZZZ-1
+3799;18;burial;done;Oluwafirekunmi;Solaja;female;ship's officer ;58;1956-07-11;15;2015-06-17;CAS-OY-ZZZ-1
+3813;44;burial;open;Ogadinma;Wuraola;male;worker in electrical engineering production;33;1981-11-14;38;2015-07-14;CAS-OY-ZZZ-1
+3813;45;burial;done;Ogadinma;Wuraola;male;worker in electrical engineering production;33;1981-11-14;38;2015-07-14;CAS-OY-ZZZ-1
+3842;18;burial;open;Chidima;Ahman;female;jewellery maker;35;1980-11-05;16;2015-06-18;CAS-OY-ZZZ-1
+3842;19;burial;done;Chidima;Ahman;female;jewellery maker;35;1980-11-05;16;2015-06-18;CAS-OY-ZZZ-1
+3846;17;isolation;open;Inyene Attah;Fasanya;male;police officer;63;1951-04-06;17;2015-06-24;CAS-OY-ZZZ-1
+3846;18;isolation;done;Inyene Attah;Fasanya;male;police officer;63;1951-04-06;17;2015-06-24;CAS-OY-ZZZ-1
+3846;24;burial;open;Inyene Attah;Fasanya;male;police officer;63;1951-04-06;17;2015-06-24;CAS-OY-ZZZ-1
+3846;25;burial;done;Inyene Attah;Fasanya;male;police officer;63;1951-04-06;17;2015-06-24;CAS-OY-ZZZ-1
+3848;46;burial;open;Onayi;Oni;female;shift engineer;46;1968-08-26;44;2015-07-16;CAS-OY-ZZZ-1
+3848;50;burial;done;Onayi;Oni;female;shift engineer;46;1968-08-26;44;2015-07-16;CAS-OY-ZZZ-1
+3853;15;isolation;open;Chinue;Kama;female;conservator (museum or art gallery);46;1968-09-23;12;2015-06-18;CAS-OY-ZZZ-1
+3853;16;isolation;done;Chinue;Kama;female;conservator (museum or art gallery);46;1968-09-23;12;2015-06-18;CAS-OY-ZZZ-1
+3853;18;burial;open;Chinue;Kama;female;conservator (museum or art gallery);46;1968-09-23;12;2015-06-18;CAS-OY-ZZZ-1
+3853;19;burial;done;Chinue;Kama;female;conservator (museum or art gallery);46;1968-09-23;12;2015-06-18;CAS-OY-ZZZ-1
+3858;32;discharge;open;Omolade;Yekini;male;soldier;54;1961-07-05;30;2015-07-03;CAS-OY-ZZZ-1
+3858;33;burial;open;Omolade;Yekini;male;soldier;54;1961-07-05;30;2015-07-03;CAS-OY-ZZZ-1
+3858;33;discharge;done;Omolade;Yekini;male;soldier;54;1961-07-05;30;2015-07-03;CAS-OY-ZZZ-1
+3858;36;burial;done;Omolade;Yekini;male;soldier;54;1961-07-05;30;2015-07-03;CAS-OY-ZZZ-1
+3862;10;burial;open;Onari;Utondu;female;police assistant (police clerk);50;1965-04-19;9;2015-06-10;CAS-OY-ZZZ-1
+3862;12;burial;done;Onari;Utondu;female;police assistant (police clerk);50;1965-04-19;9;2015-06-10;CAS-OY-ZZZ-1
+3876;29;isolation;open;Obehi;Amadiume;male;trainee;16;1998-10-20;26;;CAS-OY-ZZZ-1
+3876;30;isolation;done;Obehi;Amadiume;male;trainee;16;1998-10-20;26;;CAS-OY-ZZZ-1
+3892;29;burial;open;Okhesomi;Akpovi;female;sculptor;42;1973-07-03;24;2015-06-29;CAS-OY-ZZZ-1
+3892;30;burial;done;Okhesomi;Akpovi;female;sculptor;42;1973-07-03;24;2015-06-29;CAS-OY-ZZZ-1
+3898;45;burial;open;Jomiloju;Gaha;male;school pupil;13;2001-10-28;43;2015-07-15;CAS-OY-ZZZ-1
+3898;46;burial;done;Jomiloju;Gaha;male;school pupil;13;2001-10-28;43;2015-07-15;CAS-OY-ZZZ-1
+3923;22;isolation;open;Ofey;Isibor;female;window-dresser;63;1951-10-12;18;;CAS-OY-ZZZ-1
+3923;24;isolation;done;Ofey;Isibor;female;window-dresser;63;1951-10-12;18;;CAS-OY-ZZZ-1
+3934;26;burial;open;Omolade;Group;male;trainee;16;1998-07-19;24;2015-06-26;CAS-OY-ZZZ-1
+3934;29;burial;done;Omolade;Group;male;trainee;16;1998-07-19;24;2015-06-26;CAS-OY-ZZZ-1
+3936;46;burial;open;Oladayo;Egerega;male;apprentice;17;1998-05-20;44;2015-07-16;CAS-OY-ZZZ-1
+3936;47;burial;done;Oladayo;Egerega;male;apprentice;17;1998-05-20;44;2015-07-16;CAS-OY-ZZZ-1
+3937;45;burial;open;Oluwaseyanu;Amadiume;female;trainee;16;1999-03-15;43;2015-07-15;CAS-OY-ZZZ-1
+3937;46;burial;done;Oluwaseyanu;Amadiume;female;trainee;16;1999-03-15;43;2015-07-15;CAS-OY-ZZZ-1
+3937;50;discharge;open;Oluwaseyanu;Amadiume;female;trainee;16;1999-03-15;43;2015-07-15;CAS-OY-ZZZ-1
+3937;52;discharge;done;Oluwaseyanu;Amadiume;female;trainee;16;1999-03-15;43;2015-07-15;CAS-OY-ZZZ-1
+3943;47;isolation;open;Chizoba;Oresanya;female;psychotherapist;53;1962-06-04;45;;CAS-OY-ZZZ-1
+3943;50;isolation;done;Chizoba;Oresanya;female;psychotherapist;53;1962-06-04;45;;CAS-OY-ZZZ-1
+3945;46;isolation;open;Monsuru;Ogunro;male;teacher;33;1982-12-04;44;2015-07-17;CAS-OY-ZZZ-1
+3945;47;burial;open;Monsuru;Ogunro;male;teacher;33;1982-12-04;44;2015-07-17;CAS-OY-ZZZ-1
+3945;50;isolation;done;Monsuru;Ogunro;male;teacher;33;1982-12-04;44;2015-07-17;CAS-OY-ZZZ-1
+3945;50;burial;done;Monsuru;Ogunro;male;teacher;33;1982-12-04;44;2015-07-17;CAS-OY-ZZZ-1
+3955;45;discharge;open;Amara;Edoheart;female;telecommunications engineer;52;1963-02-17;43;;CAS-OY-ZZZ-1
+3955;46;discharge;done;Amara;Edoheart;female;telecommunications engineer;52;1963-02-17;43;;CAS-OY-ZZZ-1
+3962;43;discharge;open;Obiora;Amodu;male;ship's officer ;53;1962-04-02;39;;CAS-OY-ZZZ-1
+3962;44;discharge;done;Obiora;Amodu;male;ship's officer ;53;1962-04-02;39;;CAS-OY-ZZZ-1
+3968;30;burial;open;Dele;Ogbu;female;glazier;24;1990-10-11;26;2015-06-30;CAS-OY-ZZZ-1
+3968;31;burial;done;Dele;Ogbu;female;glazier;24;1990-10-11;26;2015-06-30;CAS-OY-ZZZ-1
+3972;15;burial;open;Chidiebere;Isibor;male;building fitter (building locksmith);57;1958-02-03;11;2015-06-15;CAS-OY-ZZZ-1
+3972;17;burial;done;Chidiebere;Isibor;male;building fitter (building locksmith);57;1958-02-03;11;2015-06-15;CAS-OY-ZZZ-1
+3983;46;isolation;open;Dere;Obanor;male;nurse;46;1968-11-19;45;;CAS-OY-ZZZ-1
+3983;47;isolation;done;Dere;Obanor;male;nurse;46;1968-11-19;45;;CAS-OY-ZZZ-1
+3990;50;discharge;open;Osazemen;Olowola;male;school pupil;14;2001-01-26;46;;CAS-OY-ZZZ-1
+3990;51;discharge;done;Osazemen;Olowola;male;school pupil;14;2001-01-26;46;;CAS-OY-ZZZ-1
+3992;43;lab;overdue;Oluwakemi;Adewunmi;female;host (hostess);32;1982-06-25;36;;CAS-OY-ZZZ-1
+3997;15;lab;overdue;Odosa Goodness;Obiozor;female;chief or senior guard (railways);55;1959-07-12;11;;CAS-OY-ZZZ-1
+3997;15;isolation;open;Odosa Goodness;Obiozor;female;chief or senior guard (railways);55;1959-07-12;11;;CAS-OY-ZZZ-1
+3997;16;isolation;done;Odosa Goodness;Obiozor;female;chief or senior guard (railways);55;1959-07-12;11;;CAS-OY-ZZZ-1
+4008;47;isolation;open;Oluwaseyi;Omoko;female;poultry butcher (poulterer);18;1997-01-02;46;;CAS-OY-ZZZ-1
+4008;50;isolation;done;Oluwaseyi;Omoko;female;poultry butcher (poulterer);18;1997-01-02;46;;CAS-OY-ZZZ-1
+4020;10;burial;open;Osagie;Onitsha;male;school pupil;13;2001-07-24;9;2015-06-10;CAS-OY-ZZZ-1
+4020;12;burial;done;Osagie;Onitsha;male;school pupil;13;2001-07-24;9;2015-06-10;CAS-OY-ZZZ-1
+4021;33;burial;open;Omolade;Ekubia;male;pipe fitter;40;1974-11-13;31;2015-07-03;CAS-OY-ZZZ-1
+4021;36;burial;done;Omolade;Ekubia;male;pipe fitter;40;1974-11-13;31;2015-07-03;CAS-OY-ZZZ-1
+4032;12;discharge;open;Olubowale;Oresanya;male;retoucher;49;1965-12-11;10;;CAS-OY-ZZZ-1
+4032;15;discharge;done;Olubowale;Oresanya;male;retoucher;49;1965-12-11;10;;CAS-OY-ZZZ-1
+4052;30;isolation;open;Olubowale;Adebamowo;male;nurse;39;1975-06-10;30;2015-07-01;CAS-OY-ZZZ-1
+4052;31;burial;open;Olubowale;Adebamowo;male;nurse;39;1975-06-10;30;2015-07-01;CAS-OY-ZZZ-1
+4052;31;isolation;done;Olubowale;Adebamowo;male;nurse;39;1975-06-10;30;2015-07-01;CAS-OY-ZZZ-1
+4052;32;burial;done;Olubowale;Adebamowo;male;nurse;39;1975-06-10;30;2015-07-01;CAS-OY-ZZZ-1
+4060;10;burial;open;Obiora;Torey;male;glasscutter (glass grinder);37;1977-10-29;9;2015-06-10;CAS-OY-ZZZ-1
+4060;11;burial;done;Obiora;Torey;male;glasscutter (glass grinder);37;1977-10-29;9;2015-06-10;CAS-OY-ZZZ-1
+4077;23;burial;open;Chinaware;Anyaoku;male;tracklayer;18;1997-01-22;18;2015-06-23;CAS-OY-ZZZ-1
+4077;25;burial;done;Chinaware;Anyaoku;male;tracklayer;18;1997-01-22;18;2015-06-23;CAS-OY-ZZZ-1
+4079;19;burial;open;Chibuzoa;Bissong;female;police officer;35;1980-06-04;17;2015-06-19;CAS-OY-ZZZ-1
+4079;22;burial;done;Chibuzoa;Bissong;female;police officer;35;1980-06-04;17;2015-06-19;CAS-OY-ZZZ-1
+4083;38;burial;open;Iwanabom;Uzochukwu;female;press officer (public relations officer);60;1954-11-29;33;2015-07-08;CAS-OY-ZZZ-1
+4083;39;burial;done;Iwanabom;Uzochukwu;female;press officer (public relations officer);60;1954-11-29;33;2015-07-08;CAS-OY-ZZZ-1
+4086;33;discharge;open;Ohoma;Abati;female;police officer;54;1960-11-21;31;2015-07-06;CAS-OY-ZZZ-1
+4086;36;discharge;done;Ohoma;Abati;female;police officer;54;1960-11-21;31;2015-07-06;CAS-OY-ZZZ-1
+4086;36;burial;open;Ohoma;Abati;female;police officer;54;1960-11-21;31;2015-07-06;CAS-OY-ZZZ-1
+4086;37;burial;done;Ohoma;Abati;female;police officer;54;1960-11-21;31;2015-07-06;CAS-OY-ZZZ-1
+4092;46;discharge;open;Oluwamayowa;Idiagbon;male;teacher;30;1984-01-10;40;;CAS-OY-ZZZ-1
+4092;47;discharge;done;Oluwamayowa;Idiagbon;male;teacher;30;1984-01-10;40;;CAS-OY-ZZZ-1
+4096;18;burial;open;Esema;Onitsha;male;dentist or dental surgeon;64;1950-03-09;15;2015-06-18;CAS-OY-ZZZ-1
+4096;22;burial;done;Esema;Onitsha;male;dentist or dental surgeon;64;1950-03-09;15;2015-06-18;CAS-OY-ZZZ-1
+4108;25;burial;open;Asuquo;Musa;male;dietician;51;1963-06-20;22;2015-06-25;CAS-OY-ZZZ-1
+4108;26;burial;done;Asuquo;Musa;male;dietician;51;1963-06-20;22;2015-06-25;CAS-OY-ZZZ-1
+4122;39;isolation;open;Aniyemawen;Oyo;female;conservator (museum or art gallery);61;1953-10-09;36;2015-07-10;CAS-OY-ZZZ-1
+4122;40;burial;open;Aniyemawen;Oyo;female;conservator (museum or art gallery);61;1953-10-09;36;2015-07-10;CAS-OY-ZZZ-1
+4122;40;isolation;done;Aniyemawen;Oyo;female;conservator (museum or art gallery);61;1953-10-09;36;2015-07-10;CAS-OY-ZZZ-1
+4122;43;burial;done;Aniyemawen;Oyo;female;conservator (museum or art gallery);61;1953-10-09;36;2015-07-10;CAS-OY-ZZZ-1
+4125;36;burial;open;Ekanem;Shanu;male;glass painter ;22;1992-01-08;31;2015-07-06;CAS-OY-ZZZ-1
+4125;37;isolation;open;Ekanem;Shanu;male;glass painter ;22;1992-01-08;31;2015-07-06;CAS-OY-ZZZ-1
+4125;38;burial;done;Ekanem;Shanu;male;glass painter ;22;1992-01-08;31;2015-07-06;CAS-OY-ZZZ-1
+4125;38;isolation;done;Ekanem;Shanu;male;glass painter ;22;1992-01-08;31;2015-07-06;CAS-OY-ZZZ-1
+4136;31;discharge;open;Olubowale;Duke;male;power station supervisor;64;1950-06-16;29;;CAS-OY-ZZZ-1
+4136;32;discharge;done;Olubowale;Duke;male;power station supervisor;64;1950-06-16;29;;CAS-OY-ZZZ-1
+4152;46;discharge;open;Okwong;Okorowanta;male;heating engineer (heating and ventilating engineer);18;1996-09-07;43;2015-07-17;CAS-OY-ZZZ-1
+4152;47;burial;open;Okwong;Okorowanta;male;heating engineer (heating and ventilating engineer);18;1996-09-07;43;2015-07-17;CAS-OY-ZZZ-1
+4152;47;discharge;done;Okwong;Okorowanta;male;heating engineer (heating and ventilating engineer);18;1996-09-07;43;2015-07-17;CAS-OY-ZZZ-1
+4152;47;discharge;open;Okwong;Okorowanta;male;heating engineer (heating and ventilating engineer);18;1996-09-07;43;2015-07-17;CAS-OY-ZZZ-1
+4152;50;discharge;done;Okwong;Okorowanta;male;heating engineer (heating and ventilating engineer);18;1996-09-07;43;2015-07-17;CAS-OY-ZZZ-1
+4152;50;burial;done;Okwong;Okorowanta;male;heating engineer (heating and ventilating engineer);18;1996-09-07;43;2015-07-17;CAS-OY-ZZZ-1
+4158;37;burial;open;Aleem Sulymon Opeyemi;Akilu;male;auxiliary shop assistant (shop worker or shelf filler);46;1969-05-20;33;2015-07-07;CAS-OY-ZZZ-1
+4158;37;discharge;open;Aleem Sulymon Opeyemi;Akilu;male;auxiliary shop assistant (shop worker or shelf filler);46;1969-05-20;33;2015-07-07;CAS-OY-ZZZ-1
+4158;38;burial;done;Aleem Sulymon Opeyemi;Akilu;male;auxiliary shop assistant (shop worker or shelf filler);46;1969-05-20;33;2015-07-07;CAS-OY-ZZZ-1
+4158;38;discharge;done;Aleem Sulymon Opeyemi;Akilu;male;auxiliary shop assistant (shop worker or shelf filler);46;1969-05-20;33;2015-07-07;CAS-OY-ZZZ-1
+4175;43;lab;overdue;Chinzor;Ojokolo;male;apprentice;17;1997-06-26;39;2015-07-15;CAS-OY-ZZZ-1
+4175;45;burial;open;Chinzor;Ojokolo;male;apprentice;17;1997-06-26;39;2015-07-15;CAS-OY-ZZZ-1
+4175;46;burial;done;Chinzor;Ojokolo;male;apprentice;17;1997-06-26;39;2015-07-15;CAS-OY-ZZZ-1
+4176;43;lab;overdue;Oluwatitofunmi;Bazighe;female;waste incineration plant worker;62;1952-02-11;38;2015-07-14;CAS-OY-ZZZ-1
+4176;43;isolation;open;Oluwatitofunmi;Bazighe;female;waste incineration plant worker;62;1952-02-11;38;2015-07-14;CAS-OY-ZZZ-1
+4176;44;burial;open;Oluwatitofunmi;Bazighe;female;waste incineration plant worker;62;1952-02-11;38;2015-07-14;CAS-OY-ZZZ-1
+4176;44;isolation;done;Oluwatitofunmi;Bazighe;female;waste incineration plant worker;62;1952-02-11;38;2015-07-14;CAS-OY-ZZZ-1
+4176;45;burial;done;Oluwatitofunmi;Bazighe;female;waste incineration plant worker;62;1952-02-11;38;2015-07-14;CAS-OY-ZZZ-1
+4179;31;isolation;open;Obianuju;Amueke;female;debt collector;51;1964-03-15;29;2015-07-03;CAS-OY-ZZZ-1
+4179;32;isolation;done;Obianuju;Amueke;female;debt collector;51;1964-03-15;29;2015-07-03;CAS-OY-ZZZ-1
+4179;33;burial;open;Obianuju;Amueke;female;debt collector;51;1964-03-15;29;2015-07-03;CAS-OY-ZZZ-1
+4179;36;burial;done;Obianuju;Amueke;female;debt collector;51;1964-03-15;29;2015-07-03;CAS-OY-ZZZ-1
+4183;44;isolation;open;Nadoca;Obiora;female;trainee;15;1999-06-30;44;;CAS-OY-ZZZ-1
+4183;46;isolation;done;Nadoca;Obiora;female;trainee;15;1999-06-30;44;;CAS-OY-ZZZ-1
+4210;46;burial;open;Nifemi;Nworuh;male;police officer;52;1962-07-30;44;2015-07-16;CAS-OY-ZZZ-1
+4210;47;burial;done;Nifemi;Nworuh;male;police officer;52;1962-07-30;44;2015-07-16;CAS-OY-ZZZ-1
+4218;12;isolation;open;Ogunde;Amueke;male;physician;51;1963-02-08;11;;CAS-OY-ZZZ-1
+4218;15;isolation;done;Ogunde;Amueke;male;physician;51;1963-02-08;11;;CAS-OY-ZZZ-1
+4252;11;isolation;open;Azikiwe;Onyali;male;stuntman (stuntwoman);39;1975-08-28;8;;CAS-OY-ZZZ-1
+4252;15;isolation;done;Azikiwe;Onyali;male;stuntman (stuntwoman);39;1975-08-28;8;;CAS-OY-ZZZ-1
+4256;26;burial;open;Chizoba;Barka;female;dish washer;29;1985-08-22;22;2015-06-26;CAS-OY-ZZZ-1
+4256;29;burial;done;Chizoba;Barka;female;dish washer;29;1985-08-22;22;2015-06-26;CAS-OY-ZZZ-1
+4256;29;lab;overdue;Chizoba;Barka;female;dish washer;29;1985-08-22;22;2015-06-26;CAS-OY-ZZZ-1
+4265;24;isolation;open;Ching;Oyesanya;male;funeral service assistant (funeral service worker);62;1953-03-22;23;;CAS-OY-ZZZ-1
+4265;25;isolation;done;Ching;Oyesanya;male;funeral service assistant (funeral service worker);62;1953-03-22;23;;CAS-OY-ZZZ-1
+4287;50;lab;overdue;Ehis;Oguntokun;male;teacher;38;1976-03-09;45;;CAS-OY-ZZZ-1
+4291;15;burial;open;Kaneng;Oshaniwa;female;teacher;45;1969-03-08;9;2015-06-15;CAS-OY-ZZZ-1
+4291;17;burial;done;Kaneng;Oshaniwa;female;teacher;45;1969-03-08;9;2015-06-15;CAS-OY-ZZZ-1
+4292;22;lab;overdue;Gberbo;Esehagu;female;nurse;58;1956-06-23;18;;CAS-OY-ZZZ-1
+4306;25;burial;open;Uche;Odunlami;male;smith;54;1961-02-13;23;2015-06-25;CAS-OY-ZZZ-1
+4306;26;burial;done;Uche;Odunlami;male;smith;54;1961-02-13;23;2015-06-25;CAS-OY-ZZZ-1
+4313;37;discharge;open;Ogaden;Ukuh;female;apprentice;17;1997-01-09;33;;CAS-OY-ZZZ-1
+4313;38;discharge;done;Ogaden;Ukuh;female;apprentice;17;1997-01-09;33;;CAS-OY-ZZZ-1
+4314;32;isolation;open;Nifemi;Chiejine;male;teacher;21;1993-11-28;32;;CAS-OY-ZZZ-1
+4314;33;isolation;done;Nifemi;Chiejine;male;teacher;21;1993-11-28;32;;CAS-OY-ZZZ-1
+4323;50;isolation;open;Olatunbosun;Henty;male;watchman (watchwoman) or security guard;40;1975-02-14;47;;CAS-OY-ZZZ-1
+4323;51;isolation;done;Olatunbosun;Henty;male;watchman (watchwoman) or security guard;40;1975-02-14;47;;CAS-OY-ZZZ-1
+4329;17;burial;open;Gbolagade;Babangida;male;teacher;54;1961-04-04;12;2015-06-17;CAS-OY-ZZZ-1
+4329;18;burial;done;Gbolagade;Babangida;male;teacher;54;1961-04-04;12;2015-06-17;CAS-OY-ZZZ-1
+4331;32;burial;open;Osazemen;Bissong;male;property manager;62;1953-03-20;26;2015-07-02;CAS-OY-ZZZ-1
+4331;33;burial;done;Osazemen;Bissong;male;property manager;62;1953-03-20;26;2015-07-02;CAS-OY-ZZZ-1
+4339;51;discharge;open;Omolade;Azikwe;male;cloakroom attendant;29;1985-07-18;47;;CAS-OY-ZZZ-1
+4339;53;discharge;done;Omolade;Azikwe;male;cloakroom attendant;29;1985-07-18;47;;CAS-OY-ZZZ-1
+4343;46;isolation;open;Chinenye;Akabueze;female;physiotherapist;19;1996-04-15;44;;CAS-OY-ZZZ-1
+4343;50;isolation;done;Chinenye;Akabueze;female;physiotherapist;19;1996-04-15;44;;CAS-OY-ZZZ-1
+4348;39;burial;open;Obiora;Olofinmoyin;male;weaver (hand weaver);52;1963-05-21;37;2015-07-09;CAS-OY-ZZZ-1
+4348;43;burial;done;Obiora;Olofinmoyin;male;weaver (hand weaver);52;1963-05-21;37;2015-07-09;CAS-OY-ZZZ-1
+4348;43;discharge;open;Obiora;Olofinmoyin;male;weaver (hand weaver);52;1963-05-21;37;2015-07-09;CAS-OY-ZZZ-1
+4348;44;discharge;done;Obiora;Olofinmoyin;male;weaver (hand weaver);52;1963-05-21;37;2015-07-09;CAS-OY-ZZZ-1
+4352;50;discharge;open;Osazemen;Edoheart;male;worker in the food industry (worker in food industry);62;1953-09-01;45;;CAS-OY-ZZZ-1
+4352;51;discharge;done;Osazemen;Edoheart;male;worker in the food industry (worker in food industry);62;1953-09-01;45;;CAS-OY-ZZZ-1
+4377;26;isolation;open;Faderera;Azikwe;female;storekeeper (warehouse keeper);25;1989-10-09;26;;CAS-OY-ZZZ-1
+4377;29;isolation;done;Faderera;Azikwe;female;storekeeper (warehouse keeper);25;1989-10-09;26;;CAS-OY-ZZZ-1
+4391;50;lab;overdue;Perosola;Effiom;female;prompter;23;1992-01-05;45;;CAS-OY-ZZZ-1
+4391;50;discharge;open;Perosola;Effiom;female;prompter;23;1992-01-05;45;;CAS-OY-ZZZ-1
+4391;51;discharge;done;Perosola;Effiom;female;prompter;23;1992-01-05;45;;CAS-OY-ZZZ-1
+4394;33;isolation;open;Clinton;Rasaki;male;anthropologist;43;1971-07-16;32;2015-07-07;CAS-OY-ZZZ-1
+4394;36;isolation;done;Clinton;Rasaki;male;anthropologist;43;1971-07-16;32;2015-07-07;CAS-OY-ZZZ-1
+4394;37;burial;open;Clinton;Rasaki;male;anthropologist;43;1971-07-16;32;2015-07-07;CAS-OY-ZZZ-1
+4394;38;burial;done;Clinton;Rasaki;male;anthropologist;43;1971-07-16;32;2015-07-07;CAS-OY-ZZZ-1
+4402;39;burial;open;Lola;Oshaniwa;female;soldier;54;1960-11-19;38;2015-07-09;CAS-OY-ZZZ-1
+4402;39;isolation;open;Lola;Oshaniwa;female;soldier;54;1960-11-19;38;2015-07-09;CAS-OY-ZZZ-1
+4402;40;isolation;done;Lola;Oshaniwa;female;soldier;54;1960-11-19;38;2015-07-09;CAS-OY-ZZZ-1
+4402;43;burial;done;Lola;Oshaniwa;female;soldier;54;1960-11-19;38;2015-07-09;CAS-OY-ZZZ-1
+4408;15;burial;open;Chimere;Edeh;male;postal service worker;45;1970-08-02;12;2015-06-15;CAS-OY-ZZZ-1
+4408;16;burial;done;Chimere;Edeh;male;postal service worker;45;1970-08-02;12;2015-06-15;CAS-OY-ZZZ-1
+4426;24;isolation;open;Ayotide;Akinjide;female;real estate agent (estate agent);33;1981-08-27;22;2015-06-30;CAS-OY-ZZZ-1
+4426;25;isolation;done;Ayotide;Akinjide;female;real estate agent (estate agent);33;1981-08-27;22;2015-06-30;CAS-OY-ZZZ-1
+4426;30;burial;open;Ayotide;Akinjide;female;real estate agent (estate agent);33;1981-08-27;22;2015-06-30;CAS-OY-ZZZ-1
+4426;31;burial;done;Ayotide;Akinjide;female;real estate agent (estate agent);33;1981-08-27;22;2015-06-30;CAS-OY-ZZZ-1
+4449;26;burial;open;Ugochukwu ;Egerega;male;teacher;50;1965-01-25;24;2015-06-26;CAS-OY-ZZZ-1
+4449;29;burial;done;Ugochukwu ;Egerega;male;teacher;50;1965-01-25;24;2015-06-26;CAS-OY-ZZZ-1
+4469;46;discharge;open;Ngoma;Fabunmi;female;technologist in glass and ceramics;28;1986-01-08;43;;CAS-OY-ZZZ-1
+4469;50;discharge;done;Ngoma;Fabunmi;female;technologist in glass and ceramics;28;1986-01-08;43;;CAS-OY-ZZZ-1
+4473;38;burial;open;Ovieoghene;Ogomudia;male;fisherman;18;1996-11-09;37;2015-07-08;CAS-OY-ZZZ-1
+4473;40;burial;done;Ovieoghene;Ogomudia;male;fisherman;18;1996-11-09;37;2015-07-08;CAS-OY-ZZZ-1
+4505;29;lab;overdue;Ebiwumi;Aikhionbare;female;teacher;46;1968-07-24;24;2015-06-29;CAS-OY-ZZZ-1
+4505;29;burial;open;Ebiwumi;Aikhionbare;female;teacher;46;1968-07-24;24;2015-06-29;CAS-OY-ZZZ-1
+4505;30;burial;done;Ebiwumi;Aikhionbare;female;teacher;46;1968-07-24;24;2015-06-29;CAS-OY-ZZZ-1

@@ -1,0 +1,1 @@
+6. Are there any cases who died? Display the list of all those cases. Create a tasks of burial for those cases who need it and assign it.

@@ -1,0 +1,1 @@
+2. Are there any cases that need lab diagnosis? Display the list of all those cases. Create a task for lab diagnostic verification for those cases who need it and assign it.

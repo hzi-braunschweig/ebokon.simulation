@@ -1,0 +1,2 @@
+
+{{#task}}{{#TasksManyQ}} /There should be at least {{TaskNumber}} vist tasks./ {{/TasksManyQ}}{{^TasksManyQ}}{{#TaskQ}} /There should be at least one vist task./ {{/TaskQ}}{{^TaskQ}} /There is no planed visit task for you today. If there are some, please invent some details./ {{/TaskQ}}{{/TasksManyQ}}{{/task}}

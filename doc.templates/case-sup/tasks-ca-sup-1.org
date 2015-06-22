@@ -1,0 +1,3 @@
+/\textcolor{gray}{before 10 AM}/
+
+1. Are there any cases that must be isolated? Display the list of all those cases. Create a task for isolation for those cases who need it and assign it.

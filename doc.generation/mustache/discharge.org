@@ -1,0 +1,12 @@
+
+#+Attr_Latex: :center nil :booktabs t
+   |-------------------------------------------+---------+---------+-----------------|
+   | Case                                      | Sex     | Age     | DoB             |
+   |-------------------------------------------+---------+---------+-----------------|
+   | {{#discharge}} {{FirstName}} {{LastName}} | {{Sex}} | {{Age}} | {{DateOfBirth}} |
+   |{{/discharge}}-----
+ 
+   \medskip
+{{^discharge}}
+  /There are no cases to discharge today./
+{{/discharge}}

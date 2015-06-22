@@ -1,0 +1,27 @@
+
+{{#symptoms}}
+   #+Attr_Latex: :center nil :booktabs t
+   |--------------------------+-----------------------------------------+
+   | Onset of Symptoms        | {{OnsetOfSymptoms}}   {{#Hospitalized}} |
+   | Hospitalized since       | {{HospDate}}                            | {{/Hospitalized}}
+   | Date of Death            | {{DateOfDeath}}                         |
+   |--------------------------+-----------------------------------------+
+   | Fever \ldots Temp.       | {{Fever}} \ldots {{Temperature}}        |
+   | Lethargy                 | {{Lethargy}}                            |
+   | Muscle Pain              | {{MusclePain}}                          |
+   | Headache                 | {{Headache}}                            |
+   |--------------------------+-----------------------------------------+
+   | Stomach Pain             | {{StomachPain}}                         |
+   | Diarrhea                 | {{Diarrhea}}                            |
+   | Vomiting                 | {{Vomiting}}                            |
+   | Breathing Difficulties   | {{BreathingDiff}}                       |
+   | Difficulty Swallowing    | {{DiffSwallowing}}                      |
+   | Hiccup                   | {{Hiccups}}                             |
+   |--------------------------+-----------------------------------------+
+   | Unexplained Bleeding     | {{UnexpBleeding}}                       |
+   |--------------------------+-----------------------------------------+
+   | Anorexia                 | {{Anorexia}}                            |
+   | Maculo-papular Rash      | {{Maculo}}                              |
+   | Unexplained Sudden Death | {{UnexpSuddenDeath}}                    |
+   |--------------------------+-----------------------------------------+
+{{/symptoms}}

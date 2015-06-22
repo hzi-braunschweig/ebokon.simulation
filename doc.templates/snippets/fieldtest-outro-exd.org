@@ -1,0 +1,10 @@
+You have successfully reached the end of the SORMAS-N pilot. There are no more data for you to enter.
+Please do not forget to fill out the logbook and hand it in to Dr. Olawunmi Adeoye. 
+We appreciate your feedback, which is of great importance for improving the performance of SORMAS.
+
+\vspace{4\baselineskip}
+
+#+BEGIN_CENTER
+/Thank you very much for participating in the SORMAS-N field test.\\
+We hope you had a pleasant time./
+#+END_CENTER

@@ -1,0 +1,30 @@
+
+{{#rumor}}{{#F}}   
+   /Rumor [fn:: Place -- {{IdPlace}}]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+--------------------------------------------------|
+   | Notified by          | {{ROFirstName}} {{ROLastName}}                   |
+   | \ldots Phone         | {{ROPhone1}} {{ROPhone1Type}}                    |
+   | \ldots Email         | {{ROEMail}}                                      |
+   |----------------------+--------------------------------------------------|
+   | Date of Event        | {{EventDate}}                                    |
+   | Type of Place        | {{PlaceTypeOfPlace}}                        |
+   | Address              | {{PlaceStreet}} \ldots {{PlaceLocality}}         |
+   | LGA \ldots State     | {{PlaceLGA}} \ldots  {{PlaceState}}              |
+   | Description of Place | /Please describe the place with your own words./ |
+   | Rumor Description    | /After having viewed all information/            |
+   |                      | /please invent further details and/              |
+   |                      | /describe the rumor with your own words./        |
+   |----------------------+--------------------------------------------------|
+   {{/F}}
+  
+   $\ldots$ /Person [fn:: Person -- {{IdPerson}}]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /{{RumorRemark}}/ |
+   {{>person}}
+   {{#L}}
+   $\blacksquare$ \medskip 
+   {{/L}}
+   {{/rumor}}{{^rumor}}   /There are no rumors for today./ {{/rumor}}

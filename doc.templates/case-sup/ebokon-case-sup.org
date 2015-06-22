@@ -1,0 +1,1324 @@
+#+Include: ../../doc.templates/title-injects.org
+#+Include: ../../preamble.org
+
+* Introduction
+
+# #+Include: ../../doc.templates/snippets/fieldtest-intro.org
+
+** About You
+
+# #+Include: ../../doc.templates/case-sup/tasks-case-sup-about.org
+
+You coordinate all activities around the case management (i.e. clinical management, isolation measures, transport, decontamination of residences or facilities, burial, psychosocial support). You immediately communicate results of laboratory investigations in case of /exercise disease/ and Avian Influenza and theirby update the status of /suspected cases/ to /confirmed cases/, /probable cases/, /non-cases/ or /discarded cases/ resp..
+
+#+name: about
+#+begin_src R :colnames yes :exports results
+cs <- read.csv2("about.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[c(18,11,5,2)]
+colnames(cs) <- c("Name", "Institute", "State","Code")
+cs
+#+end_src
+
+#+Caption: Your Coordinates.
+#+Attr_Latex: :center nil :booktabs t
+#+RESULTS: about
+| Name                           | Institute         | State | Code         |
+|--------------------------------+-------------------+-------+--------------|
+| Mr Ighogbetine Nguirmamaramama | Yar Gaya Hospital | Kano  | CAS-KN-ZZZ-1 |
+
+** Data for Exercise Disease
+
+#+Include: ../../doc.templates/snippets/fieldtest-data-exd.org
+
+** Tasks as Case Supervisor (ExD)
+
+#+Include: ../../doc.templates/case-sup/tasks-case-sup.org
+
+#+Latex: \newpage
+* Daily Tasks (Case Supervisor)
+
+#+begin_src emacs-lisp :exports none :results value raw :var user="usercode"
+(setq system-time-locale "C")
+
+(defun test (n)
+  (let* ((d (format-time-string "%Y-%m-%d -- %a %e %b" (encode-time 0 0 0 (+ 0 n) 6 2015))))
+  (concat (if (> n 8) "#+Latex: \\newpage\n")
+          (if (not (memq (mod n 7) '(0 6)))
+            (format "** Day %s -- %s\n" n d)
+            ;(format "** Day %s -- %s (fyi)\n" n d)
+          )
+          ;(if (and (eq 1 (mod n 7)) (> n 8)) 
+          ;  "#+Include: ../we-note.org\n\n")          
+          (if (not (memq (mod n 7) '(0 6)))
+            (concat 
+            "#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org\n\n"
+            "#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org\n\n"
+            "#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<tasklaboverdue>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<labinfo>>\n"
+            "   #+end_src\n\n"
+            "#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<casedischarge>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<casedied>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<taskupdate>>\n"
+            "   #+end_src\n\n"
+            )))))
+
+(apply #'concatenate 'string
+  (loop for n from 8 to 40
+   collect (test n)))
+#+end_src
+
+#+RESULTS[db41a0b2e9fc6f866b5c7749ebeb5cfc07fba22e]:
+** Day 8 -- 2015-06-08 -- Mon  8 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 9 -- 2015-06-09 -- Tue  9 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 10 -- 2015-06-10 -- Wed 10 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 11 -- 2015-06-11 -- Thu 11 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 12 -- 2015-06-12 -- Fri 12 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 15 -- 2015-06-15 -- Mon 15 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 16 -- 2015-06-16 -- Tue 16 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 17 -- 2015-06-17 -- Wed 17 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 18 -- 2015-06-18 -- Thu 18 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 19 -- 2015-06-19 -- Fri 19 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 22 -- 2015-06-22 -- Mon 22 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 23 -- 2015-06-23 -- Tue 23 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 24 -- 2015-06-24 -- Wed 24 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 25 -- 2015-06-25 -- Thu 25 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 26 -- 2015-06-26 -- Fri 26 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 29 -- 2015-06-29 -- Mon 29 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 30 -- 2015-06-30 -- Tue 30 Jun
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 31 -- 2015-07-01 -- Wed  1 Jul
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 32 -- 2015-07-02 -- Thu  2 Jul
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 33 -- 2015-07-03 -- Fri  3 Jul
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 36 -- 2015-07-06 -- Mon  6 Jul
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 37 -- 2015-07-07 -- Tue  7 Jul
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 38 -- 2015-07-08 -- Wed  8 Jul
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 39 -- 2015-07-09 -- Thu  9 Jul
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<taskupdate>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 40 -- 2015-07-10 -- Fri 10 Jul
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-1.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-2.org
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<tasklaboverdue>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<labinfo>>
+   #+end_src
+
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<casedischarge>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-6.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<casedied>>
+   #+end_src
+#+Include: ../../doc.templates/case-sup/tasks-ca-sup-7.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<taskupdate>>
+   #+end_src
+
+
+
+#+Latex: \newpage
+* The End
+
+#+Include: ../../doc.templates/snippets/fieldtest-outro-exd.org
+
+* Footnotes
+* Code																														 :noexport:
+
+** DONE Tasks for Lab results overdue 
+
+#+name: tasklaboverdue  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=43
+library(whisker)
+cs <- read.csv2("../../data.out/ft_tasks.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdCase, cs$LastName), ]
+cs <- cs[cs$TaskStatus=="overdue",]
+cs <- cs[cs$TaskType=="lab",]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+count <- nrow(cs)
+
+countQ <- as.logical(count>0)
+countManyQ <- as.logical(count>1)
+out <- data.frame(count,countQ,countManyQ)
+names(out) <- c("TaskNumber","TaskQ","TasksManyQ")
+
+task <- unname(rowSplit(out))
+f <- "task-laboverdue.org"
+contents <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: tasklaboverdue
+:RESULTS:
+
+ /There should be at least 9 lab requests overdue./ 
+
+:END:
+
+** DONE Labinfo
+
+#+name: labinfo  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=16
+library(whisker)
+cs <- read.csv2("../../data.out/ft_labinfo.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdCase, cs$LastName), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+lab <- unname(rowSplit(cs))
+
+f <- "labinfo.org"
+contents <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: labinfo
+:RESULTS:
+
+   /Lab info[fn:: Case -- 2]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Sesugh Ogunode                    |
+   | Sex \ldots Age \ldots DoB | male \ldots 17 \ldots 1998-05-03 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-15                                |
+   | Sample-Id                 | 641944                                  |
+   | Sample-Specimen           | Stool                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | negative                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 122]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Chicobe Adebowale                    |
+   | Sex \ldots Age \ldots DoB | female \ldots 30 \ldots 1984-10-26 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-15                                |
+   | Sample-Id                 | 455531                                  |
+   | Sample-Specimen           | Stool                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | negative                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 537]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Efemena Ekpuk                    |
+   | Sex \ldots Age \ldots DoB | female \ldots 17 \ldots 1997-06-28 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-15                                |
+   | Sample-Id                 | 856525                                  |
+   | Sample-Specimen           | Blood                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | negative                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 662]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Chidinma Offiah                    |
+   | Sex \ldots Age \ldots DoB | female \ldots 35 \ldots 1979-06-30 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-16                                |
+   | Sample-Id                 | 154279                                  |
+   | Sample-Specimen           | Stool                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | positive                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 1117]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Monijesu Brigidi                    |
+   | Sex \ldots Age \ldots DoB | female \ldots 48 \ldots 1966-11-18 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-16                                |
+   | Sample-Id                 | 455861                                  |
+   | Sample-Specimen           | Blood                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | negative                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 1333]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Olatunbosun Eguavoen                    |
+   | Sex \ldots Age \ldots DoB | male \ldots 47 \ldots 1967-08-16 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-15                                |
+   | Sample-Id                 | 353110                                  |
+   | Sample-Specimen           | Blood                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | negative                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 1376]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Nnaemeka Uche                    |
+   | Sex \ldots Age \ldots DoB | male \ldots 16 \ldots 1999-11-01 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-16                                |
+   | Sample-Id                 | 981983                                  |
+   | Sample-Specimen           | Blood                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | negative                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 1383]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Lola Adokwe                    |
+   | Sex \ldots Age \ldots DoB | female \ldots 21 \ldots 1993-05-08 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-15                                |
+   | Sample-Id                 | 381128                                  |
+   | Sample-Specimen           | Stool                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | positive                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 1463]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Ikeoluwatomiwaopayemi Jibowu                    |
+   | Sex \ldots Age \ldots DoB | female \ldots 23 \ldots 1992-07-04 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-16                                |
+   | Sample-Id                 | 342640                                  |
+   | Sample-Specimen           | Stool                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | inconclusive                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 1489]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Ayorogbami Latifu                    |
+   | Sex \ldots Age \ldots DoB | male \ldots 33 \ldots 1981-01-12 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-15                                |
+   | Sample-Id                 | 159953                                  |
+   | Sample-Specimen           | Blood                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | negative                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+   /Lab info[fn:: Case -- 1624]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Bukola Mamudu                    |
+   | Sex \ldots Age \ldots DoB | female \ldots 58 \ldots 1956-08-11 |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | 2015-06-15                                |
+   | Sample-Id                 | 896374                                  |
+   | Sample-Specimen           | Blood                            |
+   | Date of Diagnosis         | 2015-06-16                             |
+   | Pathogene                 | Exercise disease virus                              |
+   | Method                    | PCR                                 |
+   | Result                    | negative                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+
+
+:END:
+
+** DONE Cases to discharge
+
+#+name: casedischarge  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=22
+library(whisker)
+cs <- read.csv2("../../data.out/ft_tasks.csv", sep=";", header=TRUE, skip=0, 
+ na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdCase, cs$LastName), ]
+cs <- cs[cs$TaskStatus=="open",]
+cs <- cs[cs$TaskType=="discharge",]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+discharge <- unname(rowSplit(cs))
+
+f <- "discharge.org"
+contents <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: casedischarge
+:RESULTS:
+
+#+Attr_Latex: :center nil :booktabs t
+   |-------------------------------------------+---------+---------+-----------------|
+   | Case                                      | Sex     | Age     | DoB             |
+   |-------------------------------------------+---------+---------+-----------------|
+   |  Efemena Ekpuk | female | 17 | 1997-06-28 |
+   | Nnaemeka Uche | male | 16 | 1999-11-01 |
+   |-----
+ 
+   \medskip
+
+:END:
+
+** DONE Tasks for Cases that died
+
+#+name: casedied  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=22
+library(whisker)
+cs <- read.csv2("../../data.out/ft_tasks.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdCase, cs$LastName), ]
+cs <- cs[cs$TaskStatus=="open",]
+cs <- cs[cs$TaskType=="burial",]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+burial <- unname(rowSplit(cs))
+
+f <- "burial.org"
+contents <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: casedied
+:RESULTS:
+
+#+Attr_Latex: :center nil :booktabs t
+   |----------------------------------------+---------+---------+-----------------+-----------------|
+   | Case                                   | Sex     | Age     | DoB             | DateOfDeath     |
+   |----------------------------------------+---------+---------+-----------------+-----------------|
+   |  Nonso Fabunmi | male | 16 | 1998-08-14 | 2015-06-22 |
+   | Obioma Igiebor | female | 24 | 1990-08-23 | 2015-06-22 |
+   | Tolani Kyari | female | 39 | 1975-10-14 | 2015-06-22 |
+   | Godwin  Ewang | male | 16 | 1998-12-09 | 2015-06-22 |
+   | Ebiwumi Utondu | female | 31 | 1984-02-26 | 2015-06-22 |
+   | Olatunji Rumfa | male | 51 | 1963-06-22 | 2015-06-22 |
+   | Arome Kareem | male | 31 | 1983-06-18 | 2015-06-22 |
+   | Bola Bozimo | female | 55 | 1959-12-11 | 2015-06-22 |
+   |-----
+ 
+   \medskip
+
+:END:
+
+** DONE Tasks to update
+
+#+name: taskupdate
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :chache no :var iduser=usercode day=22
+library(whisker)
+cs <- read.csv2("../../data.out/ft_tasks.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdCase, cs$LastName), ]
+cs <- cs[cs$TaskStatus=="done",]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+task <- unname(rowSplit(cs))
+
+f <- "task.org"
+contents <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: taskupdate
+:RESULTS:
+
+#+Attr_Latex: :center nil :booktabs t
+   |--------------------------------------+---------+---------+-----------------+--------------+----------------|
+   | Case                                 | Sex     | Age     | DoB             | Task         | Status         |
+   |--------------------------------------+---------+---------+-----------------+--------------+----------------|
+   |  Sesugh Ogunode | male | 17 | 1998-05-03 | burial | done |
+   | Abieyuwa Nwakaeme | female | 32 | 1983-01-31 | burial | done |
+   | Enweliku Sani | male | 43 | 1972-11-05 | isolation | done |
+   | Godwin  Ewang | male | 16 | 1998-12-09 | isolation | done |
+   | Adejoke Novia | female | 45 | 1970-03-24 | isolation | done |
+   | Ikharo Idoko | male | 18 | 1996-09-17 | burial | done |
+   | Iyokpesomi Oshikoya | female | 60 | 1954-10-07 | isolation | done |
+   | Ikeoluwatomiwaopayemi Jibowu | female | 23 | 1992-07-04 | burial | done |
+   | Bukola Ajibade | female | 58 | 1956-05-10 | isolation | done |
+   | Olubowale Oyedepo | male | 36 | 1979-01-26 | isolation | done |
+   | Iniobong Barka | female | 18 | 1996-07-17 | burial | done |
+   | Ugoh Ayeni | male | 27 | 1987-11-20 | isolation | done |
+   | Ugoh Ayeni | male | 27 | 1987-11-20 | burial | done |
+   | Adeleke Ogundana | male | 31 | 1984-05-21 | isolation | done |
+   |-----
+
+   \medskip
+
+:END:
+
+** DONE IdUser
+
+#+name: usercode
+#+begin_src R :var x=about[2,3]
+x
+#+end_src
+
+#+RESULTS: usercode
+: CAS-KN-ZZZ-1
+
+

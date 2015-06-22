@@ -1,0 +1,13 @@
+
+{{#case}}
+   /Case of death[fn:: Person -- {{IdPerson}}]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | {{FirstName}} {{LastName}}                    |
+   | Sex \ldots DoB \ldots Age | {{Sex}} \ldots {{Age}} \ldots {{DateOfBirth}} |
+   | Date of Death             | {{DateOfDeathLater}}                          |
+   |---------------------------+-----------------------------------------------|
+   
+   \medskip
+{{/case}}{{^case}}   /Ther are no persons that died today./ {{/case}}

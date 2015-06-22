@@ -1,0 +1,12 @@
+
+#+Attr_Latex: :center nil :booktabs t
+   |----------------------------------------+---------+---------+-----------------+-----------------|
+   | Case                                   | Sex     | Age     | DoB             | DateOfDeath     |
+   |----------------------------------------+---------+---------+-----------------+-----------------|
+   | {{#burial}} {{FirstName}} {{LastName}} | {{Sex}} | {{Age}} | {{DateOfBirth}} | {{DateOfDeath}} |
+   |{{/burial}}-----
+ 
+   \medskip
+{{^burial}}
+  /There are no cases which have to be buried for today./
+{{/burial}}

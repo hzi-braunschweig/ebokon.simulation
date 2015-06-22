@@ -1,0 +1,12 @@
+
+#+Attr_Latex: :center nil :booktabs t
+   |--------------------------------------+---------+---------+-----------------+--------------+----------------|
+   | Case                                 | Sex     | Age     | DoB             | Task         | Status         |
+   |--------------------------------------+---------+---------+-----------------+--------------+----------------|
+   | {{#task}} {{FirstName}} {{LastName}} | {{Sex}} | {{Age}} | {{DateOfBirth}} | {{TaskType}} | {{TaskStatus}} |
+   |{{/task}}-----
+
+   \medskip
+{{^task}}
+  /There are no tasks to update./
+{{/task}}

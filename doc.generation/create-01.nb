@@ -1,0 +1,854 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     35243,        845]
+NotebookOptionsPosition[     32874,        757]
+NotebookOutlinePosition[     33219,        772]
+CellTagsIndexPosition[     33176,        769]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Users", "Section",
+ CellChangeTimes->{{3.6439734623469353`*^9, 3.6439734671574163`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Read", "Subsubsection",
+ CellChangeTimes->{{3.643973515355235*^9, 3.6439735216658664`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+    "\"\<\\\\..\\\\data.in\>\""}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.640277457760225*^9, 3.6402774933223104`*^9}, {
+  3.643779493294046*^9, 3.643779613406666*^9}, {3.643973024733178*^9, 
+  3.6439730273474393`*^9}, {3.643973169817685*^9, 3.643973216403343*^9}, {
+  3.6439732971984215`*^9, 3.6439733191186132`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"users", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<fieldtest-participants.csv\>\"", ",", "\"\<Table\>\"", ",", 
+     RowBox[{"\"\<FieldSeparators\>\"", "\[Rule]", "\"\<;\>\""}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.640277529704399*^9, 3.6402775846035414`*^9}, {
+   3.640277614667624*^9, 3.6402776280936613`*^9}, 3.640277701343261*^9, {
+   3.6402777430248747`*^9, 3.6402777589269037`*^9}, {3.6419797019899836`*^9, 
+   3.6419797024423847`*^9}, {3.643973005358241*^9, 3.643973005520257*^9}, {
+   3.643973339344636*^9, 3.643973366675369*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Take", "[", 
+   RowBox[{"users", ",", "10"}], "]"}], "//", "TableForm"}]], "Input",
+ CellChangeTimes->{{3.640277598283573*^9, 3.640277608046604*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Id\"\>", "\<\"IdUser\"\>", "\<\"IdUser2\"\>", "\<\"IdState\"\>", \
+"\<\"State\"\>", "\<\"StateShort\"\>", "\<\"IdLGA\"\>", "\<\"LGA\"\>", \
+"\<\"LGAShort\"\>", "\<\"LGAType\"\>", "\<\"Institution\"\>", \
+"\<\"FacilityType\"\>", "\<\"Ownership\"\>", "\<\"RealLifeRole\"\>", \
+"\<\"SormasRole\"\>", "\<\"SormasRoleShort\"\>", "\<\"No\"\>", \
+"\<\"Name\"\>", "\<\"Phone\"\>", "\<\"eMail\"\>", "\<\"Device\"\>"},
+    {"\<\"K2r-1Alb-2CtO\"\>", "\<\"COO-KN-ABS-1\"\>", "1", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "1", "\<\"Albasu\"\>", "\<\"ABS\"\>", "\<\"rural\"\>", "\<\"LGA HD\"\>", \
+"\<\"n/a\"\>", "\<\"n/a\"\>", "\<\"ADSNO\"\>", "\<\"Contact officer\"\>", "\<\
+\"COO\"\>", 
+     "1", "\<\"Mr Nonso Fabunmi\"\>", "\<\"+234-802-9867422\"\>", \
+"\<\"nonso.fabunmi@snft.net\"\>", "\<\"phone\"\>"},
+    {"\<\"K2r-1Alb-3HFP\"\>", "\<\"HFP-KN-ABS-1\"\>", "2", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "1", "\<\"Albasu\"\>", "\<\"ABS\"\>", "\<\"rural\"\>", "\<\"Albasu PHC\"\
+\>", "\<\"Primary\"\>", "\<\"Public\"\>", "\<\"n/a\"\>", "\<\"Hospital focal \
+person\"\>", "\<\"HFP\"\>", 
+     "1", "\<\"Mr Sesugh Ogunode\"\>", "\<\"+234-806-8590530\"\>", \
+"\<\"sesugh.ogunode@sormas.ng\"\>", "\<\"phone\"\>"},
+    {"\<\"K2r-1Alb-4HFP\"\>", "\<\"HFP-KN-ABS-2\"\>", "3", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "1", "\<\"Albasu\"\>", "\<\"ABS\"\>", "\<\"rural\"\>", "\<\"Fanda \
+PHC\"\>", "\<\"Primary\"\>", "\<\"Public\"\>", "\<\"n/a\"\>", "\<\"Hospital \
+focal person\"\>", "\<\"HFP\"\>", 
+     "2", "\<\"Mr Ugoh Maduabum\"\>", "\<\"+234-703-6666648\"\>", \
+"\<\"ugoh.maduabum@sormas.ng\"\>", "\<\"phone\"\>"},
+    {"\<\"K2r-1Alb-5HFP\"\>", "\<\"HFP-KN-ABS-3\"\>", "4", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "1", "\<\"Albasu\"\>", "\<\"ABS\"\>", "\<\"rural\"\>", "\<\"Hungu \
+PHC\"\>", "\<\"Primary\"\>", "\<\"Public\"\>", "\<\"n/a\"\>", "\<\"Hospital \
+focal person\"\>", "\<\"HFP\"\>", 
+     "3", "\<\"Mrs Chiburem Dabiri\"\>", "\<\"+234-64-725328\"\>", \
+"\<\"chiburem.dabiri@sormas.net\"\>", "\<\"phone\"\>"},
+    {"\<\"K2r-1Alb-6HFP\"\>", "\<\"HFP-KN-ABS-4\"\>", "5", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "1", "\<\"Albasu\"\>", "\<\"ABS\"\>", "\<\"rural\"\>", "\<\"Tsangaya PHC\
+\"\>", "\<\"Primary\"\>", "\<\"Public\"\>", "\<\"n/a\"\>", "\<\"Hospital \
+focal person\"\>", "\<\"HFP\"\>", 
+     "4", "\<\"Mr Azi Aikhionbare\"\>", "\<\"+234-813-1846976\"\>", \
+"\<\"azi.aikhionbare@ebokon.ng\"\>", "\<\"phone\"\>"},
+    {"\<\"K2r-1Alb-1SvO\"\>", "\<\"SUO-KN-ABS-1\"\>", "6", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "1", "\<\"Albasu\"\>", "\<\"ABS\"\>", "\<\"rural\"\>", "\<\"LGA HD\"\>", \
+"\<\"n/a\"\>", "\<\"n/a\"\>", "\<\"DSNO\"\>", "\<\"Surveillance officer\"\>", \
+"\<\"SUO\"\>", 
+     "1", "\<\"Mr Adebolajo Oboli\"\>", "\<\"0806-7040681\"\>", \
+"\<\"adebolajo.oboli@sormas.org\"\>", "\<\"phone\"\>"},
+    {"\<\"K2r-2DTo-2CtO\"\>", "\<\"COO-KN-DTF-1\"\>", "7", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "2", "\<\"Dawakin Tofa\"\>", "\<\"DTF\"\>", "\<\"rural\"\>", "\<\"LGA HD\
+\"\>", "\<\"n/a\"\>", "\<\"n/a\"\>", "\<\"ADSNO\"\>", "\<\"Contact \
+officer\"\>", "\<\"COO\"\>", 
+     "1", "\<\"Mr Nnaemeka Mbah\"\>", "\<\"0809-8629930\"\>", \
+"\<\"nnaemeka.mbah@sormas.ng\"\>", "\<\"phone\"\>"},
+    {"\<\"K2r-2DTo-3HFP\"\>", "\<\"HFP-KN-DTF-1\"\>", "8", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "2", "\<\"Dawakin Tofa\"\>", "\<\"DTF\"\>", "\<\"rural\"\>", \
+"\<\"Dandalama PHC\"\>", "\<\"Primary\"\>", "\<\"Public\"\>", "\<\"n/a\"\>", \
+"\<\"Hospital focal person\"\>", "\<\"HFP\"\>", 
+     "1", "\<\"Mr Godwin Fajinmi\"\>", "\<\"0807-4757680\"\>", \
+"\<\"godwin.fajinmi@sormas.ng\"\>", "\<\"phone\"\>"},
+    {"\<\"K2r-2DTo-5HFP\"\>", "\<\"HFP-KN-DTF-2\"\>", "9", 
+     "1", "\<\"Kano\"\>", "\<\"KN\"\>", 
+     "2", "\<\"Dawakin Tofa\"\>", "\<\"DTF\"\>", "\<\"rural\"\>", \
+"\<\"Dawanau PHC\"\>", "\<\"Primary\"\>", "\<\"Public\"\>", "\<\"n/a\"\>", \
+"\<\"Hospital focal person\"\>", "\<\"HFP\"\>", 
+     "2", "\<\"Mrs Mujee Bot Kan\"\>", "\<\"0813-9282742\"\>", "\<\"mujee \
+bot.kan@sormas.com\"\>", "\<\"phone\"\>"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.6402776084466047`*^9, 3.640277705613505*^9, {3.6402777469758825`*^9, 
+   3.640277761591908*^9}, 3.6419797055391903`*^9, 3.6422711831625166`*^9, 
+   3.6423215609634237`*^9, 3.6439730087265778`*^9, {3.643973348857587*^9, 
+   3.643973368677569*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Individuals", "Subsubsection",
+ CellChangeTimes->{{3.6439738007577724`*^9, 3.6439738088415813`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"User", "[", "id_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Cases", "[", 
+    RowBox[{"users", ",", 
+     RowBox[{"{", 
+      RowBox[{"_", ",", "id", ",", "___"}], "}"}]}], "]"}], "//", 
+   "First"}]}]], "Input",
+ CellChangeTimes->{{3.64197984550605*^9, 3.6419798838999205`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"User", "[", "\"\<HFP-OY-AYT-1\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6419798673468904`*^9, 3.6419798774979086`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"O2r-2IrN-5HFP\"\>", ",", "\<\"HFP-OY-AYT-1\"\>", ",", "60", 
+   ",", "2", ",", "\<\"Oyo\"\>", ",", "\<\"OY\"\>", ",", "10", 
+   ",", "\<\"Ibarapa North\"\>", ",", "\<\"AYT\"\>", ",", "\<\"rural\"\>", 
+   ",", "\<\"Akindele Clinic\"\>", ",", "\<\"???\"\>", ",", "\<\"Private\"\>",
+    ",", "\<\"n/a\"\>", ",", "\<\"Hospital focal person\"\>", 
+   ",", "\<\"HFP\"\>", ",", "1", ",", "\<\"Mr Ime  Iyke\"\>", 
+   ",", "\<\"+234-801-7199462\"\>", ",", "\<\"i.iyke@ebokon.org\"\>", 
+   ",", "\<\"phone\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.64197987816971*^9, 3.641979885867524*^9}, 
+   3.6422702825565324`*^9, 3.642271343093998*^9, 3.643973814710168*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Some Data", "Subsubsection",
+ CellChangeTimes->{{3.643973496371337*^9, 3.6439735023849382`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"userH", "=", 
+  RowBox[{"users", "[", 
+   RowBox[{"[", "1", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6419798375410357`*^9, 3.6419798395564394`*^9}, {
+   3.641979891553934*^9, 3.64197989432014*^9}, 3.6439737654232397`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Id\"\>", ",", "\<\"IdUser\"\>", ",", "\<\"IdUser2\"\>", 
+   ",", "\<\"IdState\"\>", ",", "\<\"State\"\>", ",", "\<\"StateShort\"\>", 
+   ",", "\<\"IdLGA\"\>", ",", "\<\"LGA\"\>", ",", "\<\"LGAShort\"\>", 
+   ",", "\<\"LGAType\"\>", ",", "\<\"Institution\"\>", 
+   ",", "\<\"FacilityType\"\>", ",", "\<\"Ownership\"\>", 
+   ",", "\<\"RealLifeRole\"\>", ",", "\<\"SormasRole\"\>", 
+   ",", "\<\"SormasRoleShort\"\>", ",", "\<\"No\"\>", ",", "\<\"Name\"\>", 
+   ",", "\<\"Phone\"\>", ",", "\<\"eMail\"\>", ",", "\<\"Device\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.641979895289341*^9, 3.642270290450146*^9, 
+  3.6422713440455995`*^9, 3.6439737676654634`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Position", "[", 
+  RowBox[{
+   RowBox[{"users", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], ",", "\"\<Institution\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6439734257742777`*^9, 3.643973445734274*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", "11", "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.6439734460883093`*^9, 3.643973449408641*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"#", "[", 
+    RowBox[{"[", "11", "]"}], "]"}], "&"}], "/@", "users"}]], "Input",
+ CellChangeTimes->{{3.6422711901357293`*^9, 3.642271245874627*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Institution\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"Albasu PHC\"\>", ",", "\<\"Fanda PHC\"\>", 
+   ",", "\<\"Hungu PHC\"\>", ",", "\<\"Tsangaya PHC\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"LGA HD\"\>", ",", "\<\"Dandalama PHC\"\>",
+    ",", "\<\"Dawanau PHC\"\>", ",", "\<\"Tattarawa PHC\"\>", 
+   ",", "\<\"Dawaki General hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Getso MCH\"\>", 
+   ",", "\<\"Alheri Clinic\"\>", ",", "\<\"Koya Health Post \"\>", 
+   ",", "\<\"Gwarzo General Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Chiranci PHC\"\>", 
+   ",", "\<\"Sheka PHC\"\>", ",", "\<\"Nasiha Clinic\"\>", 
+   ",", "\<\"Tajudden Clinic\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Kiru CHC\"\>", ",", "\<\"Yako BCH\"\>", 
+   ",", "\<\"Stholic Clinic \"\>", ",", "\<\"Taimako Clinic\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"LGA HD\"\>", ",", "\<\"Gwagwarwa PHC\"\>",
+    ",", "\<\"Ahmadiyya Hospital\"\>", ",", "\<\"Bamaiyi Hospital\"\>", 
+   ",", "\<\"Sir Muhd Sunusi Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Ja'oji PHC\"\>", 
+   ",", "\<\"Unguwa Uku PHC\"\>", ",", "\<\"Almu Hospital\"\>", 
+   ",", "\<\"Annoury Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Ungogo PHC\"\>", 
+   ",", "\<\"Rahama Clinic\"\>", ",", "\<\"Unicare Hospital\"\>", 
+   ",", "\<\"Waziri Shehu Gidado\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"Yar Gaya Hospital\"\>", ",", "\<\"Yar Gaya Hospital\"\>", 
+   ",", "\<\"State HD\"\>", ",", "\<\"State HD\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"Jobi Memorial Hospital, Paadi\"\>", 
+   ",", "\<\"Iwo road Health Centre\"\>", ",", "\<\"OkeAdu Health Centre\"\>",
+    ",", "\<\"Oluyoro Catholic Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Akindele Clinic\"\>", 
+   ",", "\<\"Victory foundation\"\>", ",", "\<\"PHC Okeola\"\>", 
+   ",", "\<\"General Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Grace Hospital\"\>", 
+   ",", "\<\"Oroki Medical Centre\"\>", ",", "\<\"Boroboro Health centre\"\>",
+    ",", "\<\"State Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Baptist Medical centre Okeho\"\>", 
+   ",", "\<\"Wuraola Hospital\"\>", 
+   ",", "\<\"Ijo Primary Health Care Centre\"\>", 
+   ",", "\<\"Okeho General Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Elkeedam Clinic\"\>", 
+   ",", "\<\"Agede PHC\"\>", ",", "\<\"Kisi General Hospital\"\>", 
+   ",", "\<\"Muslim Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Ayeye Primary Health Centre\"\>", 
+   ",", "\<\"Jericho Specialist Hospital\"\>", ",", "\<\"AlafiaHospital\"\>", 
+   ",", "\<\"Unity Medical Centre\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Oke Imale primary health centre\"\>", 
+   ",", "\<\"General Hospital, Eruwa\"\>", ",", "\<\"Awojobi Clinic\"\>", 
+   ",", "\<\"Rehoboth Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"LGA HD\"\>", ",", "\<\"Isale Taba Maternity Centre\"\>", 
+   ",", "\<\"State Hospital\"\>", ",", "\<\"Baptist Medical Centre\"\>", 
+   ",", "\<\"Muslim Hospital\"\>", ",", "\<\"LGA HD\"\>", 
+   ",", "\<\"Isolation unit\"\>", ",", "\<\"IDSR UCH\"\>", 
+   ",", "\<\"State HD\"\>", ",", "\<\"State HD\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.6422712109617653`*^9, 3.6422712467170286`*^9}, 
+   3.6439733827219734`*^9, 3.6439734502417245`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"First", "/@", 
+   RowBox[{"Rest", "@", "users"}]}], "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.6402778073000154`*^9, 3.6402778301000767`*^9}}],
+
+Cell[BoxData["104"], "Output",
+ CellChangeTimes->{{3.640277812618025*^9, 3.6402778305710773`*^9}, 
+   3.641979713462405*^9, 3.6439734534090414`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Id", "Subsubsection",
+ CellChangeTimes->{{3.6439734765123515`*^9, 3.643973482582958*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ids", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"#", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], "&"}], "/@", 
+   RowBox[{"Rest", "@", "users"}]}]}]], "Input",
+ CellChangeTimes->{{3.6402778363810854`*^9, 3.6402778396630974`*^9}, {
+  3.6419797193042164`*^9, 3.6419797245362263`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"COO-KN-ABS-1\"\>", ",", "\<\"HFP-KN-ABS-1\"\>", 
+   ",", "\<\"HFP-KN-ABS-2\"\>", ",", "\<\"HFP-KN-ABS-3\"\>", 
+   ",", "\<\"HFP-KN-ABS-4\"\>", ",", "\<\"SUO-KN-ABS-1\"\>", 
+   ",", "\<\"COO-KN-DTF-1\"\>", ",", "\<\"HFP-KN-DTF-1\"\>", 
+   ",", "\<\"HFP-KN-DTF-2\"\>", ",", "\<\"HFP-KN-DTF-3\"\>", 
+   ",", "\<\"HFP-KN-DTF-4\"\>", ",", "\<\"SUO-KN-DTF-1\"\>", 
+   ",", "\<\"COO-KN-GRZ-1\"\>", ",", "\<\"HFP-KN-GRZ-1\"\>", 
+   ",", "\<\"HFP-KN-GRZ-2\"\>", ",", "\<\"HFP-KN-GRZ-3\"\>", 
+   ",", "\<\"HFP-KN-GRZ-4\"\>", ",", "\<\"SUO-KN-GRZ-1\"\>", 
+   ",", "\<\"COO-KN-KBT-1\"\>", ",", "\<\"HFP-KN-KBT-1\"\>", 
+   ",", "\<\"HFP-KN-KBT-2\"\>", ",", "\<\"HFP-KN-KBT-3\"\>", 
+   ",", "\<\"HFP-KN-KBT-4\"\>", ",", "\<\"SUO-KN-KBT-1\"\>", 
+   ",", "\<\"COO-KN-KKU-1\"\>", ",", "\<\"HFP-KN-KKU-1\"\>", 
+   ",", "\<\"HFP-KN-KKU-2\"\>", ",", "\<\"HFP-KN-KKU-3\"\>", 
+   ",", "\<\"HFP-KN-KKU-4\"\>", ",", "\<\"SUO-KN-KKU-1\"\>", 
+   ",", "\<\"COO-KN-NSR-1\"\>", ",", "\<\"HFP-KN-NSR-1\"\>", 
+   ",", "\<\"HFP-KN-NSR-2\"\>", ",", "\<\"HFP-KN-NSR-3\"\>", 
+   ",", "\<\"HFP-KN-NSR-4\"\>", ",", "\<\"SUO-KN-NSR-1\"\>", 
+   ",", "\<\"COO-KN-TRN-1\"\>", ",", "\<\"HFP-KN-TRN-1\"\>", 
+   ",", "\<\"HFP-KN-TRN-2\"\>", ",", "\<\"HFP-KN-TRN-3\"\>", 
+   ",", "\<\"HFP-KN-TRN-4\"\>", ",", "\<\"SUO-KN-TRN-1\"\>", 
+   ",", "\<\"COO-KN-UGG-1\"\>", ",", "\<\"HFP-KN-UGG-1\"\>", 
+   ",", "\<\"HFP-KN-UGG-2\"\>", ",", "\<\"HFP-KN-UGG-3\"\>", 
+   ",", "\<\"HFP-KN-UGG-4\"\>", ",", "\<\"SUO-KN-UGG-1\"\>", 
+   ",", "\<\"CAS-KN-ZZZ-1\"\>", ",", "\<\"HFP-KN-ZZZ-1\"\>", 
+   ",", "\<\"RUO-KN-ZZZ-1\"\>", ",", "\<\"SCS-KN-ZZZ-1\"\>", 
+   ",", "\<\"COO-OY-AGG-1\"\>", ",", "\<\"HFP-OY-AGG-1\"\>", 
+   ",", "\<\"HFP-OY-AGG-2\"\>", ",", "\<\"HFP-OY-AGG-3\"\>", 
+   ",", "\<\"HFP-OY-AGG-4\"\>", ",", "\<\"SUO-OY-AGG-1\"\>", 
+   ",", "\<\"COO-OY-AYT-1\"\>", ",", "\<\"HFP-OY-AYT-1\"\>", 
+   ",", "\<\"HFP-OY-AYT-2\"\>", ",", "\<\"HFP-OY-AYT-3\"\>", 
+   ",", "\<\"HFP-OY-AYT-4\"\>", ",", "\<\"SUO-OY-AYT-1\"\>", 
+   ",", "\<\"COO-OY-FMT-1\"\>", ",", "\<\"HFP-OY-FMT-1\"\>", 
+   ",", "\<\"HFP-OY-FMT-2\"\>", ",", "\<\"HFP-OY-FMT-3\"\>", 
+   ",", "\<\"HFP-OY-FMT-4\"\>", ",", "\<\"SUO-OY-FMT-1\"\>", 
+   ",", "\<\"COO-OY-KEH-1\"\>", ",", "\<\"HFP-OY-KEH-1\"\>", 
+   ",", "\<\"HFP-OY-KEH-2\"\>", ",", "\<\"HFP-OY-KEH-3\"\>", 
+   ",", "\<\"HFP-OY-KEH-4\"\>", ",", "\<\"SUO-OY-KEH-1\"\>", 
+   ",", "\<\"COO-OY-KSH-1\"\>", ",", "\<\"HFP-OY-KSH-1\"\>", 
+   ",", "\<\"HFP-OY-KSH-2\"\>", ",", "\<\"HFP-OY-KSH-3\"\>", 
+   ",", "\<\"HFP-OY-KSH-4\"\>", ",", "\<\"SUO-OY-KSH-1\"\>", 
+   ",", "\<\"COO-OY-NRK-1\"\>", ",", "\<\"HFP-OY-NRK-1\"\>", 
+   ",", "\<\"HFP-OY-NRK-2\"\>", ",", "\<\"HFP-OY-NRK-3\"\>", 
+   ",", "\<\"HFP-OY-NRK-4\"\>", ",", "\<\"SUO-OY-NRK-1\"\>", 
+   ",", "\<\"COO-OY-RUW-1\"\>", ",", "\<\"HFP-OY-RUW-1\"\>", 
+   ",", "\<\"HFP-OY-RUW-2\"\>", ",", "\<\"HFP-OY-RUW-3\"\>", 
+   ",", "\<\"HFP-OY-RUW-4\"\>", ",", "\<\"SUO-OY-RUW-1\"\>", 
+   ",", "\<\"COO-OY-SHK-1\"\>", ",", "\<\"HFP-OY-SHK-1\"\>", 
+   ",", "\<\"HFP-OY-SHK-2\"\>", ",", "\<\"HFP-OY-SHK-3\"\>", 
+   ",", "\<\"HFP-OY-SHK-4\"\>", ",", "\<\"SUO-OY-SHK-1\"\>", 
+   ",", "\<\"CAS-OY-ZZZ-1\"\>", ",", "\<\"HFP-OY-ZZZ-1\"\>", 
+   ",", "\<\"RUO-OY-ZZZ-1\"\>", ",", "\<\"SCS-OY-ZZZ-1\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.6402778418411036`*^9, {3.641979714817008*^9, 3.6419797253650274`*^9}, 
+   3.642270208596402*^9, 3.6422728482582607`*^9, 3.6423366953408084`*^9, 
+   3.643973550033703*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Create Directories and Put Files in it", "Section",
+ CellChangeTimes->{{3.643973534255125*^9, 3.643973545219221*^9}, {
+  3.643974012780259*^9, 3.643974022535451*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Create Directories", "Subsection",
+ CellChangeTimes->{{3.6439739895172586`*^9, 3.6439739977992587`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CreateDirectory", "[", 
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+    "\"\<\\\\..\\\\doc.injects\>\""}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.640277955024382*^9, 3.6402779588853874`*^9}, {
+  3.64397360611131*^9, 3.643973641775876*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+    "\"\<\\\\..\\\\doc.injects\>\""}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.6402779438643546`*^9, 3.6402779662324114`*^9}, {
+  3.642271772362353*^9, 3.6422717733919544`*^9}, {3.64397357580628*^9, 
+  3.643973601152814*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"DeleteDirectory", "[", 
+     RowBox[{"#", ",", 
+      RowBox[{"DeleteContents", "\[Rule]", "True"}]}], "]"}], "&"}], "/@", 
+   "ids"}], ";"}]], "Input",
+ CellChangeTimes->{{3.6402780587696686`*^9, 3.6402780605246716`*^9}, {
+  3.6439741212134624`*^9, 3.6439741304094625`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CreateDirectory", "/@", "ids"}], ";"}]], "Input",
+ CellChangeTimes->{{3.640277781854946*^9, 3.6402777837479486`*^9}, {
+   3.6402778482841206`*^9, 3.6402778542821302`*^9}, 3.6402780278815794`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Copy Templates", "Subsection",
+ CellChangeTimes->{{3.643973922304259*^9, 3.6439739307132587`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Position", "[", 
+  RowBox[{"userH", ",", "\"\<SormasRoleShort\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.64198027359984*^9, 3.6419802991282873`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", "16", "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.641980288946069*^9, 3.6419802997064877`*^9}, 
+   3.6439738558532815`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Which", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"User", "[", "#", "]"}], "[", 
+        RowBox[{"[", "16", "]"}], "]"}], "\[Equal]", "\"\<HFP\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"CopyFile", "[", "\[IndentingNewLine]", 
+       RowBox[{
+       "\"\<..\\\\doc.templates\\\\informant\\\\ebokon-informant.org\>\"", 
+        ",", 
+        RowBox[{"\"\<.\\\\\>\"", "<>", 
+         RowBox[{
+          RowBox[{"User", "[", "#", "]"}], "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<\\\\\>\"", "<>", 
+         RowBox[{"ToLowerCase", "@", 
+          RowBox[{
+           RowBox[{"User", "[", "#", "]"}], "[", 
+           RowBox[{"[", "2", "]"}], "]"}]}], "<>", "\"\<.org\>\""}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"User", "[", "#", "]"}], "[", 
+        RowBox[{"[", "16", "]"}], "]"}], "\[Equal]", "\"\<RUO\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"CopyFile", "[", "\[IndentingNewLine]", 
+       RowBox[{
+       "\"\<..\\\\doc.templates\\\\rumor-off\\\\ebokon-rumor-off.org\>\"", 
+        ",", 
+        RowBox[{"\"\<.\\\\\>\"", "<>", 
+         RowBox[{
+          RowBox[{"User", "[", "#", "]"}], "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<\\\\\>\"", "<>", 
+         RowBox[{"ToLowerCase", "@", 
+          RowBox[{
+           RowBox[{"User", "[", "#", "]"}], "[", 
+           RowBox[{"[", "2", "]"}], "]"}]}], "<>", "\"\<.org\>\""}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"User", "[", "#", "]"}], "[", 
+        RowBox[{"[", "16", "]"}], "]"}], "\[Equal]", "\"\<COO\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"CopyFile", "[", "\[IndentingNewLine]", 
+       RowBox[{
+       "\"\<..\\\\doc.templates\\\\contact-off\\\\ebokon-contact-off.org\>\"",
+         ",", 
+        RowBox[{"\"\<.\\\\\>\"", "<>", 
+         RowBox[{
+          RowBox[{"User", "[", "#", "]"}], "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<\\\\\>\"", "<>", 
+         RowBox[{"ToLowerCase", "@", 
+          RowBox[{
+           RowBox[{"User", "[", "#", "]"}], "[", 
+           RowBox[{"[", "2", "]"}], "]"}]}], "<>", "\"\<.org\>\""}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"User", "[", "#", "]"}], "[", 
+        RowBox[{"[", "16", "]"}], "]"}], "\[Equal]", "\"\<SUO\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"CopyFile", "[", "\[IndentingNewLine]", 
+       RowBox[{
+       "\"\<..\\\\doc.templates\\\\surveillance-off\\\\ebokon-surveillance-\
+off.org\>\"", ",", 
+        RowBox[{"\"\<.\\\\\>\"", "<>", 
+         RowBox[{
+          RowBox[{"User", "[", "#", "]"}], "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<\\\\\>\"", "<>", 
+         RowBox[{"ToLowerCase", "@", 
+          RowBox[{
+           RowBox[{"User", "[", "#", "]"}], "[", 
+           RowBox[{"[", "2", "]"}], "]"}]}], "<>", "\"\<.org\>\""}]}], "]"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"User", "[", "#", "]"}], "[", 
+        RowBox[{"[", "16", "]"}], "]"}], "\[Equal]", "\"\<CAS\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"CopyFile", "[", "\[IndentingNewLine]", 
+       RowBox[{
+       "\"\<..\\\\doc.templates\\\\case-sup\\\\ebokon-case-sup.org\>\"", ",", 
+        RowBox[{"\"\<.\\\\\>\"", "<>", 
+         RowBox[{
+          RowBox[{"User", "[", "#", "]"}], "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<\\\\\>\"", "<>", 
+         RowBox[{"ToLowerCase", "@", 
+          RowBox[{
+           RowBox[{"User", "[", "#", "]"}], "[", 
+           RowBox[{"[", "2", "]"}], "]"}]}], "<>", "\"\<.org\>\""}]}], 
+       "]"}]}], "\[IndentingNewLine]", "]"}], "&"}], "/@", "ids"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.6419797645855007`*^9, 3.6419797676003065`*^9}, {
+   3.6419802391477766`*^9, 3.6419802659076257`*^9}, {3.6419803047054973`*^9, 
+   3.6419803262353373`*^9}, {3.6419803581133957`*^9, 
+   3.6419804415357513`*^9}, {3.6419804832900286`*^9, 3.641980513557884*^9}, {
+   3.641980555584362*^9, 3.6419805703765893`*^9}, {3.6419855723790946`*^9, 
+   3.6419855777681046`*^9}, {3.642270314661389*^9, 3.642270411615559*^9}, {
+   3.6422716236088905`*^9, 3.6422716455565295`*^9}, {3.642271678303387*^9, 
+   3.642271786698778*^9}, 3.643973895808259*^9, {3.643974286091462*^9, 
+   3.6439743369934626`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Put About - File", "Subsection",
+ CellChangeTimes->{{3.643973940813259*^9, 3.6439739533192587`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UserAbout", "[", "id_", "]"}], ":=", 
+  RowBox[{"{", 
+   RowBox[{"userH", ",", 
+    RowBox[{"User", "[", "id", "]"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.6419797883305445`*^9, 3.641979817296399*^9}, {
+  3.6419799334566126`*^9, 3.6419799437092314`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UserAbout", "[", "\"\<CAS-OY-ZZZ-1\>\"", "]"}], "//", 
+  "TableForm"}]], "Input",
+ CellChangeTimes->{{3.641979946067836*^9, 3.641979956252054*^9}, {
+  3.6423216144091177`*^9, 3.6423216192607265`*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Id\"\>", "\<\"IdUser\"\>", "\<\"IdUser2\"\>", "\<\"IdState\"\>", \
+"\<\"State\"\>", "\<\"StateShort\"\>", "\<\"IdLGA\"\>", "\<\"LGA\"\>", \
+"\<\"LGAShort\"\>", "\<\"LGAType\"\>", "\<\"Institution\"\>", \
+"\<\"FacilityType\"\>", "\<\"Ownership\"\>", "\<\"RealLifeRole\"\>", \
+"\<\"SormasRole\"\>", "\<\"SormasRoleShort\"\>", "\<\"No\"\>", \
+"\<\"Name\"\>", "\<\"Phone\"\>", "\<\"eMail\"\>", "\<\"Device\"\>"},
+    {"\<\"O0c-3CsS\"\>", "\<\"CAS-OY-ZZZ-1\"\>", "101", 
+     "2", "\<\"Oyo\"\>", "\<\"OY\"\>", 
+     "0", "\<\"n/a\"\>", "\<\"ZZZ\"\>", "\<\"n/a\"\>", "\<\"Isolation \
+unit\"\>", "\<\"n/a\"\>", "\<\"n/a\"\>", "\<\"Physician in charge\"\>", \
+"\<\"Case supervisor\"\>", "\<\"CAS\"\>", 
+     "1", "\<\"Mrs Ololade Vanzekin\"\>", "\<\"064-3042639\"\>", \
+"\<\"ololade.vanzekin@sormas-n.ng\"\>", "\<\"tablet\"\>"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.641979951582646*^9, 3.641979956642055*^9}, 
+   3.6422702996073627`*^9, 3.6422713480392065`*^9, 3.642321619853527*^9, 
+   3.6439739626752586`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{"\"\<.\\\\\>\"", "<>", 
+      RowBox[{
+       RowBox[{"User", "[", "#", "]"}], "[", 
+       RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<\\\\about.csv\>\""}], ",", 
+     RowBox[{"UserAbout", "[", "#", "]"}], ",", "\"\<Table\>\"", ",", 
+     RowBox[{"\"\<FieldSeparators\>\"", "\[Rule]", "\"\<;\>\""}]}], "]"}], 
+   "&"}], "/@", "ids"}]], "Input",
+ CellChangeTimes->{{3.6419806259130926`*^9, 3.64198070406104*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\".\\\\COO-KN-ABS-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-ABS-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-ABS-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-ABS-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-ABS-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-KN-ABS-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-KN-DTF-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-DTF-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-DTF-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-DTF-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-DTF-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-KN-DTF-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-KN-GRZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-GRZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-GRZ-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-GRZ-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-GRZ-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-KN-GRZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-KN-KBT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-KBT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-KBT-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-KBT-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-KBT-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-KN-KBT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-KN-KKU-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-KKU-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-KKU-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-KKU-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-KKU-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-KN-KKU-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-KN-NSR-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-NSR-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-NSR-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-NSR-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-NSR-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-KN-NSR-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-KN-TRN-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-TRN-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-TRN-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-TRN-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-TRN-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-KN-TRN-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-KN-UGG-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-UGG-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-UGG-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-UGG-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-UGG-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-KN-UGG-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\CAS-KN-ZZZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-KN-ZZZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\RUO-KN-ZZZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SCS-KN-ZZZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-OY-AGG-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-AGG-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-AGG-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-AGG-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-AGG-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-OY-AGG-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-OY-AYT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-AYT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-AYT-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-AYT-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-AYT-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-OY-AYT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-OY-FMT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-FMT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-FMT-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-FMT-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-FMT-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-OY-FMT-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-OY-KEH-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-KEH-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-KEH-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-KEH-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-KEH-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-OY-KEH-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-OY-KSH-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-KSH-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-KSH-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-KSH-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-KSH-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-OY-KSH-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-OY-NRK-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-NRK-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-NRK-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-NRK-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-NRK-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-OY-NRK-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-OY-RUW-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-RUW-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-RUW-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-RUW-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-RUW-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-OY-RUW-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\COO-OY-SHK-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-SHK-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-SHK-2\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-SHK-3\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-SHK-4\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SUO-OY-SHK-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\CAS-OY-ZZZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\HFP-OY-ZZZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\RUO-OY-ZZZ-1\\\\about.csv\"\>", 
+   ",", "\<\".\\\\SCS-OY-ZZZ-1\\\\about.csv\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.6419807159888625`*^9, 3.6419857279373827`*^9, 
+  3.642270305504173*^9, 3.6422713514400125`*^9, 3.6423215875302706`*^9, 
+  3.6423216244867353`*^9, 3.642336737367282*^9, 3.643974043496516*^9, 
+  3.6439741702534623`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1920, 1118},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 94, 1, 63, "Section"],
+Cell[CellGroupData[{
+Cell[699, 27, 97, 1, 34, "Subsubsection"],
+Cell[799, 30, 445, 9, 31, "Input"],
+Cell[1247, 41, 596, 11, 31, "Input"],
+Cell[CellGroupData[{
+Cell[1868, 56, 184, 4, 31, "Input"],
+Cell[2055, 62, 4856, 88, 176, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6960, 156, 106, 1, 34, "Subsubsection"],
+Cell[7069, 159, 310, 9, 31, "Input"],
+Cell[CellGroupData[{
+Cell[7404, 172, 146, 2, 31, "Input"],
+Cell[7553, 176, 702, 11, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8304, 193, 102, 1, 34, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[8431, 198, 252, 5, 31, "Input"],
+Cell[8686, 205, 707, 12, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9430, 222, 231, 6, 31, "Input"],
+Cell[9664, 230, 142, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9843, 238, 195, 5, 31, "Input"],
+Cell[10041, 245, 3525, 55, 172, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13603, 305, 184, 4, 31, "Input"],
+Cell[13790, 311, 148, 2, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13987, 319, 95, 1, 34, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[14107, 324, 304, 8, 31, "Input"],
+Cell[14414, 334, 3471, 58, 152, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17946, 399, 172, 2, 63, "Section"],
+Cell[CellGroupData[{
+Cell[18143, 405, 110, 1, 43, "Subsection"],
+Cell[18256, 408, 301, 7, 31, "Input"],
+Cell[18560, 417, 351, 8, 31, "Input"],
+Cell[18914, 427, 335, 9, 31, "Input"],
+Cell[19252, 438, 230, 4, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19519, 447, 104, 1, 43, "Subsection"],
+Cell[CellGroupData[{
+Cell[19648, 452, 177, 3, 31, "Input"],
+Cell[19828, 457, 170, 4, 31, "Output"]
+}, Open  ]],
+Cell[20013, 464, 4486, 104, 409, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24536, 573, 106, 1, 43, "Subsection"],
+Cell[24645, 576, 294, 7, 31, "Input"],
+Cell[CellGroupData[{
+Cell[24964, 587, 235, 5, 31, "Input"],
+Cell[25202, 594, 1501, 30, 56, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26740, 629, 499, 12, 31, "Input"],
+Cell[27242, 643, 5592, 109, 272, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

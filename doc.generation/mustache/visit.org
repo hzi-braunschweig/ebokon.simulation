@@ -1,0 +1,26 @@
+
+{{#visit}}
+   /Visit[fn:: Person -- {{IdPerson}}]/\nopagebreak
+ 
+   {{>visitbase}}
+    
+   #+Attr_Latex: :center nil :booktabs t
+   |-------------+-----------------|
+   | Available   | {{Available}}   |
+   | Cooperative | {{Cooperative}} |
+   |-------------+-----------------|
+      
+   {{#CooperativeQ}}{{>symptoms}} 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+---------------------------------------------------------|
+   | Psychosocial Support | {{PsychoSocial}}                                        |
+   | Next Appointment     | {{Appointment}}                                         |
+   |----------------------+---------------------------------------------------------|
+   | Remarks              | /Please feel free to invent further details/            |
+   |                      | /that are consistent with the information given above./ |
+   |----------------------+---------------------------------------------------------|
+   {{/CooperativeQ}}
+
+   #+Latex: \medskip  
+{{/visit}}{{^visit}}   /There are no visit information today./ {{/visit}}

@@ -1,0 +1,7 @@
+
+{{#case}}   /Symptomatic Person[fn:: Person -- {{IdPerson}}]/
+   {{>person}}
+   {{>symptoms}}
+   \medskip
+
+{{/case}}{{^case}}   /There are no symptomatic persons today./ {{/case}}

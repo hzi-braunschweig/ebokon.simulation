@@ -1,0 +1,9 @@
+
+#+Attr_Latex: :center nil :booktabs t
+|---------------------------+-------------------------------------------------------------|
+| Name                      | {{FirstName}} {{LastName}}                                  |
+| Sex \ldots DoB \ldots Age | {{Sex}} \ldots {{Age}} \ldots {{DateOfBirth}}               |
+| Number of Visit           | {{VisitNumber}}   {{#IsLastQ}} /(Last visit!)/ {{/IsLastQ}} |
+| Scheduled Time            | {{VisitScheduledTime}}                                      |
+| Priority                  | {{VisitPrio}}                                               |
+|---------------------------+-------------------------------------------------------------|

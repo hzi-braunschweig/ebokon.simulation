@@ -1,0 +1,15 @@
+
+{{#person}}
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | {{FirstName}} {{LastName}}                                                                |          |
+   | Sex \ldots Age \ldots DoB | {{Sex}} \ldots {{Age}} \ldots {{DateOfBirth}}                                    {{#PRQ}} |          |
+   | Has \ldots                | {{PRFirstName}} {{PRLastName}} \ldots {{PRSex}} \ldots {{PRAge}} \ldots {{PRDateOfBirth}} |          |
+   | \quad as \ldots           | {{RelationOfPR}}                                                                          | {{/PRQ}} |
+   | Marital State             | {{MaritalState}}                                                                          |          |
+   | Home Address              | {{Street}} \ldots {{Locality}} \ldots {{LGA}} \ldots {{State}}                            |          |
+   | Phone-1                   | {{Phone1}} {{Phone1Type}}                                                                 |          |
+   | Phone-2                   | {{Phone2}} {{Phone2Type}}                                                                 |          |
+   | Occupation                | {{Occupation}}                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+{{/person}}

@@ -1,0 +1,9 @@
+
+{{#visit}}
+   /Visit[fn:: Person -- {{IdPerson}}]/
+ 
+   {{>visitbase}}
+  
+   #+Latex: \medskip  
+
+{{/visit}}{{^visit}}   /There are no unpossible visits for today./ {{/visit}}

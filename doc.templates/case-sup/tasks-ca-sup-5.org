@@ -1,0 +1,2 @@
+5. Are there any cases that can be discharged? Display the list of all those cases. Create a task for those cases who need it and assign it.
+   From those that have two negative tests (48h apart) the following cases are symptomfree for at least 3 days.

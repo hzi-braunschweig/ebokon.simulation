@@ -1,0 +1,26 @@
+
+{{#contact}}
+   /Contact [fn:: \\ Case -- {{IdCase}}\\ Contact person -- {{IdPerson}}]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------------------|
+   | Name                      | {{CaseFirstName}} {{CaseLastName}}                        |
+   | Sex \ldots DoB \ldots Age | {{CaseSex}} \ldots {{CaseAge}} \ldots {{CaseDateOfBirth}} |
+   |---------------------------+-----------------------------------------------------------|
+   {{>person}}
+
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+--------------------------------------------------|
+   | Date of Last Contact | {{EventDate}}                                    |
+   | Type of Contact      | {{TypeOfContact}}                           |
+   | Type of Place        | {{EventTypeOfPlace}}                       |
+   | Address              | {{EventStreet}} \ldots {{EventLocality}}         |
+   | LGA \ldots State     | {{EventLGA}} \ldots {{EventState}}               |
+   | Description of Place | /Please describe the place with your own words./ |
+   | Description          | /After having viewed all information/            |
+   |                      | /please invent further details and/              |
+   |                      | /describe the rumor with your own words./        |
+   |----------------------+--------------------------------------------------|
+ 
+   \medskip
+{{/contact}}{{^contact}}   /There are no contact information for today./ {{/contact}}

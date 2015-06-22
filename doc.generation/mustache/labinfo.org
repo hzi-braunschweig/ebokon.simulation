@@ -1,0 +1,20 @@
+
+{{#lab}}
+   /Lab info[fn:: Case -- {{IdCase}}]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | {{FirstName}} {{LastName}}                    |
+   | Sex \ldots Age \ldots DoB | {{Sex}} \ldots {{Age}} \ldots {{DateOfBirth}} |
+   |---------------------------+-----------------------------------------------|
+   | Sample-Date               | {{SampleDate}}                                |
+   | Sample-Id                 | {{SampleId}}                                  |
+   | Sample-Specimen           | {{SampleSpecimen}}                            |
+   | Date of Diagnosis         | {{DiagnosisDate}}                             |
+   | Pathogene                 | {{LabPathogene}}                              |
+   | Method                    | {{LabMethod}}                                 |
+   | Result                    | {{LabResult}}                                 |
+   |---------------------------+-----------------------------------------------|
+   
+   #+Latex: \medskip
+{{/lab}}{{^lab}}   /There is no lab information today./ {{/lab}}
