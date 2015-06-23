@@ -7,9 +7,7 @@
 
 ** About You
 
-# #+Include: ../../doc.templates/case-sup/tasks-case-sup-about.org
-
-You coordinate all activities around the case management (i.e. clinical management, isolation measures, transport, decontamination of residences or facilities, burial, psychosocial support). You immediately communicate results of laboratory investigations in case of /exercise disease/ and Avian Influenza and theirby update the status of /suspected cases/ to /confirmed cases/, /probable cases/, /non-cases/ or /discarded cases/ resp..
+#+Include: ../../doc.templates/case-sup/tasks-case-sup-about.org
 
 #+name: about
 #+begin_src R :colnames yes :exports results
