@@ -1,4 +1,4 @@
-#+Include: title.org
+#+Include: ../../doc.templates/title-tasks-logbook.org
 #+Include: ../../preamble.org
 
 #+Latex: \newpage

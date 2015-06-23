@@ -1169,7 +1169,7 @@ text
 #+name: contact  
 #+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=12
 library(whisker)
-cs <- read.csv2("../../data.out/ft_contacts_visit.csv", sep=";", header=TRUE, skip=0, 
+cs <- read.csv2("../../data.out/ft_contacts.csv", sep=";", header=TRUE, skip=0, 
   na.strings=c("","nil"), stringsAsFactors=FALSE)
 cs <- cs[order(cs$IdCase, cs$IdPerson), ]
 
