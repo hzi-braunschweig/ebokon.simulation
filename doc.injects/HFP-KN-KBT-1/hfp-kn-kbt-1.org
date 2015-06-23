@@ -1,0 +1,510 @@
+#+Include: ../../doc.templates/title-injects.org
+#+Include: ../../preamble.org
+
+# C-c C-v C-b to eval all blocks
+
+* Introduction
+
+# #+Include: ../../doc.templates/snippets/fieldtest-intro.org
+
+** About You
+
+#+Include: ../../doc.templates/informant/tasks-informant-about.org
+
+#+name: about
+#+begin_src R :colnames yes :exports results
+cs <- read.csv2("about.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[c(18,11,8,2)]
+colnames(cs) <- c("Name", "Institute", "LGA","Code")
+cs
+#+end_src
+
+#+Caption: Your Coordinates.
+#+Attr_Latex: :center nil :booktabs t
+#+RESULTS: about
+| Name              | Institute     | LGA          | Code         |
+|-------------------+---------------+--------------+--------------|
+| Mr Godwin Fajinmi | Dandalama PHC | Dawakin Tofa | HFP-KN-DTF-1 |
+
+
+** Data for Exercise Disease
+
+#+Include: ../../doc.templates/snippets/fieldtest-data-exd.org
+
+** Tasks as Hospital Focal Person (ExD)
+
+#+Include: ../../doc.templates/informant/tasks-informant.org
+
+#+Latex: \newpage
+* Daily Tasks (Hospital Focal Person)
+
+#+begin_src emacs-lisp :exports none :results value raw :var user="usercode"
+(setq system-time-locale "C")
+
+(defun test (n)
+  (let* ((d (format-time-string "%Y-%m-%d -- %a %e %b" (encode-time 0 0 0 (+ 0 n) 6 2015))))
+  (concat (if (> n 8) "#+Latex: \\newpage\n")
+          (if (not (memq (mod n 7) '(0 6)))
+            (format "** Day %s -- %s\n" n d)
+          ;  (format "** Day %s -- %s (fyi)\n" n d)
+          )
+          ;(if (and (eq 1 (mod n 7)) (> n 8)) 
+          ;  "#+Include: ../we-note.org\n\n")          
+          (if (not (memq (mod n 7) '(0 6)))
+            (concat 
+            "#+Include: ../../doc.templates/informant/tasks-inf-1.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<sperson>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/informant/tasks-inf-2.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<pdeath>>\n"
+            "   #+end_src\n"
+          )))))
+
+(apply #'concatenate 'string
+  (loop for n from 8 to 40
+   collect (test n)))
+#+end_src
+
+#+RESULTS[db41a0b2e9fc6f866b5c7749ebeb5cfc07fba22e]:
+** Day 8 -- 2015-06-08 -- Mon  8 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 9 -- 2015-06-09 -- Tue  9 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 10 -- 2015-06-10 -- Wed 10 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 11 -- 2015-06-11 -- Thu 11 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 12 -- 2015-06-12 -- Fri 12 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 15 -- 2015-06-15 -- Mon 15 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 16 -- 2015-06-16 -- Tue 16 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 17 -- 2015-06-17 -- Wed 17 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 18 -- 2015-06-18 -- Thu 18 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 19 -- 2015-06-19 -- Fri 19 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 22 -- 2015-06-22 -- Mon 22 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 23 -- 2015-06-23 -- Tue 23 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 24 -- 2015-06-24 -- Wed 24 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 25 -- 2015-06-25 -- Thu 25 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 26 -- 2015-06-26 -- Fri 26 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 29 -- 2015-06-29 -- Mon 29 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 30 -- 2015-06-30 -- Tue 30 Jun
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 31 -- 2015-07-01 -- Wed  1 Jul
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 32 -- 2015-07-02 -- Thu  2 Jul
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 33 -- 2015-07-03 -- Fri  3 Jul
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 36 -- 2015-07-06 -- Mon  6 Jul
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 37 -- 2015-07-07 -- Tue  7 Jul
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 38 -- 2015-07-08 -- Wed  8 Jul
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 39 -- 2015-07-09 -- Thu  9 Jul
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<pdeath>>
+   #+end_src
+#+Latex: \newpage
+** Day 40 -- 2015-07-10 -- Fri 10 Jul
+#+Include: ../../doc.templates/informant/tasks-inf-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<sperson>>
+   #+end_src
+#+Include: ../../doc.templates/informant/tasks-inf-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<pdeath>>
+   #+end_src
+
+
+
+#+Latex: \newpage
+* The End
+
+#+Include: ../../doc.templates/snippets/fieldtest-outro-exd.org
+
+* Footnotes
+* Code																														 :noexport:
+
+** DONE Symptomatic Person
+
+#+name: sperson  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=9
+library(whisker)
+cs <- read.csv2("../../data.out/ft_cases.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+case <- unname(rowSplit(cs))
+
+f <- "case.org"
+template <- readChar(f, file.info(f)$size)
+f <- "person.org"
+person <- readChar(f, file.info(f)$size)
+f <- "symptoms.org"
+symptoms <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(template, partials=list(person=person, symptoms=symptoms))
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: sperson
+:RESULTS:
+
+   /Symptomatic Person[fn:: Person -- 479]/
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Okwong Arase                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots NA \ldots 1992-05-05                                     |
+   | Marital State             | NA                                                                          |          |
+   | Home Address              | Mohammed Nasiru Mukhtar Close \ldots Yakasai \ldots Dawakin Tofa \ldots Kano                            |          |
+   | Phone-1                   | +234-818-4262384 NA                                                                 |          |
+   | Phone-2                   | 0805-1207008 mobile                                                                 |          |
+   | Occupation                | shoemaker (cobbler)                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |--------------------------+-----------------------------------------+
+   | Onset of Symptoms        | 2015-06-09   
+   | Date of Death            | NA                         |
+   |--------------------------+-----------------------------------------+
+   | Fever \ldots Temp.       | yes \ldots 38.8        |
+   | Lethargy                 | NA                            |
+   | Muscle Pain              | yes                          |
+   | Headache                 | NA                            |
+   |--------------------------+-----------------------------------------+
+   | Stomach Pain             | no                         |
+   | Diarrhea                 | no                            |
+   | Vomiting                 | no                            |
+   | Breathing Difficulties   | NA                       |
+   | Difficulty Swallowing    | no                      |
+   | Hiccup                   | no                             |
+   |--------------------------+-----------------------------------------+
+   | Unexplained Bleeding     | no                       |
+   |--------------------------+-----------------------------------------+
+   | Anorexia                 | no                            |
+   | Maculo-papular Rash      | no                              |
+   | Unexplained Sudden Death | no                    |
+   |--------------------------+-----------------------------------------+
+
+   \medskip
+
+
+
+:END:
+
+** DONE Cases of Death
+
+#+name: pdeath  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=12
+library(whisker)
+cs <- read.csv2("../../data.out/ft_cases.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$DateOfDeathDay==day,]
+cs <- cs[!is.na(cs$DateOfDeathDay),]
+
+case <- unname(rowSplit(cs))
+
+f <- "case-death.org"
+template <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(template)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: pdeath
+:RESULTS:
+
+   /Case of death[fn:: Person -- 479]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Okwong Arase                    |
+   | Sex \ldots DoB \ldots Age | male \ldots NA \ldots 1992-05-05 |
+   | Date of Death             | 2015-06-12                          |
+   |---------------------------+-----------------------------------------------|
+   
+   \medskip
+
+
+:END:
+
+** DONE IdUser
+#+name: usercode
+#+begin_src R :var x=about[2,3]
+x
+#+end_src
+
+#+RESULTS: usercode
+: HFP-KN-DTF-1
+
+

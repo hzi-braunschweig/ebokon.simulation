@@ -1,0 +1,1089 @@
+#+Include: ../../doc.templates/title-injects.org
+#+Include: ../../preamble.org
+
+* Introduction
+
+# #+Include: ../../doc.templates/snippets/fieldtest-intro.org
+
+** About You
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surveillance-off-about.org
+
+#+name: about
+#+begin_src R :colnames yes :exports results
+cs <- read.csv2("about.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[c(18,11,8,2)] # 5-State
+colnames(cs) <- c("Name", "Institute", "LGA","Code")
+cs
+#+end_src
+
+#+Caption: Your Coordinates.
+#+Attr_Latex: :center nil :booktabs t
+#+RESULTS: about
+| Name               | Institute | LGA       | Code         |
+|--------------------+-----------+-----------+--------------|
+| Mrs Omotese Ogugua | LGA HD    | Saki West | SUO-OY-SHK-1 |
+
+** Data for Exercise Disease
+
+#+Include: ../../doc.templates/snippets/fieldtest-data-exd.org
+
+** Tasks as Surveillance Officer (ExD)
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surveillance-off.org
+
+
+#+Latex: \newpage
+* Daily Tasks (Surveillance Officer)
+
+#+begin_src emacs-lisp :exports none :results value raw :var user="usercode"
+(setq system-time-locale "C")
+
+(defun test (n)
+  (let* ((d (format-time-string "%Y-%m-%d -- %a %e %b" (encode-time 0 0 0 (+ 0 n) 6 2015))))
+  (concat (if (> n 8) "#+Latex: \\newpage\n")
+          (if (not (memq (mod n 7) '(0 6)))
+            (format "** Day %s -- %s\n" n d)
+            ;(format "** Day %s -- %s (fyi)\n" n d)
+          )
+          ;(if (and (eq 1 (mod n 7)) (> n 8)) 
+          ;  "#+Include: ../we-note.org\n\n")          
+          (if (not (memq (mod n 7) '(0 6)))
+            (concat 
+            "#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<rumor>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<contact>>\n"
+            "   #+end_src\n\n"
+            "#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<sperson>>\n"
+            "   #+end_src\n\n"
+            "#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<pdeath>>\n"
+            "   #+end_src\n\n"
+            )))))
+
+(apply #'concatenate 'string
+  (loop for n from 8 to 40
+   collect (test n)))
+#+end_src
+
+#+RESULTS[db41a0b2e9fc6f866b5c7749ebeb5cfc07fba22e]:
+** Day 8 -- 2015-06-08 -- Mon  8 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 9 -- 2015-06-09 -- Tue  9 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 10 -- 2015-06-10 -- Wed 10 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 11 -- 2015-06-11 -- Thu 11 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 12 -- 2015-06-12 -- Fri 12 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 15 -- 2015-06-15 -- Mon 15 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 16 -- 2015-06-16 -- Tue 16 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 17 -- 2015-06-17 -- Wed 17 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 18 -- 2015-06-18 -- Thu 18 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 19 -- 2015-06-19 -- Fri 19 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 22 -- 2015-06-22 -- Mon 22 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 23 -- 2015-06-23 -- Tue 23 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 24 -- 2015-06-24 -- Wed 24 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 25 -- 2015-06-25 -- Thu 25 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 26 -- 2015-06-26 -- Fri 26 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 29 -- 2015-06-29 -- Mon 29 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 30 -- 2015-06-30 -- Tue 30 Jun
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 31 -- 2015-07-01 -- Wed  1 Jul
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 32 -- 2015-07-02 -- Thu  2 Jul
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 33 -- 2015-07-03 -- Fri  3 Jul
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 36 -- 2015-07-06 -- Mon  6 Jul
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 37 -- 2015-07-07 -- Tue  7 Jul
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 38 -- 2015-07-08 -- Wed  8 Jul
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 39 -- 2015-07-09 -- Thu  9 Jul
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 40 -- 2015-07-10 -- Fri 10 Jul
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<contact>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<sperson>>
+   #+end_src
+
+#+Include: ../../doc.templates/surveillance-off/tasks-surv-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<pdeath>>
+   #+end_src
+
+
+
+
+#+Latex: \newpage
+* The End
+
+#+Include: ../../doc.templates/snippets/fieldtest-outro-exd.org
+
+* Footnotes
+* Code																														 :noexport:
+
+** DONE Rumor 
+
+#+name: rumor  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=39
+library(whisker)
+cs <- read.csv2("../../data.out/ft_rumors.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdRumor,cs$IdPerson), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+cs$rank <- sequence(rle(cs$IdRumor)$lengths)
+cs$F <- cs$rank==1
+
+sel <- if (nrow(cs)>0) {which( with( cs, 
+ {tmp <- logical(length(cs$IdRumor)); 
+ split(tmp, cs$IdRumor) <- lapply(split(rank, cs$IdRumor), function(x) x==max(x));
+ tmp}))}
+
+if (nrow(cs)>0) {cs$L <- F; cs$L[sel]<-T}
+
+rumor <- unname(rowSplit(cs))
+
+f <- "rumor.org"
+contents <- readChar(f, file.info(f)$size)
+f <- "person.org"
+person <- readChar(f, file.info(f)$size)
+f <- "symptoms.org"
+symptoms <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents, partials=list(person=person, symptoms=symptoms))
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: rumor
+:RESULTS:
+
+   
+   /Rumor [fn:: Place -- 202]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+--------------------------------------------------|
+   | Notified by          | Akinola Obanor                   |
+   | \ldots Phone         | 0802-7978377 mobile                    |
+   | \ldots Email         | akinola.obanor@sormas-n.ng                                      |
+   |----------------------+--------------------------------------------------|
+   | Date of Event        | 2015-07-09                                    |
+   | Type of Place        | Home                        |
+   | Address              | Golf Course Road \ldots Shabe         |
+   | LGA \ldots State     | Saki West \ldots  Oyo              |
+   | Description of Place | /Please describe the place with your own words./ |
+   | Rumor Description    | /After having viewed all information/            |
+   |                      | /please invent further details and/              |
+   |                      | /describe the rumor with your own words./        |
+   |----------------------+--------------------------------------------------|
+  
+   $\ldots$ /Person [fn:: Person -- 149]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person seemed very sick./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Olafimihan Awosola                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 43 \ldots                                      |
+   | Marital State             | separated (not living common law)                                                                          |          |
+   | Home Address              | Igunsi Lane \ldots Daho \ldots Albasu \ldots Kano                            |          |
+   | Phone-1                   | +234-805-5684038 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | soldier                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 320]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person has touched the sick one./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Yakubu Latifu                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 19 \ldots                                      |
+   | Marital State             | married (and not separated)                                                                          |          |
+   | Home Address              | Ogbeifun Lane \ldots Taura \ldots Dawakin Tofa \ldots Kano                            |          |
+   | Phone-1                   | +234-813-7938811 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | management accountant                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 4254]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person was standing nearby./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Nifemi Afikuyomi                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 28 \ldots                                      |
+   | Marital State             | married (and not separated)                                                                          |          |
+   | Home Address              | Chief Dr.Ofili Ugwudioha Street \ldots Muwa \ldots Saki West \ldots Oyo                            |          |
+   | Phone-1                   | 0805-6519155 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | dish washer                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 4280]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person was standing nearby./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Adejoke Ogundana                                                                |          |
+   | Sex \ldots Age \ldots DoB | female \ldots 34 \ldots                                      |
+   | Marital State             | single (not living common law)                                                                          |          |
+   | Home Address              | Mbanugo Street \ldots Ifelodun \ldots Saki West \ldots Oyo                            |          |
+   | Phone-1                   | +234-807-5553998 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | confectioner (pastry and cake maker)                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 4428]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person has touched the sick one./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Obiora Erese                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 60 \ldots                                      |
+   | Marital State             | married (and not separated)                                                                          |          |
+   | Home Address              | UNTH Road Extension \ldots Irawo \ldots Saki West \ldots Oyo                            |          |
+   | Phone-1                   | 038-8513612 landline                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | employment agent (employment officer)                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 4471]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person was standing nearby./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Osaruese Dikeh                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 15 \ldots                                      |
+   | Marital State             | single (not living common law)                                                                          |          |
+   | Home Address              | Nonso Mba Street \ldots Ladele \ldots Saki West \ldots Oyo                            |          |
+   | Phone-1                   | 0806-2888058 mobile                                                                 |          |
+   | Phone-2                   | 0813-1891911 mobile                                                                 |          |
+   | Occupation                | trainee                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 4472]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person was standing nearby./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Ofey Shakpoke                                                                |          |
+   | Sex \ldots Age \ldots DoB | female \ldots 54 \ldots                                      |
+   | Marital State             | separated (not living common law)                                                                          |          |
+   | Home Address              | Niwil Close \ldots Idi Apa \ldots Saki West \ldots Oyo                            |          |
+   | Phone-1                   | +234-818-5017199 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | electrician                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   
+   $\blacksquare$ \medskip 
+   
+
+:END:
+
+** DONE Contact
+
+#+name: contact  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=15
+library(whisker)
+cs <- read.csv2("../../data.out/ft_contacts.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdCase, cs$IdPerson), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+contact <- unname(rowSplit(cs))
+
+f <- "contact.org"
+contents <- readChar(f, file.info(f)$size)
+f <- "person.org"
+person <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents, partials=list(person=person))
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: contact
+:RESULTS:
+
+   /Contact [fn:: \\ Case -- 2\\ Contact person -- 4402]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------------------|
+   | Name                      | Sesugh Ogunode                        |
+   | Sex \ldots DoB \ldots Age | male \ldots 17 \ldots 1998-05-03 |
+   |---------------------------+-----------------------------------------------------------|
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Lola Oshaniwa                                                                |          |
+   | Sex \ldots Age \ldots DoB | female \ldots 54 \ldots 1960-11-19                                     |
+   | Marital State             | married (and not separated)                                                                          |          |
+   | Home Address              | Iskalu Lane \ldots Mejaw \ldots Saki West \ldots Oyo                            |          |
+   | Phone-1                   | 038-5438034 landline                                                                 |          |
+   | Phone-2                   | 0806-8888772 mobile                                                                 |          |
+   | Occupation                | soldier                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+--------------------------------------------------|
+   | Date of Last Contact | 2015-06-08                                    |
+   | Type of Contact      | had direct physical contact with the body of the case (alive or dead)                           |
+   | Type of Place        | Home                       |
+   | Address              | Iskalu Lane \ldots Mejaw         |
+   | LGA \ldots State     | Saki West \ldots Oyo               |
+   | Description of Place | /Please describe the place with your own words./ |
+   | Description          | /After having viewed all information/            |
+   |                      | /please invent further details and/              |
+   |                      | /describe the rumor with your own words./        |
+   |----------------------+--------------------------------------------------|
+ 
+   \medskip
+
+
+:END:
+
+** DONE Symptomatic Person
+
+#+name: sperson  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=15
+library(whisker)
+cs <- read.csv2("../../data.out/ft_cases.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=TRUE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+case <- unname(rowSplit(cs))
+
+f <- "case.org"
+template <- readChar(f, file.info(f)$size)
+f <- "person.org"
+person <- readChar(f, file.info(f)$size)
+f <- "symptoms.org"
+symptoms <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(template, partials=list(person=person, symptoms=symptoms))
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: sperson
+:RESULTS:
+
+   /Symptomatic Person[fn:: Person -- 4266]/
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Nonso Khreis                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 30 \ldots 1984-09-11                                     |
+   | Marital State             | separated (not living common law)                                                                          |          |
+   | Home Address              | Woji Road \ldots Aiyekale \ldots Saki West \ldots Oyo                            |          |
+   | Phone-1                   | 0813-4934620 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | secondary school teacher                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |--------------------------+-----------------------------------------+
+   | Onset of Symptoms        | 2015-06-15   
+   | Date of Death            | NA                         |
+   |--------------------------+-----------------------------------------+
+   | Fever \ldots Temp.       | no \ldots NA        |
+   | Lethargy                 | yes                            |
+   | Muscle Pain              | yes                          |
+   | Headache                 | yes                            |
+   |--------------------------+-----------------------------------------+
+   | Stomach Pain             | no                         |
+   | Diarrhea                 | no                            |
+   | Vomiting                 | no                            |
+   | Breathing Difficulties   | no                       |
+   | Difficulty Swallowing    | no                      |
+   | Hiccup                   | no                             |
+   |--------------------------+-----------------------------------------+
+   | Unexplained Bleeding     | no                       |
+   |--------------------------+-----------------------------------------+
+   | Anorexia                 | no                            |
+   | Maculo-papular Rash      | no                              |
+   | Unexplained Sudden Death | no                    |
+   |--------------------------+-----------------------------------------+
+
+   \medskip
+
+
+
+:END:
+
+** DONE Cases of Death
+
+#+name: pdeath  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=15
+library(whisker)
+cs <- read.csv2("../../data.out/ft_cases.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$DateOfDeathDay==day,]
+cs <- cs[!is.na(cs$DateOfDeathDay),]
+
+case <- unname(rowSplit(cs))
+
+f <- "case-death.org"
+template <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(template)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: pdeath
+:RESULTS:
+
+   /Case of death[fn:: Person -- 4291]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Kaneng Oshaniwa                    |
+   | Sex \ldots DoB \ldots Age | female \ldots 45 \ldots 1969-03-08 |
+   | Date of Death             | 2015-06-15                          |
+   |---------------------------+-----------------------------------------------|
+   
+   \medskip
+   /Case of death[fn:: Person -- 4408]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Chimere Edeh                    |
+   | Sex \ldots DoB \ldots Age | male \ldots 45 \ldots 1970-08-02 |
+   | Date of Death             | 2015-06-15                          |
+   |---------------------------+-----------------------------------------------|
+   
+   \medskip
+
+
+:END:
+
+
+** DONE IdUser
+
+#+name: usercode
+#+begin_src R :var x=about[2,3]
+x
+#+end_src
+
+#+RESULTS: usercode
+: SUO-OY-SHK-1

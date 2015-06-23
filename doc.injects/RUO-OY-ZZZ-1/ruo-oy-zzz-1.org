@@ -1,0 +1,604 @@
+#+Include: ../../doc.templates/title-injects.org
+#+Include: ../../preamble.org
+
+* Introduction
+
+# #+Include: ../../doc.templates/snippets/fieldtest-intro.org
+
+** About You
+
+#+Include: ../../doc.templates/rumor-off/tasks-rumor-off-about.org
+
+#+name: about
+#+begin_src R :colnames yes :exports results
+cs <- read.csv2("about.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","n/a","nil"), stringsAsFactors=FALSE)
+cs <- cs[c(18,11,5,2)]
+colnames(cs) <- c("Name", "Institute","State","Code")
+cs
+#+end_src
+
+#+Caption: Your Coordinates.
+#+Attr_Latex: :center nil :booktabs t
+#+RESULTS: about
+| Name                 | Institute | State | Code         |
+|----------------------+-----------+-------+--------------|
+| Mrs Omodolapo Okafor | State HD  | Oyo   | RUO-OY-ZZZ-1 |
+
+** Data for Exercise Disease
+
+#+Include: ../../doc.templates/snippets/fieldtest-data-exd.org
+
+** Tasks as Rumor Officer (ExD)
+
+#+Include: ../../doc.templates/rumor-off/tasks-rumor-off.org
+
+#+Latex: \newpage
+* Daily Tasks (Rumor Officer)
+
+#+begin_src emacs-lisp :exports none :results value raw :var user="usercode"
+(setq system-time-locale "C")
+
+(defun test (n)
+  (let* ((d (format-time-string "%Y-%m-%d -- %a %e %b" (encode-time 0 0 0 (+ 0 n) 6 2015))))
+  (concat (if (> n 8) "#+Latex: \\newpage\n")
+          (if (not (memq (mod n 7) '(0 6)))
+            (format "** Day %s -- %s\n" n d)
+            ;(format "** Day %s -- %s (fyi)\n" n d)
+          )
+          ;(if (and (eq 1 (mod n 7)) (> n 8)) 
+          ;  "#+Include: ../we-note.org\n\n")          
+          (if (not (memq (mod n 7) '(0 6)))
+            (concat 
+            "#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<rumor>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<pdeath>>\n"
+            "   #+end_src\n\n"
+            )))))
+
+(apply #'concatenate 'string
+  (loop for n from 8 to 40
+   collect (test n)))
+#+end_src
+
+#+RESULTS[db41a0b2e9fc6f866b5c7749ebeb5cfc07fba22e]:
+** Day 8 -- 2015-06-08 -- Mon  8 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 9 -- 2015-06-09 -- Tue  9 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 10 -- 2015-06-10 -- Wed 10 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 11 -- 2015-06-11 -- Thu 11 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 12 -- 2015-06-12 -- Fri 12 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 15 -- 2015-06-15 -- Mon 15 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 16 -- 2015-06-16 -- Tue 16 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 17 -- 2015-06-17 -- Wed 17 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 18 -- 2015-06-18 -- Thu 18 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 19 -- 2015-06-19 -- Fri 19 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 22 -- 2015-06-22 -- Mon 22 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 23 -- 2015-06-23 -- Tue 23 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 24 -- 2015-06-24 -- Wed 24 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 25 -- 2015-06-25 -- Thu 25 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 26 -- 2015-06-26 -- Fri 26 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 29 -- 2015-06-29 -- Mon 29 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 30 -- 2015-06-30 -- Tue 30 Jun
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 31 -- 2015-07-01 -- Wed  1 Jul
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 32 -- 2015-07-02 -- Thu  2 Jul
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 33 -- 2015-07-03 -- Fri  3 Jul
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 36 -- 2015-07-06 -- Mon  6 Jul
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 37 -- 2015-07-07 -- Tue  7 Jul
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 38 -- 2015-07-08 -- Wed  8 Jul
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 39 -- 2015-07-09 -- Thu  9 Jul
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 40 -- 2015-07-10 -- Fri 10 Jul
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<rumor>>
+   #+end_src
+#+Include: ../../doc.templates/rumor-off/tasks-ru-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<pdeath>>
+   #+end_src
+
+
+
+
+#+Latex: \newpage
+* The End
+
+#+Include: ../../doc.templates/snippets/fieldtest-outro-exd.org
+
+* Footnotes
+* Code																														 :noexport:
+
+** DONE Rumor 
+
+#+name: rumor  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=9
+library(whisker)
+cs <- read.csv2("../../data.out/ft_rumors.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdRumor,cs$IdPerson), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+cs$rank <- sequence(rle(cs$IdRumor)$lengths)
+cs$F <- cs$rank==1
+
+sel <- if (nrow(cs)>0) {which( with( cs, 
+ {tmp <- logical(length(cs$IdRumor)); 
+ split(tmp, cs$IdRumor) <- lapply(split(rank, cs$IdRumor), function(x) x==max(x));
+ tmp}))}
+
+if (nrow(cs)>0) {cs$L <- F; cs$L[sel]<-T}
+
+rumor <- unname(rowSplit(cs))
+
+f <- "rumor.org"
+contents <- readChar(f, file.info(f)$size)
+f <- "person.org"
+person <- readChar(f, file.info(f)$size)
+f <- "symptoms.org"
+symptoms <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents, partials=list(person=person, symptoms=symptoms))
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: rumor
+:RESULTS:
+
+   
+   /Rumor [fn:: Place -- 4563]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+--------------------------------------------------|
+   | Notified by          | Ogunbanwo Buhari                   |
+   | \ldots Phone         | +234-38-5315270 landline                    |
+   | \ldots Email         | ogunbanwo.buhari@sormas.ng                                      |
+   |----------------------+--------------------------------------------------|
+   | Date of Event        | 2015-06-09                                    |
+   | Type of Place        | Home                        |
+   | Address              | Adeshina Street \ldots Ojete         |
+   | LGA \ldots State     | Kajola \ldots  Oyo              |
+   | Description of Place | /Please describe the place with your own words./ |
+   | Rumor Description    | /After having viewed all information/            |
+   |                      | /please invent further details and/              |
+   |                      | /describe the rumor with your own words./        |
+   |----------------------+--------------------------------------------------|
+  
+   $\ldots$ /Person [fn:: Person -- 3235]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person was standing nearby./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Isoken Novia                                                                |          |
+   | Sex \ldots Age \ldots DoB | female \ldots 17 \ldots                                      |
+   | Marital State             | married (and not separated)                                                                          |          |
+   | Home Address              | Layi Oyekanmi Street \ldots Ilua \ldots Kajola \ldots Oyo                            |          |
+   | Phone-1                   | +234-805-1650516 mobile                                                                 |          |
+   | Phone-2                   | +234-809-3704544 mobile                                                                 |          |
+   | Occupation                | philosopher                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 3239]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person seemed very sick./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Adaze Henshaw                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 20 \ldots                                      |
+   | Marital State             | living common law                                                                          |          |
+   | Home Address              | Dolphin Estate IV Phase II Road \ldots Kajola \ldots Kajola \ldots Oyo                            |          |
+   | Phone-1                   | 0703-5894209 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | student                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 3247]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person was standing nearby./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Asuquo Nguirmamaramama                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 44 \ldots                                      |
+   | Marital State             | single (not living common law)                                                                          |          |
+   | Home Address              | Emma Azuka Street \ldots Apa Obe \ldots Kajola \ldots Oyo                            |          |
+   | Phone-1                   | 0809-8737004 mobile                                                                 |          |
+   | Phone-2                   | +234-805-4942077 mobile                                                                 |          |
+   | Occupation                | police officer                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 3315]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person was standing nearby./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Clinton Mamudu                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 63 \ldots                                      |
+   | Marital State             | married (and not separated)                                                                          |          |
+   | Home Address              | Denton Street \ldots Egbebi \ldots Kajola \ldots Oyo                            |          |
+   | Phone-1                   | 0706-3022821 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | sales assistant (salesperson)                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+        
+   $\ldots$ /Person [fn:: Person -- 3377]/
+   
+   #+Attr_Latex: :center nil :booktabs t
+   | Description of Person | /This person was standing nearby./ |
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Bukola Odita                                                                |          |
+   | Sex \ldots Age \ldots DoB | female \ldots 61 \ldots                                      |
+   | Marital State             | divorced (not living common law)                                                                          |          |
+   | Home Address              | Industry Road \ldots Agunyansuneja \ldots Kajola \ldots Oyo                            |          |
+   | Phone-1                   | 0803-3565018 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | physician                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   
+   $\blacksquare$ \medskip 
+   
+
+:END:
+
+** DONE Cases of Death
+
+#+name: pdeath  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=25
+library(whisker)
+cs <- read.csv2("../../data.out/ft_cases.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$DateOfDeathDay==day,]
+cs <- cs[!is.na(cs$DateOfDeathDay),]
+
+case <- unname(rowSplit(cs))
+
+f <- "case-death.org"
+template <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(template)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: pdeath
+:RESULTS:
+
+   /Case of death[fn:: Person -- 4306]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Uche Odunlami                    |
+   | Sex \ldots DoB \ldots Age | male \ldots NA \ldots 1961-02-13 |
+   | Date of Death             | 2015-06-25                          |
+   |---------------------------+-----------------------------------------------|
+   
+   \medskip
+
+
+:END:
+
+** DONE IdUser
+
+#+name: usercode
+#+begin_src R :var x=about[2,3]
+x
+#+end_src
+
+#+RESULTS: usercode
+: RUO-OY-ZZZ-1
+

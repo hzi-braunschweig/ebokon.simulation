@@ -1,0 +1,1324 @@
+#+Include: ../../doc.templates/title-injects.org
+#+Include: ../../preamble.org
+
+# C-c C-v C-b to eval all blocks
+
+* Introduction
+
+# #+Include: ../../doc.templates/snippets/fieldtest-intro.org
+
+** About You
+
+#+Include: ../../doc.templates/contact-off/tasks-contact-off-about.org
+
+#+name: about
+#+begin_src R :colnames yes :exports results
+cs <- read.csv2("about.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[c(18,11,8,2)] # 5 - State
+colnames(cs) <- c("Name", "Institute", "LGA","Code")
+cs
+#+end_src
+
+#+Caption: Your Coordinates.
+#+Attr_Latex: :center nil :booktabs t
+#+RESULTS: about
+| Name             | Institute | LGA    | Code         |
+|------------------+-----------+--------+--------------|
+| Mr Nonso Fabunmi | LGA HD    | Albasu | COO-KN-ABS-1 |
+
+** Data for Exercise Disease
+
+#+Include: ../../doc.templates/snippets/fieldtest-data-exd.org
+
+** Tasks as Contact Officer (ExD)
+
+#+Include: ../../doc.templates/contact-off/tasks-contact-off.org
+
+#+Latex: \newpage
+* Daily Tasks (Contact Officer)
+
+#+begin_src emacs-lisp :exports none :results value raw :var user="usercode"
+(setq system-time-locale "C")
+
+(defun test (n)
+  (let* ((d (format-time-string "%Y-%m-%d -- %a %e %b" (encode-time 0 0 0 (+ 0 n) 6 2015))))
+  (concat (if (> n 8) "#+Latex: \\newpage\n")
+          (if (not (memq (mod n 7) '(0 6)))
+            (format "** Day %s -- %s\n" n d)
+          ;  (format "** Day %s -- %s (fyi)\n" n d)
+          )
+          ;(if (and (eq 1 (mod n 7)) (> n 8)) 
+          ;  "#+Include: ../we-note.org\n\n")          
+          (if (not (memq (mod n 7) '(0 6)))
+            (concat 
+            "#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<tasknumber>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<visit>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<visitno>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<contact>>\n"
+            "   #+end_src\n"
+            "#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org\n\n"
+            (format "   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=%s day=%s\n" user n)
+            "   <<pdeath>>\n"
+            "   #+end_src\n\n"
+            )))))
+
+(apply #'concatenate 'string
+  (loop for n from 8 to 40
+   collect (test n)))
+#+end_src
+
+#+RESULTS[db41a0b2e9fc6f866b5c7749ebeb5cfc07fba22e]:
+** Day 8 -- 2015-06-08 -- Mon  8 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=8
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 9 -- 2015-06-09 -- Tue  9 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=9
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 10 -- 2015-06-10 -- Wed 10 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=10
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 11 -- 2015-06-11 -- Thu 11 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=11
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 12 -- 2015-06-12 -- Fri 12 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=12
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 15 -- 2015-06-15 -- Mon 15 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=15
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 16 -- 2015-06-16 -- Tue 16 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=16
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 17 -- 2015-06-17 -- Wed 17 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=17
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 18 -- 2015-06-18 -- Thu 18 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=18
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 19 -- 2015-06-19 -- Fri 19 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=19
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 22 -- 2015-06-22 -- Mon 22 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=22
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 23 -- 2015-06-23 -- Tue 23 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=23
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 24 -- 2015-06-24 -- Wed 24 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=24
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 25 -- 2015-06-25 -- Thu 25 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=25
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 26 -- 2015-06-26 -- Fri 26 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=26
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 29 -- 2015-06-29 -- Mon 29 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=29
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 30 -- 2015-06-30 -- Tue 30 Jun
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=30
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 31 -- 2015-07-01 -- Wed  1 Jul
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=31
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 32 -- 2015-07-02 -- Thu  2 Jul
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=32
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 33 -- 2015-07-03 -- Fri  3 Jul
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=33
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+#+Latex: \newpage
+#+Latex: \newpage
+** Day 36 -- 2015-07-06 -- Mon  6 Jul
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=36
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 37 -- 2015-07-07 -- Tue  7 Jul
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=37
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 38 -- 2015-07-08 -- Wed  8 Jul
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=38
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 39 -- 2015-07-09 -- Thu  9 Jul
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=39
+   <<pdeath>>
+   #+end_src
+
+#+Latex: \newpage
+** Day 40 -- 2015-07-10 -- Fri 10 Jul
+#+Include: ../../doc.templates/contact-off/tasks-co-off-1.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<tasknumber>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-2.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<visit>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-3.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<visitno>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-4.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<contact>>
+   #+end_src
+#+Include: ../../doc.templates/contact-off/tasks-co-off-5.org
+
+   #+begin_src R :exports results :dir ../../doc.generation/mustache :results value org drawer :cache no :noweb yes :var iduser=usercode day=40
+   <<pdeath>>
+   #+end_src
+
+
+
+
+
+
+#+Latex: \newpage
+* The End
+
+#+Include: ../../doc.templates/snippets/fieldtest-outro-exd.org
+
+* Footnotes
+* Code																														 :noexport:
+
+** DONE Visit
+
+#+name: visit  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=9
+library(whisker)
+cs <- read.csv2("../../data.out/ft_visits.csv", sep=";", header=TRUE, skip=0, na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+cs <- cs[cs$PossibleQ,]
+
+visit <- unname(rowSplit(cs))
+
+f <- "visit.org"
+template <- readChar(f, file.info(f)$size)
+f <- "visitbase.org"
+visitbase <- readChar(f, file.info(f)$size)
+f <- "symptoms.org"
+symptoms <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(template, partials=list(visitbase=visitbase, symptoms=symptoms))
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: visit
+:RESULTS:
+
+   /Visit[fn:: Person -- 47]/\nopagebreak
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------|
+   | Name                      | Chiapali Iyorhe                                  |
+   | Sex \ldots DoB \ldots Age | female \ldots 13 \ldots 2001-11-06               |
+   | Number of Visit           | 1    |
+   | Scheduled Time            | 2015-06-09 19:15                                      |
+   | Priority                  | 3                                               |
+   |---------------------------+-------------------------------------------------------------|
+       
+   #+Attr_Latex: :center nil :booktabs t
+   |-------------+-----------------|
+   | Available   | yes   |
+   | Cooperative | yes |
+   |-------------+-----------------|
+      
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |--------------------------+-----------------------------------------+
+   | Onset of Symptoms        | NA   
+   | Date of Death            | NA                         |
+   |--------------------------+-----------------------------------------+
+   | Fever \ldots Temp.       | no \ldots NA        |
+   | Lethargy                 | no                            |
+   | Muscle Pain              | no                          |
+   | Headache                 | no                            |
+   |--------------------------+-----------------------------------------+
+   | Stomach Pain             | no                         |
+   | Diarrhea                 | no                            |
+   | Vomiting                 | no                            |
+   | Breathing Difficulties   | no                       |
+   | Difficulty Swallowing    | no                      |
+   | Hiccup                   | no                             |
+   |--------------------------+-----------------------------------------+
+   | Unexplained Bleeding     | no                       |
+   |--------------------------+-----------------------------------------+
+   | Anorexia                 | no                            |
+   | Maculo-papular Rash      | no                              |
+   | Unexplained Sudden Death | no                    |
+   |--------------------------+-----------------------------------------+
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+---------------------------------------------------------|
+   | Psychosocial Support | no                                        |
+   | Next Appointment     | 2015-06-10 12:15                                         |
+   |----------------------+---------------------------------------------------------|
+   | Remarks              | /Please feel free to invent further details/            |
+   |                      | /that are consistent with the information given above./ |
+   |----------------------+---------------------------------------------------------|
+
+   #+Latex: \medskip  
+   /Visit[fn:: Person -- 121]/\nopagebreak
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------|
+   | Name                      | Ayodele Oparathompson                                  |
+   | Sex \ldots DoB \ldots Age | male \ldots 17 \ldots 1997-01-06               |
+   | Number of Visit           | 1    |
+   | Scheduled Time            | 2015-06-09 08:15                                      |
+   | Priority                  | 2                                               |
+   |---------------------------+-------------------------------------------------------------|
+       
+   #+Attr_Latex: :center nil :booktabs t
+   |-------------+-----------------|
+   | Available   | yes   |
+   | Cooperative | yes |
+   |-------------+-----------------|
+      
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |--------------------------+-----------------------------------------+
+   | Onset of Symptoms        | NA   
+   | Date of Death            | NA                         |
+   |--------------------------+-----------------------------------------+
+   | Fever \ldots Temp.       | no \ldots NA        |
+   | Lethargy                 | no                            |
+   | Muscle Pain              | no                          |
+   | Headache                 | no                            |
+   |--------------------------+-----------------------------------------+
+   | Stomach Pain             | no                         |
+   | Diarrhea                 | no                            |
+   | Vomiting                 | no                            |
+   | Breathing Difficulties   | no                       |
+   | Difficulty Swallowing    | no                      |
+   | Hiccup                   | no                             |
+   |--------------------------+-----------------------------------------+
+   | Unexplained Bleeding     | no                       |
+   |--------------------------+-----------------------------------------+
+   | Anorexia                 | no                            |
+   | Maculo-papular Rash      | no                              |
+   | Unexplained Sudden Death | no                    |
+   |--------------------------+-----------------------------------------+
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+---------------------------------------------------------|
+   | Psychosocial Support | yes                                        |
+   | Next Appointment     | 2015-06-10 14:45                                         |
+   |----------------------+---------------------------------------------------------|
+   | Remarks              | /Please feel free to invent further details/            |
+   |                      | /that are consistent with the information given above./ |
+   |----------------------+---------------------------------------------------------|
+
+   #+Latex: \medskip  
+   /Visit[fn:: Person -- 149]/\nopagebreak
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------|
+   | Name                      | Olafimihan Awosola                                  |
+   | Sex \ldots DoB \ldots Age | male \ldots 43 \ldots 1971-03-08               |
+   | Number of Visit           | 1    |
+   | Scheduled Time            | 2015-06-09 13:00                                      |
+   | Priority                  | 2                                               |
+   |---------------------------+-------------------------------------------------------------|
+       
+   #+Attr_Latex: :center nil :booktabs t
+   |-------------+-----------------|
+   | Available   | yes   |
+   | Cooperative | yes |
+   |-------------+-----------------|
+      
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |--------------------------+-----------------------------------------+
+   | Onset of Symptoms        | NA   
+   | Date of Death            | NA                         |
+   |--------------------------+-----------------------------------------+
+   | Fever \ldots Temp.       | no \ldots NA        |
+   | Lethargy                 | no                            |
+   | Muscle Pain              | no                          |
+   | Headache                 | no                            |
+   |--------------------------+-----------------------------------------+
+   | Stomach Pain             | no                         |
+   | Diarrhea                 | no                            |
+   | Vomiting                 | no                            |
+   | Breathing Difficulties   | no                       |
+   | Difficulty Swallowing    | no                      |
+   | Hiccup                   | no                             |
+   |--------------------------+-----------------------------------------+
+   | Unexplained Bleeding     | no                       |
+   |--------------------------+-----------------------------------------+
+   | Anorexia                 | no                            |
+   | Maculo-papular Rash      | no                              |
+   | Unexplained Sudden Death | no                    |
+   |--------------------------+-----------------------------------------+
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+---------------------------------------------------------|
+   | Psychosocial Support | yes                                        |
+   | Next Appointment     | 2015-06-10 14:00                                         |
+   |----------------------+---------------------------------------------------------|
+   | Remarks              | /Please feel free to invent further details/            |
+   |                      | /that are consistent with the information given above./ |
+   |----------------------+---------------------------------------------------------|
+
+   #+Latex: \medskip  
+   /Visit[fn:: Person -- 204]/\nopagebreak
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------|
+   | Name                      | Akinola Dilomprizulike                                  |
+   | Sex \ldots DoB \ldots Age | male \ldots 27 \ldots 1987-11-08               |
+   | Number of Visit           | 1    |
+   | Scheduled Time            | 2015-06-09 18:15                                      |
+   | Priority                  | 1                                               |
+   |---------------------------+-------------------------------------------------------------|
+       
+   #+Attr_Latex: :center nil :booktabs t
+   |-------------+-----------------|
+   | Available   | yes   |
+   | Cooperative | yes |
+   |-------------+-----------------|
+      
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |--------------------------+-----------------------------------------+
+   | Onset of Symptoms        | NA   
+   | Date of Death            | NA                         |
+   |--------------------------+-----------------------------------------+
+   | Fever \ldots Temp.       | no \ldots NA        |
+   | Lethargy                 | no                            |
+   | Muscle Pain              | no                          |
+   | Headache                 | no                            |
+   |--------------------------+-----------------------------------------+
+   | Stomach Pain             | no                         |
+   | Diarrhea                 | no                            |
+   | Vomiting                 | no                            |
+   | Breathing Difficulties   | no                       |
+   | Difficulty Swallowing    | no                      |
+   | Hiccup                   | no                             |
+   |--------------------------+-----------------------------------------+
+   | Unexplained Bleeding     | no                       |
+   |--------------------------+-----------------------------------------+
+   | Anorexia                 | no                            |
+   | Maculo-papular Rash      | no                              |
+   | Unexplained Sudden Death | no                    |
+   |--------------------------+-----------------------------------------+
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+---------------------------------------------------------|
+   | Psychosocial Support | NA                                        |
+   | Next Appointment     | 2015-06-10 08:15                                         |
+   |----------------------+---------------------------------------------------------|
+   | Remarks              | /Please feel free to invent further details/            |
+   |                      | /that are consistent with the information given above./ |
+   |----------------------+---------------------------------------------------------|
+
+   #+Latex: \medskip  
+   /Visit[fn:: Person -- 205]/\nopagebreak
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------|
+   | Name                      | Obiora Obasanjo                                  |
+   | Sex \ldots DoB \ldots Age | male \ldots 61 \ldots 1954-10-04               |
+   | Number of Visit           | 1    |
+   | Scheduled Time            | 2015-06-09 15:15                                      |
+   | Priority                  | 2                                               |
+   |---------------------------+-------------------------------------------------------------|
+       
+   #+Attr_Latex: :center nil :booktabs t
+   |-------------+-----------------|
+   | Available   | yes   |
+   | Cooperative | yes |
+   |-------------+-----------------|
+      
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |--------------------------+-----------------------------------------+
+   | Onset of Symptoms        | NA   
+   | Date of Death            | NA                         |
+   |--------------------------+-----------------------------------------+
+   | Fever \ldots Temp.       | no \ldots NA        |
+   | Lethargy                 | no                            |
+   | Muscle Pain              | no                          |
+   | Headache                 | no                            |
+   |--------------------------+-----------------------------------------+
+   | Stomach Pain             | no                         |
+   | Diarrhea                 | no                            |
+   | Vomiting                 | no                            |
+   | Breathing Difficulties   | no                       |
+   | Difficulty Swallowing    | no                      |
+   | Hiccup                   | no                             |
+   |--------------------------+-----------------------------------------+
+   | Unexplained Bleeding     | no                       |
+   |--------------------------+-----------------------------------------+
+   | Anorexia                 | no                            |
+   | Maculo-papular Rash      | no                              |
+   | Unexplained Sudden Death | no                    |
+   |--------------------------+-----------------------------------------+
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+---------------------------------------------------------|
+   | Psychosocial Support | NA                                        |
+   | Next Appointment     | 2015-06-10 12:45                                         |
+   |----------------------+---------------------------------------------------------|
+   | Remarks              | /Please feel free to invent further details/            |
+   |                      | /that are consistent with the information given above./ |
+   |----------------------+---------------------------------------------------------|
+
+   #+Latex: \medskip  
+
+
+:END:
+
+** DONE Visit not possible 
+
+#+name: visitno  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=12
+library(whisker)
+cs <- read.csv2("../../data.out/ft_visits.csv", sep=";", header=TRUE, skip=0, na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+cs <- cs[!cs$PossibleQ,]
+
+visit <- unname(rowSplit(cs))
+
+f <- "visit-no.org"
+template <- readChar(f, file.info(f)$size)
+f <- "visitbase.org"
+visitbase <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(template, partials=list(visitbase=visitbase))
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: visitno
+:RESULTS:
+
+   /Visit[fn:: Person -- 149]/
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------|
+   | Name                      | Olafimihan Awosola                                  |
+   | Sex \ldots DoB \ldots Age | male \ldots 43 \ldots 1971-03-08               |
+   | Number of Visit           | 4    |
+   | Scheduled Time            | 2015-06-12 19:30                                      |
+   | Priority                  | 2                                               |
+   |---------------------------+-------------------------------------------------------------|
+     
+   #+Latex: \medskip  
+
+   /Visit[fn:: Person -- 286]/
+ 
+   
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------|
+   | Name                      | Olufunso Adesina Erinle Emedolu                                  |
+   | Sex \ldots DoB \ldots Age | male \ldots 12 \ldots 2003-03-31               |
+   | Number of Visit           | 2    |
+   | Scheduled Time            | 2015-06-12 08:30                                      |
+   | Priority                  | 1                                               |
+   |---------------------------+-------------------------------------------------------------|
+     
+   #+Latex: \medskip  
+
+
+
+:END:
+
+** DONE Contact
+
+#+name: contact  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=12
+library(whisker)
+cs <- read.csv2("../../data.out/ft_contacts.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdCase, cs$IdPerson), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+contact <- unname(rowSplit(cs))
+
+f <- "contact.org"
+contents <- readChar(f, file.info(f)$size)
+f <- "person.org"
+person <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents, partials=list(person=person))
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: contact
+:RESULTS:
+
+   /Contact [fn:: \\ Case -- 281\\ Contact person -- 342]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------------------|
+   | Name                      | Adaeze Envoh                        |
+   | Sex \ldots DoB \ldots Age | female \ldots 25 \ldots 1990-05-26 |
+   |---------------------------+-----------------------------------------------------------|
+   
+      #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+   | Name                      | Omoregie Osanebi                                                                |          |
+   | Sex \ldots Age \ldots DoB | male \ldots 23 \ldots 1992-04-20                                     |
+   | Marital State             | single (not living common law)                                                                          |          |
+   | Home Address              | Wokemba Street \ldots Tudun Fulani \ldots Dawakin Tofa \ldots Kano                            |          |
+   | Phone-1                   | 0802-7384042 mobile                                                                 |          |
+   | Phone-2                   | NA NA                                                                 |          |
+   | Occupation                | nurse                                                                            |          |
+   |---------------------------+-------------------------------------------------------------------------------------------+----------|
+
+   #+Attr_Latex: :center nil :booktabs t
+   |----------------------+--------------------------------------------------|
+   | Date of Last Contact | 2015-06-08                                    |
+   | Type of Contact      | touched or shared the linens, clothes, or dishes of the case                           |
+   | Type of Place        | Hospital                       |
+   | Address              | Anemagu Lane \ldots Sakwaya         |
+   | LGA \ldots State     | Albasu \ldots Kano               |
+   | Description of Place | /Please describe the place with your own words./ |
+   | Description          | /After having viewed all information/            |
+   |                      | /please invent further details and/              |
+   |                      | /describe the rumor with your own words./        |
+   |----------------------+--------------------------------------------------|
+ 
+   \medskip
+
+
+:END:
+
+** DONE Number of Visit Tasks
+#+name: tasknumber
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :chache no :var iduser=usercode day=10
+library(whisker)
+cs <- read.csv2("../../data.out/ft_visits.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$Day==day,]
+
+count <- nrow(cs)
+
+countQ <- as.logical(count>0)
+countManyQ <- as.logical(count>1)
+out <- data.frame(count,countQ,countManyQ)
+names(out) <- c("TaskNumber","TaskQ","TasksManyQ")
+
+task <- unname(rowSplit(out))
+
+f <- "task-visit.org"
+contents <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(contents)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: tasknumber
+:RESULTS:
+
+ /There should be at least 7 vist tasks./ 
+
+:END:
+
+** DONE Cases of Death
+
+#+name: pdeath  
+#+begin_src R :exports both :dir ../../doc.generation/mustache :results value org drawer :cache no :var iduser=usercode day=40
+library(whisker)
+cs <- read.csv2("../../data.out/ft_cases.csv", sep=";", header=TRUE, skip=0, 
+  na.strings=c("","nil"), stringsAsFactors=FALSE)
+cs <- cs[order(cs$IdPerson, cs$LastName), ]
+
+cs <- cs[cs$IdUser==iduser,]
+cs <- cs[cs$DateOfDeathDay==day,]
+cs <- cs[!is.na(cs$DateOfDeathDay),]
+
+case <- unname(rowSplit(cs))
+
+f <- "case-death.org"
+template <- readChar(f, file.info(f)$size)
+
+text <- whisker.render(template)
+text <- gsub("[\r]", "", text)
+text
+#+end_src
+
+#+RESULTS: pdeath
+:RESULTS:
+
+   /Case of death[fn:: Person -- 121]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Ayodele Oparathompson                    |
+   | Sex \ldots DoB \ldots Age | male \ldots 17 \ldots NA |
+   | Date of Death             | 2015-07-10                          |
+   |---------------------------+-----------------------------------------------|
+   
+   \medskip
+   /Case of death[fn:: Person -- 149]/
+
+   #+Attr_Latex: :center nil :booktabs t
+   |---------------------------+-----------------------------------------------|
+   | Name                      | Olafimihan Awosola                    |
+   | Sex \ldots DoB \ldots Age | male \ldots 43 \ldots 1971-03-08 |
+   | Date of Death             | 2015-07-10                          |
+   |---------------------------+-----------------------------------------------|
+   
+   \medskip
+
+
+:END:
+
+** DONE IdUser
+
+#+name: usercode
+#+begin_src R :var x=about[2,3]
+x
+#+end_src
+
+#+RESULTS: usercode
+: COO-KN-ABS-1
