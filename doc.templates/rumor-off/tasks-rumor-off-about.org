@@ -1,0 +1,2 @@
+You triage and process incoming rumors on /exercise disease/, decide which ones to document according to credibility, and forwards them to the /Surveillance supervisor/. You will document all available information on the source of a rumor, on the place the rumor-event has happened, the possible cases and the contact persons participating in the event in SORMAS.
+
