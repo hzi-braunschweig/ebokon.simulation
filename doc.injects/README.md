@@ -11,5 +11,6 @@
 3. Copy all generated pdf-files to a location of your choice (e.g. to [all](./all))
 
   ```{bash}
+  cd all
   cp ../*-*/*.pdf .
   ```
