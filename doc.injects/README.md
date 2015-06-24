@@ -4,6 +4,6 @@
 - process the org-mode-files with emacs (see 'org-export-1.bat')
 - copy all generated pdf-files to a location of your choice (like 'all')
 
-```
+```{bash}
 cp ../*-*/*.pdf .
 ```
