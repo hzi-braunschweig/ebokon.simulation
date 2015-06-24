@@ -1,1 +1,1 @@
-FOR /F %%f IN ('ls -1 SUO-KN-*/*.org') do emacs %%f -f org-latex-export-to-pdf --kill
+FOR /F %%f IN ('ls -1 *-KN-*/*.org') do emacs %%f -f org-latex-export-to-pdf --kill
