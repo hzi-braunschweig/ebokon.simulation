@@ -13,6 +13,8 @@ The simulation and generation of field test materials was part of the [Ebokon/10
 - automatic generated [booklets](doc.injects/all) for the pilot phase
 - everything as reproducible research (in [org-mode](http://orgmode.org/) and [R](http://www.r-project.org/))
 
+![Contacts to infectious persons](img/ft-simulation_contact_net.png)
+
 ## Disclaimer
 
 All names and identifying details have been changed to protect the privacy of individuals.
