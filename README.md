@@ -10,7 +10,7 @@ The simulation and generation of field test materials was part of the [Ebokon/10
 
 - framework for agend based simulation writen in [Mathematica](http://www.wolfram.com/mathematica/)
 - guidlines to extract data for enriching the abstract simulation with real life data (e.g. [OSM-Data](http://download.geofabrik.de/))
-- automatic generated [booklets](doc.injects/all) for the pilot phase
+- automatic [generated](doc.injects) [booklets](doc.injects/all) for the pilot phase
 - everything as reproducible research (in [org-mode](http://orgmode.org/) and [R](http://www.r-project.org/))
 
 ![Contacts to infectious persons](img/ft-simulation_contact_net.png)
